@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified" 
-	xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.dei.isep.ipp.pt/lprog/adotapets">
 	<xsd:element name="ADOTAPets">
 		<xsd:complexType>
 			<xsd:sequence>
