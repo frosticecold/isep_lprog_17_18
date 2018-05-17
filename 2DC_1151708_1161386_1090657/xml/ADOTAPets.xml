@@ -2,7 +2,7 @@
 <ADOTAPets 
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ADOTAPets.xsd">
     <Animais>
-        <Animal TipoAnimal="Cão" BoxID="1">
+        <Animal TipoAnimal="Cão" BoxID="1" Chip="PT-12345">
             <Nome>Lassie</Nome>
             <Raca>Collie</Raca>
             <Idade>8</Idade>

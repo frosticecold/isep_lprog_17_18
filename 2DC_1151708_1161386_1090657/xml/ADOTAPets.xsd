@@ -21,6 +21,7 @@
 		<xsd:sequence>
 			<xsd:element name="Animal" type="TAnimal" maxOccurs="unbounded" />
 		</xsd:sequence>
+		<xsd:attribute name="Tipo" type="xsd:string" fixed="Domesticos"/>
 	</xsd:complexType>
 	<xsd:complexType name="TBoxes">
 		<xsd:sequence>
@@ -41,6 +42,13 @@
 		</xsd:sequence>
 		<xsd:attribute name="TipoAnimal" type="TTipoAnimal" default="Outro"/>
 		<xsd:attribute name="BoxID" type="xsd:integer" use="required"/>
+		<xsd:attribute name="Chip">
+			<xsd:simpleType>
+				<xsd:restriction base = "xsd:string">
+					<xsd:pattern value ="PT-[0-9]{5}"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
 	</xsd:complexType>
 	<xsd:complexType name="TBox">
 		<xsd:attribute name="BoxID">
@@ -91,7 +99,7 @@
 			<xsd:element name="DataAdministracao" type="xsd:date"/>
 			<xsd:element name="Validade" type="TValidade"/>
 		</xsd:sequence>
-		<xsd:attribute name="Nome" type="xsd:string"/>
+		<xsd:attribute name="Nome" type="xsd:string" use="required"/>
 	</xsd:complexType>
 	<xsd:simpleType name="TValidade">
 		<xsd:restriction base="xsd:string">
