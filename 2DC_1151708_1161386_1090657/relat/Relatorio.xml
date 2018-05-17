@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<relatorio
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Relatorio.xsd">
+    <páginaRosto>
+        <tema>Trabalho LPROG</tema>
+        <disciplina>
+            <designacao>Linguagens e Programação</designacao>
+            <anoCurricular>2</anoCurricular>
+            <sigla>LPROG</sigla>
+        </disciplina>
+        <autor>
+            <nome>Raúl Correia</nome>
+            <número>1090657</número>
+            <mail>1090657@isep.ipp.pt</mail>
+        </autor>
+        <autor>
+            <nome>Mário Dias</nome>
+            <número>1151708</número>
+            <mail>1151708@isep.ipp.pt</mail>
+        </autor>
+        <autor>
+            <nome>Miguel Santos</nome>
+            <número>1161386</número>
+            <mail>1161386@isep.ipp.pt</mail>
+        </autor>
+        <turma>2DC</turma>
+        <professor sigla="PDF" tipoAula="PL"/>
+        <professor sigla="AMD" tipoAula="T"/>
+        <professor sigla="ACM" tipoAula="TP"/>
+        <logotipoDEI>mete aqui um uri em vez de ficares feito banana a ler esta treta</logotipoDEI>
+        <data>2018-05-17</data>
+    </páginaRosto>
+
+    <corpo id="SUBSEC001">
+        <introdução>
+            <subsecção id="SUBSEC001"/>
+            <parágrafo>
+                Hoje em dia... o bison não serve para nada.
+            </parágrafo>
+        </introdução>
+        <outrasSecções>
+            <análise>
+                <subsecção id="SUBSEC002"/>
+                <parágrafo>
+                    
+                </parágrafo>
+            </análise>
+            <linguagem>
+                <subsecção id="SUBSEC003"/>
+                <parágrafo>
+                    
+                </parágrafo>
+            </linguagem>
+            <transformações>
+                <subsecção id="SUBSEC004"/>
+                <parágrafo>
+                    
+                </parágrafo>
+            </transformações>
+        </outrasSecções>
+    </corpo>
+
+    <conclusão>
+        <subsecção id="SUBSEC005"/>
+            <parágrafo>
+                    
+            </parágrafo>
+    </conclusão>
+
+    <referências>
+        <refBibliográfica>
+
+        </refBibliográfica>
+        <refWeb>
+        
+        </refWeb>
+    </referências>
+</relatorio>
