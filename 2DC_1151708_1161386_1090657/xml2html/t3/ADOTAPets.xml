@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<ADOTAPets 
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="ADOTAPets.xsd">
+<?xml-stylesheet type="text/xsl" href="ADOTAPets.xsl"?>
+<ADOTAPets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dei.isep.ipp.pt/lprog/adotapets ADOTAPets.xsd" xmlns="http://www.dei.isep.ipp.pt/lprog/adotapets">
     <Animais>
-        <Animal TipoAnimal="Cão" BoxID="1">
+        <Animal TipoAnimal="Cão" BoxID="1" Chip="PT-12345">
             <Nome>Lassie</Nome>
             <Raca>Collie</Raca>
             <Idade>8</Idade>
