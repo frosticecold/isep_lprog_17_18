@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<relatorio
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Relatorio.xsd">
+<relatório
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.dei.isep.ipp.pt/lprog Relatorio.xsd"
+    xmlns="http://www.dei.isep.ipp.pt/lprog">
     <páginaRosto>
         <tema>Trabalho LPROG</tema>
         <disciplina>
@@ -36,6 +38,7 @@
             <subsecção id="SUBSEC001"/>
             <parágrafo>
                 Hoje em dia... o bison não serve para nada.
+                Ok. Topkek
             </parágrafo>
         </introdução>
         <outrasSecções>
@@ -75,4 +78,4 @@
         
         </refWeb>
     </referências>
-</relatorio>
+</relatório>
