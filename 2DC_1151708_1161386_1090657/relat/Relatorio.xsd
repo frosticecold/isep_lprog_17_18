@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xs:schema xmlns="http://www.dei.isep.ipp.pt/lprog" 
-           xmlns:xs="http://www.w3.org/2001/XMLSchema"
-           targetNamespace="http://www.dei.isep.ipp.pt/lprog" 
-           elementFormDefault="qualified">
-
-  <xs:include schemaLocation="RelatorioSimpleTypes.xsd"/> 
+<xs:schema 
+  xmlns="http://www.dei.isep.ipp.pt/lprog" 
+  xmlns:xs="http://www.w3.org/2001/XMLSchema" 
+  targetNamespace="http://www.dei.isep.ipp.pt/lprog" 
+  elementFormDefault="qualified">
+  <xs:include schemaLocation="RelatorioSimpleTypes.xsd"/>
   <xs:include schemaLocation="RelatorioComplexTypes.xsd"/>
-    
   <xs:element name="relatório" type="TRelatorio"/>
-
   <xs:complexType name="TRelatorio">
     <xs:annotation>
       <xs:documentation>
@@ -25,25 +23,23 @@
     </xs:sequence>
     <xs:attribute name="id" type="xs:token" use="required"/>
   </xs:complexType>
-
-    <xs:complexType name="TpaginaRosto">
-      <xs:annotation>
-        <xs:documentation>
+  <xs:complexType name="TpaginaRosto">
+    <xs:annotation>
+      <xs:documentation>
           Este tipo é usado para a página de rosto do relatório,
           deve conter a informação sobre os grupos, docentes (T, TP e PL), etc.
         </xs:documentation>
-      </xs:annotation>
-      <xs:sequence>
-        <xs:element name="tema" type="xs:string"/>
-        <xs:element name="disciplina" type="TDisciplina"/>
-        <xs:element name="autor" type="TAluno" maxOccurs="3"/>
-        <xs:element name="turma" type="TTurma"/>
-        <xs:element name="professor" type="TProfessor" minOccurs="3" maxOccurs="3"/>
-        <xs:element name="logotipoDEI" type="xs:anyURI"/>
-        <xs:element name="data" type="xs:date"/>
-      </xs:sequence>
-    </xs:complexType>
- 
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="tema" type="xs:string"/>
+      <xs:element name="disciplina" type="TDisciplina"/>
+      <xs:element name="autor" type="TAluno" maxOccurs="3"/>
+      <xs:element name="turma" type="TTurma"/>
+      <xs:element name="professor" type="TProfessor" minOccurs="3" maxOccurs="3"/>
+      <xs:element name="logotipoDEI" type="xs:anyURI"/>
+      <xs:element name="data" type="xs:date"/>
+    </xs:sequence>
+  </xs:complexType>
   <xs:complexType name="TCorpo">
     <xs:annotation>
       <xs:documentation>
@@ -70,8 +66,6 @@
     </xs:sequence>
     <xs:attribute name="id" type="xs:string" use="required"/>
   </xs:complexType>
-
-
   <xs:complexType name="TOutrasSeccoes">
     <xs:annotation>
       <xs:documentation>
