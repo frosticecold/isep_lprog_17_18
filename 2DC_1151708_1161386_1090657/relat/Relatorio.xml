@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<relatório
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.dei.isep.ipp.pt/lprog Relatorio.xsd"
-    xmlns="http://www.dei.isep.ipp.pt/lprog">
+<relatorio 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="Relatorio.xsd">
     <páginaRosto>
-        <tema>Trabalho LPROG</tema>
+        <tema>ADOTAPets - Informação estruturada em XML</tema>
         <disciplina>
             <designacao>Linguagens e Programação</designacao>
             <anoCurricular>2</anoCurricular>
@@ -32,50 +30,37 @@
         <logotipoDEI>mete aqui um uri em vez de ficares feito banana a ler esta treta</logotipoDEI>
         <data>2018-05-17</data>
     </páginaRosto>
-
     <corpo id="SUBSEC001">
         <introdução>
             <subsecção id="SUBSEC001"/>
             <parágrafo>
-                Hoje em dia... o bison não serve para nada.
-                Ok. Topkek
+                Tendo em conta um aumento significativo da utilização do XML nos últimos anos devido à facilidade com que permite compartilhar informação através da internet, este trabalho tem em vista aplicar os conhecimentos obtidos durante as aulas da cadeira LPROG no tema fornecido "ADOTAPets".
+            </parágrafo>
+            <parágrafo>
+                
             </parágrafo>
         </introdução>
         <outrasSecções>
             <análise>
                 <subsecção id="SUBSEC002"/>
-                <parágrafo>
-                    
-                </parágrafo>
+                <parágrafo></parágrafo>
             </análise>
             <linguagem>
                 <subsecção id="SUBSEC003"/>
-                <parágrafo>
-                    
-                </parágrafo>
+                <parágrafo></parágrafo>
             </linguagem>
             <transformações>
                 <subsecção id="SUBSEC004"/>
-                <parágrafo>
-                    
-                </parágrafo>
+                <parágrafo></parágrafo>
             </transformações>
         </outrasSecções>
     </corpo>
-
     <conclusão>
         <subsecção id="SUBSEC005"/>
-            <parágrafo>
-                    
-            </parágrafo>
+        <parágrafo></parágrafo>
     </conclusão>
-
     <referências>
-        <refBibliográfica>
-
-        </refBibliográfica>
-        <refWeb>
-        
-        </refWeb>
+        <refBibliográfica></refBibliográfica>
+        <refWeb></refWeb>
     </referências>
-</relatório>
+</relatorio>
