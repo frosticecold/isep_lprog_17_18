@@ -30,9 +30,9 @@
             <xsl:element name="Informações">
                 <xsl:element name="Vacinas">
                     <xsl:attribute name="Quantidade">
-                        <xsl:value-of select="count(ns:Animais/ns:Animal/ns:Vacinas/ns:Vacina)"/>
+                        <xsl:value-of select="count(ns:Vacinas/ns:Vacina)"/>
                     </xsl:attribute>
-                    <xsl:apply-templates select="ns:Animais/ns:Animal/ns:Vacinas/ns:Vacina"/>
+                    <xsl:apply-templates select="ns:Vacinas/ns:Vacina"/>
                 </xsl:element>
             </xsl:element>
         </xsl:element>
