@@ -40,6 +40,9 @@
     <!-- Criar template Vacinas-->
     <xsl:template match="ns:Vacina">
         <xsl:element name="Vacina">
+            <xsl:attribute name="Nome">
+                <xsl:value-of select="@Nome"/>
+            </xsl:attribute>
             <xsl:element name="DataAdministracao">
                 <xsl:value-of select="ns:DataAdministracao"/>
             </xsl:element>

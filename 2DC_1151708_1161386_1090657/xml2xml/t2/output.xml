@@ -5,16 +5,16 @@
       <BoxID>1</BoxID>
       <Informações>
          <Vacinas Quantidade="4">
-            <Vacina>
+            <Vacina Nome="Contra Pulgas">
                <DataAdministracao>2018-05-03</DataAdministracao>
             </Vacina>
-            <Vacina>
+            <Vacina Nome="Antirrábica">
                <DataAdministracao>2018-07-03</DataAdministracao>
             </Vacina>
-            <Vacina>
+            <Vacina Nome="Giardíase">
                <DataAdministracao>2019-05-27</DataAdministracao>
             </Vacina>
-            <Vacina>
+            <Vacina Nome="Óctupla">
                <DataAdministracao>2018-05-03</DataAdministracao>
             </Vacina>
          </Vacinas>
@@ -25,16 +25,16 @@
       <BoxID>2</BoxID>
       <Informações>
          <Vacinas Quantidade="4">
-            <Vacina>
+            <Vacina Nome="Contra Pulgas">
                <DataAdministracao>2018-05-03</DataAdministracao>
             </Vacina>
-            <Vacina>
+            <Vacina Nome="Antirrábica">
                <DataAdministracao>2018-07-03</DataAdministracao>
             </Vacina>
-            <Vacina>
+            <Vacina Nome="Giardíase">
                <DataAdministracao>2019-05-27</DataAdministracao>
             </Vacina>
-            <Vacina>
+            <Vacina Nome="Óctupla">
                <DataAdministracao>2018-05-03</DataAdministracao>
             </Vacina>
          </Vacinas>
@@ -45,16 +45,16 @@
       <BoxID>3</BoxID>
       <Informações>
          <Vacinas Quantidade="4">
-            <Vacina>
+            <Vacina Nome="Contra Pulgas">
                <DataAdministracao>2018-05-03</DataAdministracao>
             </Vacina>
-            <Vacina>
+            <Vacina Nome="Antirrábica">
                <DataAdministracao>2018-07-03</DataAdministracao>
             </Vacina>
-            <Vacina>
+            <Vacina Nome="Giardíase">
                <DataAdministracao>2019-05-27</DataAdministracao>
             </Vacina>
-            <Vacina>
+            <Vacina Nome="Óctupla">
                <DataAdministracao>2018-05-03</DataAdministracao>
             </Vacina>
          </Vacinas>
@@ -65,16 +65,16 @@
       <BoxID>5</BoxID>
       <Informações>
          <Vacinas Quantidade="4">
-            <Vacina>
+            <Vacina Nome="Contra Pulgas">
                <DataAdministracao>2018-05-03</DataAdministracao>
             </Vacina>
-            <Vacina>
+            <Vacina Nome="Antirrábica">
                <DataAdministracao>2018-07-03</DataAdministracao>
             </Vacina>
-            <Vacina>
+            <Vacina Nome="Giardíase">
                <DataAdministracao>2019-05-27</DataAdministracao>
             </Vacina>
-            <Vacina>
+            <Vacina Nome="Óctupla">
                <DataAdministracao>2018-05-03</DataAdministracao>
             </Vacina>
          </Vacinas>
