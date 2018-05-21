@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Animais Quantidade="4">
+   <Animal Tipo="Cão">
+      <Nome>Lassie</Nome>
+      <BoxID>1</BoxID>
+      <Informações>
+         <Vacinas Quantidade="0"/>
+      </Informações>
+   </Animal>
+   <Animal Tipo="Gato">
+      <Nome>Vistoso</Nome>
+      <BoxID>2</BoxID>
+      <Informações>
+         <Vacinas Quantidade="0"/>
+      </Informações>
+   </Animal>
+   <Animal Tipo="gato">
+      <Nome>Tareco</Nome>
+      <BoxID>3</BoxID>
+      <Informações>
+         <Vacinas Quantidade="0"/>
+      </Informações>
+   </Animal>
+   <Animal Tipo="Outro">
+      <Nome>Indefinido</Nome>
+      <BoxID>5</BoxID>
+      <Informações>
+         <Vacinas Quantidade="0"/>
+      </Informações>
+   </Animal>
+</Animais>
