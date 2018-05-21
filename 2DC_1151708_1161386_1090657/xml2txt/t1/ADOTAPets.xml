@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="ADOTAPets.xsl"?>
+<ADOTAPets 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dei.isep.ipp.pt/lprog/adotapets ADOTAPets.xsd" 
+    xmlns="http://www.dei.isep.ipp.pt/lprog/adotapets">
+    <?xml-stylesheet type="text/xsl" href="adotapets.xsl"?>
+    <Animais>
+        <Animal TipoAnimal="Cão" BoxID="1" Chip="PT-12345">
+            <Nome>Lassie</Nome>
+            <Raca>Collie</Raca>
+            <Idade>8</Idade>
+            <Sexo>Feminino</Sexo>
+            <Peso>15.01Kg</Peso>
+            <Personalidade>Divertido</Personalidade>
+            <Vacinas>
+                <Vacina Nome="Contra Pulgas">
+                    <DataAdministracao>2018-05-03</DataAdministracao>
+                    <Validade>mensal</Validade>
+                </Vacina>
+                <Vacina Nome="Antirrábica">
+                    <DataAdministracao>2018-07-03</DataAdministracao>
+                    <Validade>Sem Validade</Validade>
+                </Vacina>
+                <Vacina Nome="Giardíase">
+                    <DataAdministracao>2019-05-27</DataAdministracao>
+                    <Validade>Anual</Validade>
+                </Vacina>
+                <Vacina Nome="Óctupla">
+                    <DataAdministracao>2018-05-03</DataAdministracao>
+                    <Validade>Mensal</Validade>
+                </Vacina>
+            </Vacinas>
+            <Racao>Light</Racao>
+            <ExercicioFisico>Normal</ExercicioFisico>
+        </Animal>
+        <Animal TipoAnimal="Gato" BoxID="2">
+            <Nome>Vistoso</Nome>
+            <Raca>Rafeiro</Raca>
+            <Idade>2</Idade>
+            <Sexo>Masculino</Sexo>
+            <Peso>6.01Kg</Peso>
+            <Personalidade>Rabujento</Personalidade>
+            <Vacinas>
+                <Vacina Nome="Contra Pulgas">
+                    <DataAdministracao>2018-05-03</DataAdministracao>
+                    <Validade>mensal</Validade>
+                </Vacina>
+                <Vacina Nome="Antirrábica">
+                    <DataAdministracao>2018-07-03</DataAdministracao>
+                    <Validade>Sem Validade</Validade>
+                </Vacina>
+                <Vacina Nome="Giardíase">
+                    <DataAdministracao>2019-05-27</DataAdministracao>
+                    <Validade>Anual</Validade>
+                </Vacina>
+                <Vacina Nome="Óctupla">
+                    <DataAdministracao>2018-05-03</DataAdministracao>
+                    <Validade>Mensal</Validade>
+                </Vacina>
+            </Vacinas>
+            <Racao>Light</Racao>
+            <ExercicioFisico>Normal</ExercicioFisico>
+        </Animal>
+        <Animal TipoAnimal="gato" BoxID="3">
+            <Nome>Tareco</Nome>
+            <Raca>Collie</Raca>
+            <Idade>8</Idade>
+            <Sexo>Feminino</Sexo>
+            <Peso>15.01Kg</Peso>
+            <Personalidade>Divertido</Personalidade>
+            <Vacinas>
+                <Vacina Nome="Contra Pulgas">
+                    <DataAdministracao>2018-05-03</DataAdministracao>
+                    <Validade>mensal</Validade>
+                </Vacina>
+                <Vacina Nome="Antirrábica">
+                    <DataAdministracao>2018-07-03</DataAdministracao>
+                    <Validade>Sem Validade</Validade>
+                </Vacina>
+                <Vacina Nome="Giardíase">
+                    <DataAdministracao>2019-05-27</DataAdministracao>
+                    <Validade>Anual</Validade>
+                </Vacina>
+                <Vacina Nome="Óctupla">
+                    <DataAdministracao>2018-05-03</DataAdministracao>
+                    <Validade>Mensal</Validade>
+                </Vacina>
+            </Vacinas>
+            <Racao>Light</Racao>
+            <ExercicioFisico>Normal</ExercicioFisico>
+        </Animal>
+        <Animal TipoAnimal="Outro" BoxID="5">
+            <Nome>Indefinido</Nome>
+            <Raca>Collie</Raca>
+            <Idade>8</Idade>
+            <Sexo>Feminino</Sexo>
+            <Peso>15.01Kg</Peso>
+            <Personalidade>Divertido</Personalidade>
+            <Vacinas>
+                <Vacina Nome="Contra Pulgas">
+                    <DataAdministracao>2018-05-03</DataAdministracao>
+                    <Validade>mensal</Validade>
+                </Vacina>
+                <Vacina Nome="Antirrábica">
+                    <DataAdministracao>2018-07-03</DataAdministracao>
+                    <Validade>Sem Validade</Validade>
+                </Vacina>
+                <Vacina Nome="Giardíase">
+                    <DataAdministracao>2019-05-27</DataAdministracao>
+                    <Validade>Anual</Validade>
+                </Vacina>
+                <Vacina Nome="Óctupla">
+                    <DataAdministracao>2018-05-03</DataAdministracao>
+                    <Validade>Mensal</Validade>
+                </Vacina>
+            </Vacinas>
+            <Racao>Light</Racao>
+            <ExercicioFisico>Normal</ExercicioFisico>
+        </Animal>
+    </Animais>
+    <Boxes>
+        <Box BoxID="1"/>
+        <Box BoxID="2"/>
+        <Box BoxID="3"/>
+        <Box BoxID="4"/>
+        <Box BoxID="5"/>
+    </Boxes>
+</ADOTAPets>
