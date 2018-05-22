@@ -6,48 +6,70 @@
     <xsl:output method="html" indent="yes"/>
     <xsl:template match="/">
         <html>
-       <head> 
-         
-       </head>
-       <body>
-         <h2>Animal Details</h2>
-         <table border="1">
-       <tr bgcolor="aqua">
-         <th style="text-align:Left"> TipoAnimal</th>
-         <th style="text-align:Left"> Nome</th>
-         <th style="text-align:Left"> Raça</th>
-         <th style="text-align:Left"> Sexo</th>
-         <th style="text-align:Left"> Idade</th>
-         <th style="text-align:Left"> Peso</th>
-       </tr>
-       <xsl:for-each select="ADOTAPets/Animais/Animal">
-         <tr>        
-           <td>              
-             <xsl:value-of select="TipoAnimal" />
-           </td>        
-           <td>            
-             <xsl:value-of select="Nome"/>
-           </td>        
-           <td>            
-             <xsl:value-of select="Raca"/>
-           </td>        
-           <td>            
-             <xsl:value-of select="Sexo"/>
-           </td>        
-           <td>            
-             <xsl:value-of select="Idade"/>
-           </td>        
-             <td>              
-               <xsl:value-of select="Peso"/>
-             </td>          
-         </tr>
-       </xsl:for-each>
-     </table>
-         <br/>
-         <br/>
-         <form id ="form" method="post" >        
-         </form>
-         </body>
-     </html>
+            <head>
+                <style>
+                    #Animais {
+                        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                        border-collapse: collapse;
+                        width: 100%;
+                    }
+
+                    #Animais td, #Animais th {
+                        border: 1px solid #ddd;
+                        padding: 8px;
+                    }
+
+                    #Animais tr:nth-child(even){background-color: #f2f2f2;}
+
+                    #Animais tr:hover {background-color: #ddd;}
+
+                    #Animais th {
+                        padding-top: 12px;
+                        padding-bottom: 12px;
+                        text-align: left;
+                        background-color: #4CAF50;
+                        color: white;
+                    }
+</style>
+            </head>
+            <body>
+                <h2>Animal Details</h2>
+                <table id="Animais" border="1">
+                    <tr bgcolor="#01DF01">
+                        <th style="text-align:center"> Tipo Animal</th>
+                        <th style="text-align:center"> Nome</th>
+                        <th style="text-align:center"> Raça</th>
+                        <th style="text-align:center"> Sexo</th>
+                        <th style="text-align:center"> Idade</th>
+                        <th style="text-align:center"> Peso</th>
+                    </tr>
+                    <xsl:for-each select="ns:ADOTAPets/ns:Animais/ns:Animal">
+                        <tr>
+                            <td style="text-align:center">
+                                <xsl:value-of select="@TipoAnimal"/>
+                            </td>
+                            <td style="text-align:center">
+                                <xsl:value-of select="ns:Nome"/>
+                            </td>
+                            <td style="text-align:center">
+                                <xsl:value-of select="ns:Raca"/>
+                            </td>
+                            <td style="text-align:center">
+                                <xsl:value-of select="ns:Sexo"/>
+                            </td>
+                            <td style="text-align:center">
+                                <xsl:value-of select="ns:Idade"/>
+                            </td>
+                            <td style="text-align:center">
+                                <xsl:value-of select="ns:Peso"/>
+                            </td>
+                        </tr>
+                    </xsl:for-each>
+                </table>
+                <br/>
+                <br/>
+                <form id ="form" method="post"></form>
+            </body>
+        </html>
     </xsl:template>
 </xsl:stylesheet>

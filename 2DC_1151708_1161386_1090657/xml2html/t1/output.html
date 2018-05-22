@@ -1,17 +1,71 @@
 <html xmlns:ns="http://www.dei.isep.ipp.pt/lprog/adotapets">
    <head>
-      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-   </head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+                    #Animais {
+                        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                        border-collapse: collapse;
+                        width: 100%;
+                    }
+
+                    #Animais td, #Animais th {
+                        border: 1px solid #ddd;
+                        padding: 8px;
+                    }
+
+                    #Animais tr:nth-child(even){background-color: #f2f2f2;}
+
+                    #Animais tr:hover {background-color: #ddd;}
+
+                    #Animais th {
+                        padding-top: 12px;
+                        padding-bottom: 12px;
+                        text-align: left;
+                        background-color: #4CAF50;
+                        color: white;
+                    }
+</style></head>
    <body>
       <h2>Animal Details</h2>
-      <table border="1">
-         <tr bgcolor="aqua">
-            <th style="text-align:Left"> TipoAnimal</th>
-            <th style="text-align:Left"> Nome</th>
-            <th style="text-align:Left"> Raça</th>
-            <th style="text-align:Left"> Sexo</th>
-            <th style="text-align:Left"> Idade</th>
-            <th style="text-align:Left"> Peso</th>
+      <table id="Animais" border="1">
+         <tr bgcolor="#01DF01">
+            <th style="text-align:center"> Tipo Animal</th>
+            <th style="text-align:center"> Nome</th>
+            <th style="text-align:center"> Raça</th>
+            <th style="text-align:center"> Sexo</th>
+            <th style="text-align:center"> Idade</th>
+            <th style="text-align:center"> Peso</th>
+         </tr>
+         <tr>
+            <td style="text-align:center">Cão</td>
+            <td style="text-align:center">Lassie</td>
+            <td style="text-align:center">Collie</td>
+            <td style="text-align:center">Feminino</td>
+            <td style="text-align:center">8</td>
+            <td style="text-align:center">15.01Kg</td>
+         </tr>
+         <tr>
+            <td style="text-align:center">Gato</td>
+            <td style="text-align:center">Vistoso</td>
+            <td style="text-align:center">Rafeiro</td>
+            <td style="text-align:center">Masculino</td>
+            <td style="text-align:center">2</td>
+            <td style="text-align:center">6.01Kg</td>
+         </tr>
+         <tr>
+            <td style="text-align:center">gato</td>
+            <td style="text-align:center">Tareco</td>
+            <td style="text-align:center">Collie</td>
+            <td style="text-align:center">Feminino</td>
+            <td style="text-align:center">8</td>
+            <td style="text-align:center">15.01Kg</td>
+         </tr>
+         <tr>
+            <td style="text-align:center">Outro</td>
+            <td style="text-align:center">Indefinido</td>
+            <td style="text-align:center">Collie</td>
+            <td style="text-align:center">Feminino</td>
+            <td style="text-align:center">8</td>
+            <td style="text-align:center">15.01Kg</td>
          </tr>
       </table><br><br><form id="form" method="post"></form>
    </body>
