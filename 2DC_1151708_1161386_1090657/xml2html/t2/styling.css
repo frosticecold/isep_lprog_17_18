@@ -1,19 +1,19 @@
-#Animais {
+#Vacinas {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 	border-collapse: collapse;
 	width: 100%;
 }
 
-#Animais td, #Animais th {
+#Vacinas td, #Vacinas th {
 	border: 1px solid #ddd;
 	padding: 5px;
 }
 
-#Animais tr:nth-child(even){background-color: #f2f2f2;}
+#Vacinas tr:nth-child(even){background-color: #f2f2f2;}
 
-#Animais tr:hover {background-color: #ddd;}
+#Vacinas tr:hover {background-color: #ddd;}
 
-#Animais th {
+#Vacinas th {
 	padding-top: 6px;
 	padding-bottom: 6px;
 	text-align: left;
@@ -61,4 +61,10 @@ h3{
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
  	font-weight: bold;
  	text-align: center;
+}
+
+#Animais {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	text-align: center
 }
