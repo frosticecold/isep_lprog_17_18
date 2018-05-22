@@ -7,30 +7,7 @@
     <xsl:template match="/">
         <html>
             <head>
-                <style>
-                    #Animais {
-                        font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-                        border-collapse: collapse;
-                        width: 100%;
-                    }
-
-                    #Animais td, #Animais th {
-                        border: 1px solid #ddd;
-                        padding: 8px;
-                    }
-
-                    #Animais tr:nth-child(even){background-color: #f2f2f2;}
-
-                    #Animais tr:hover {background-color: #ddd;}
-
-                    #Animais th {
-                        padding-top: 12px;
-                        padding-bottom: 12px;
-                        text-align: left;
-                        background-color: #4CAF50;
-                        color: white;
-                    }
-</style>
+                <link href="styling.css" rel="stylesheet"/>
             </head>
             <body>
                 <h2>Animal Details</h2>
