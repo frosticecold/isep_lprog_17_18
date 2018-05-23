@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-stylesheet type="text/xsl" href="ADOTAPets.xsl"?>
-<ADOTAPets xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dei.isep.ipp.pt/lprog/adotapets ADOTAPets.xsd" xmlns="http://www.dei.isep.ipp.pt/lprog/adotapets">
+<ADOTAPets 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dei.isep.ipp.pt/lprog/adotapets ADOTAPets.xsd" 
+    xmlns="http://www.dei.isep.ipp.pt/lprog/adotapets">
+    <?xml-stylesheet type="text/xsl" href="adotapets.xsl"?>
     <Animais>
         <Animal TipoAnimal="Cão" BoxID="1" Chip="PT-12345">
             <Nome>Lassie</Nome>
@@ -59,7 +62,7 @@
             <ExercicioFisico>Normal</ExercicioFisico>
         </Animal>
         <Animal TipoAnimal="gato" BoxID="3">
-            <Nome>Lassie</Nome>
+            <Nome>Tareco</Nome>
             <Raca>Collie</Raca>
             <Idade>8</Idade>
             <Sexo>Feminino</Sexo>
@@ -87,7 +90,7 @@
             <ExercicioFisico>Normal</ExercicioFisico>
         </Animal>
         <Animal TipoAnimal="Outro" BoxID="5">
-            <Nome>Lassie</Nome>
+            <Nome>Indefinido</Nome>
             <Raca>Collie</Raca>
             <Idade>8</Idade>
             <Sexo>Feminino</Sexo>
