@@ -18,7 +18,6 @@
                 <h3>Cães</h3>
                 <table id="Animais" border="1">
                     <tr bgcolor="#01DF01">
-                        <th style="text-align:center"> Tipo Animal</th>
                         <th style="text-align:center"> Nome</th>
                         <th style="text-align:center"> Raça</th>
                         <th style="text-align:center"> Sexo</th>
@@ -29,9 +28,6 @@
                         <xsl:choose>
                             <xsl:when test="@TipoAnimal ='Gato' or @TipoAnimal='gato'">
                                 <tr>
-                                    <td style="text-align:center">
-                                        <xsl:value-of select="@TipoAnimal"/>
-                                    </td>
                                     <td style="text-align:center">
                                         <xsl:value-of select="ns:Nome"/>
                                     </td>
@@ -56,7 +52,6 @@
                 <h3>Gatos</h3>
                 <table id="Animais2" border="1">
                     <tr bgcolor="#01DF01">
-                        <th style="text-align:center"> Tipo Animal</th>
                         <th style="text-align:center"> Nome</th>
                         <th style="text-align:center"> Raça</th>
                         <th style="text-align:center"> Sexo</th>
@@ -67,9 +62,6 @@
                         <xsl:choose>
                             <xsl:when test="@TipoAnimal ='Cão' or @TipoAnimal='cão'">
                                 <tr>
-                                    <td style="text-align:center">
-                                        <xsl:value-of select="@TipoAnimal"/>
-                                    </td>
                                     <td style="text-align:center">
                                         <xsl:value-of select="ns:Nome"/>
                                     </td>
@@ -94,7 +86,6 @@
                 <h3>Outros</h3>
                 <table id="Animais3" border="1">
                     <tr bgcolor="#01DF01">
-                        <th style="text-align:center"> Tipo Animal</th>
                         <th style="text-align:center"> Nome</th>
                         <th style="text-align:center"> Raça</th>
                         <th style="text-align:center"> Sexo</th>
@@ -105,9 +96,6 @@
                         <xsl:choose>
                             <xsl:when test="@TipoAnimal ='Outro' or @TipoAnimal='outro'">
                                 <tr>
-                                    <td style="text-align:center">
-                                        <xsl:value-of select="@TipoAnimal"/>
-                                    </td>
                                     <td style="text-align:center">
                                         <xsl:value-of select="ns:Nome"/>
                                     </td>
