@@ -26,7 +26,7 @@
                     </tr>
                     <xsl:for-each select="ns:ADOTAPets/ns:Animais/ns:Animal">
                         <xsl:choose>
-                            <xsl:when test="@TipoAnimal ='Gato' or @TipoAnimal='gato'">
+                            <xsl:when test="@TipoAnimal ='Cão' or @TipoAnimal='cão'">
                                 <tr>
                                     <td style="text-align:center">
                                         <xsl:value-of select="ns:Nome"/>
@@ -60,7 +60,7 @@
                     </tr>
                     <xsl:for-each select="ns:ADOTAPets/ns:Animais/ns:Animal">
                         <xsl:choose>
-                            <xsl:when test="@TipoAnimal ='Cão' or @TipoAnimal='cão'">
+                            <xsl:when test="@TipoAnimal ='Gato' or @TipoAnimal='gato'">
                                 <tr>
                                     <td style="text-align:center">
                                         <xsl:value-of select="ns:Nome"/>
