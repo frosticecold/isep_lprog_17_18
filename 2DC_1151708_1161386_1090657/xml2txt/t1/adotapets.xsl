@@ -8,6 +8,7 @@
     </xsl:template>
     <!-- Criar Elemento Raíz-->
     <xsl:template match="ns:ADOTAPets">
+    <xsl:call-template name="HEADER"/>
     Animais : Quantidade = <xsl:value-of select="count(ns:Animais/ns:Animal)"/>
             <xsl:apply-templates select="ns:Animais/ns:Animal"/>
     </xsl:template>
@@ -23,4 +24,13 @@
             Racao:<xsl:value-of select="ns:Racao"/>
             ExercicioFisico:<xsl:value-of select="ns:ExercicioFisico"/>
     </xsl:template>
+
+    <xsl:template name="HEADER">
+ █████╗ ██████╗  ██████╗ ████████╗ █████╗ ██████╗ ███████╗████████╗███████╗
+██╔══██╗██╔══██╗██╔═══██╗╚══██╔══╝██╔══██╗██╔══██╗██╔════╝╚══██╔══╝██╔════╝
+███████║██║  ██║██║   ██║   ██║   ███████║██████╔╝█████╗     ██║   ███████╗
+██╔══██║██║  ██║██║   ██║   ██║   ██╔══██║██╔═══╝ ██╔══╝     ██║   ╚════██║
+██║  ██║██████╔╝╚██████╔╝   ██║   ██║  ██║██║     ███████╗   ██║   ███████║
+╚═╝  ╚═╝╚═════╝  ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚═╝     ╚══════╝   ╚═╝   ╚══════╝
+</xsl:template>
 </xsl:stylesheet>
