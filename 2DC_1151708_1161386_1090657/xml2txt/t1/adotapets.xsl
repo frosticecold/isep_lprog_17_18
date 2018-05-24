@@ -15,14 +15,14 @@
     <!-- Criar template Animais-->
     <xsl:template match="ns:Animal">
         Animal
-            Nome:<xsl:value-of select="ns:Nome"/>
-            Tipo:<xsl:value-of select="@TipoAnimal"/>
-            Sexo:<xsl:value-of select="ns:Sexo"/>
-            Idade:<xsl:value-of select="ns:Idade"/>
-            Raca:<xsl:value-of select="ns:Raca"/>
-            Peso:<xsl:value-of select="ns:Peso"/>
-            Racao:<xsl:value-of select="ns:Racao"/>
-            ExercicioFisico:<xsl:value-of select="ns:ExercicioFisico"/>
+            •Nome:<xsl:value-of select="ns:Nome"/>
+            •Tipo:<xsl:value-of select="@TipoAnimal"/>
+            •Sexo:<xsl:value-of select="ns:Sexo"/>
+            •Idade:<xsl:value-of select="ns:Idade"/>
+            •Raca:<xsl:value-of select="ns:Raca"/>
+            •Peso:<xsl:value-of select="ns:Peso"/>
+            •Racao:<xsl:value-of select="ns:Racao"/>
+            •ExercicioFisico:<xsl:value-of select="ns:ExercicioFisico"/>
     </xsl:template>
 
     <xsl:template name="HEADER">
