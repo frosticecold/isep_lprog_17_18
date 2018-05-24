@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<relatório
+<relatório id="LPROG"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.dei.isep.ipp.pt/lprog Relatorio.xsd"
     xmlns="http://www.dei.isep.ipp.pt/lprog">
     <páginaRosto>
         <tema>ADOTAPets - Informação estruturada em XML</tema>
         <disciplina>
-            <designacao>Linguagens e Programação</designacao>
+            <designação>Linguagens e Programação</designação>
             <anoCurricular>2</anoCurricular>
             <sigla>LPROG</sigla>
         </disciplina>
@@ -34,7 +34,7 @@
     </páginaRosto>
 
     <corpo id="SUBSEC001">
-        <introdução>
+        <introdução id="SEC001" tituloSecção="Introdução">
             <subsecção id="SUBSEC001"/>
             <parágrafo>
                 Tendo em conta um aumento significativo da utilização do XML nos últimos anos devido à facilidade com que permite compartilhar informação através da internet, este trabalho tem em vista aplicar os conhecimentos obtidos durante as aulas da cadeira LPROG sobre o tema fornecido "ADOTAPets".
@@ -44,40 +44,37 @@
             </parágrafo>
         </introdução>
         <outrasSecções>
-            <análise>
+            <análise id="SEC002" tituloSecção="Análise">
                 <subsecção id="SUBSEC002"/>
                 <parágrafo>
                     
                 </parágrafo>
             </análise>
-            <linguagem>
+            <linguagem id="SEC003" tituloSecção="Linguagem">
                 <subsecção id="SUBSEC003"/>
                 <parágrafo>
                     
                 </parágrafo>
             </linguagem>
-            <transformações>
+            <transformações id="SEC004" tituloSecção="Transformações">
                 <subsecção id="SUBSEC004"/>
                 <parágrafo>
                     
                 </parágrafo>
             </transformações>
         </outrasSecções>
-    </corpo>
-
-    <conclusão>
+        <conclusão id="SEC005" tituloSecção="Conclusão">
         <subsecção id="SUBSEC005"/>
             <parágrafo>
                     
             </parágrafo>
     </conclusão>
-
-    <referências>
-        <refBibliográfica>
-
+    <referências id="SEC006" tituloSecção="Referências">
+        <refBibliográfica idRef="RefB_xml">
+            <título>XML em 3 passos</título>
+            <dataPublicação>2011-05-10</dataPublicação>
+            <autor>Marco António</autor>
         </refBibliográfica>
-        <refWeb>
-        
-        </refWeb>
     </referências>
+    </corpo>
 </relatório>
