@@ -1,1 +1,38 @@
-LassieCollie15.01KgLightNormalVistosoRafeiro6.01KgLightNormalTarecoCollie15.01KgLightNormalIndefinidoCollie15.01KgLightNormal
+
+    Animais : Quantidade = 4
+        Animal
+            Nome:Lassie
+            Tipo:Cão
+            Sexo:Feminino
+            Idade:8
+            Raca:Collie
+            Peso:15.01Kg
+            Racao:Light
+            ExercicioFisico:Normal
+        Animal
+            Nome:Vistoso
+            Tipo:Gato
+            Sexo:Masculino
+            Idade:2
+            Raca:Rafeiro
+            Peso:6.01Kg
+            Racao:Light
+            ExercicioFisico:Normal
+        Animal
+            Nome:Tareco
+            Tipo:gato
+            Sexo:Feminino
+            Idade:8
+            Raca:Collie
+            Peso:15.01Kg
+            Racao:Light
+            ExercicioFisico:Normal
+        Animal
+            Nome:Indefinido
+            Tipo:Outro
+            Sexo:Feminino
+            Idade:8
+            Raca:Collie
+            Peso:15.01Kg
+            Racao:Light
+            ExercicioFisico:Normal
