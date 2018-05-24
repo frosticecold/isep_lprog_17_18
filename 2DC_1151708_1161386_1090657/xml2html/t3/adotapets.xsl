@@ -14,7 +14,13 @@
                 </style>
             </head>
             <body>
-                <h2>Animal Details</h2>
+                <body id="backgroundIMG">
+                    <h2> Animal Details</h2>
+                </body>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
                 <h3>Cães</h3>
                 <table id="Animais" border="1">
                     <tr bgcolor="#01DF01">

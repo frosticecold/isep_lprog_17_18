@@ -17,6 +17,15 @@
                 <h2>Animal Details</h2>
                 <xsl:for-each select="ns:ADOTAPets/ns:Animais/ns:Animal">
                     <h3>Dados</h3>
+                    <h3>
+                        <img>
+                            <xsl:attribute name="src">
+                                <xsl:value-of select="ns:Fotografia" />
+                            </xsl:attribute>
+                            <xsl:attribute name="width">70px</xsl:attribute>
+                            <xsl:attribute name="height">70px</xsl:attribute>
+                        </img>
+                    </h3>
                     <div id="divID">
                         <dl id="Animais">
                             <dt>Tipo Animal:</dt>

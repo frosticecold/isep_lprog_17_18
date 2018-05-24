@@ -13,7 +13,7 @@
                 <h2>Animal Details</h2>
                 <table id="Animais" border="1">
                     <tr bgcolor="#01DF01">
-                        <th style="text-align:center"> Tipo Animal</th>
+                        <th style="text-align:center"> Fotografia</th>
                         <th style="text-align:center"> Nome</th>
                         <th style="text-align:center"> Raça</th>
                         <th style="text-align:center"> Sexo</th>
@@ -23,7 +23,13 @@
                     <xsl:for-each select="ns:ADOTAPets/ns:Animais/ns:Animal">
                         <tr>
                             <td style="text-align:center">
-                                <xsl:value-of select="@TipoAnimal"/>
+                                <img>
+                                    <xsl:attribute name="src">
+                                        <xsl:value-of select="ns:Fotografia" />
+                                    </xsl:attribute>
+                                    <xsl:attribute name="width">70px</xsl:attribute>
+                                    <xsl:attribute name="height">70px</xsl:attribute>
+                                </img>
                             </td>
                             <td style="text-align:center">
                                 <xsl:value-of select="ns:Nome"/>
