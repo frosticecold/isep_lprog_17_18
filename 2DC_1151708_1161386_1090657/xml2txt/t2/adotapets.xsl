@@ -2,50 +2,38 @@
 <xsl:stylesheet version="1.0" 
     xmlns:xsl="http://www.w3.org/1999/XSL/Transform" 
     xmlns:ns="http://www.dei.isep.ipp.pt/lprog/adotapets">
-    <xsl:output method="xml" version="1.0" encoding="UTF-8" indent="yes"/>
+    <xsl:output method="text" encoding="UTF-8" indent="yes"/>
     <xsl:template match="/">
         <xsl:apply-templates select="ns:ADOTAPets"/>
     </xsl:template>
     <!-- Criar Elemento Raíz-->
     <xsl:template match="ns:ADOTAPets">
-        <xsl:element name="Animais">
-            <xsl:attribute name="Quantidade">
-                <xsl:value-of select="count(ns:Animais/ns:Animal)"/>
-            </xsl:attribute>
-            <xsl:apply-templates select="ns:Animais/ns:Animal"/>
-        </xsl:element>
-    </xsl:template>
+
+
+      .o.       ooooo      ooo ooooo ooo        ooooo       .o.       ooooo  .oooooo..o 
+     .888.      `888b.     `8' `888' `88.       .888'      .888.      `888' d8P'    `Y8 
+    .8"888.      8 `88b.    8   888   888b     d'888      .8"888.      888  Y88bo.      
+   .8' `888.     8   `88b.  8   888   8 Y88. .P  888     .8' `888.     888   `"Y8888o.  
+  .88ooo8888.    8     `88b.8   888   8  `888'   888    .88ooo8888.    888       `"Y88b 
+ .8'     `888.   8       `888   888   8    Y     888   .8'     `888.   888  oo     .d8P 
+o88o     o8888o o8o        `8  o888o o8o        o888o o88o     o8888o o888o 8""88888P'  
+    
     <!-- Criar template Animais-->
-    <xsl:template match="ns:Animal">
-        <xsl:element name="Animal">
-            <xsl:attribute name="Tipo">
-                <xsl:value-of select="@TipoAnimal"/>
-            </xsl:attribute>
-            <xsl:element name="Nome">
-                <xsl:value-of select="ns:Nome"/>
-            </xsl:element>
-            <xsl:element name="BoxID">
-                <xsl:value-of select="@BoxID"/>
-            </xsl:element>
-            <xsl:element name="Informações">
-                <xsl:element name="Vacinas">
-                    <xsl:attribute name="Quantidade">
-                        <xsl:value-of select="count(ns:Vacinas/ns:Vacina)"/>
-                    </xsl:attribute>
-                    <xsl:apply-templates select="ns:Vacinas/ns:Vacina"/>
-                </xsl:element>
-            </xsl:element>
-        </xsl:element>
+    <xsl:apply-templates select="ns:Animais/ns:Animal"/>
     </xsl:template>
-    <!-- Criar template Vacinas-->
-    <xsl:template match="ns:Vacina">
-        <xsl:element name="Vacina">
-            <xsl:attribute name="Nome">
-                <xsl:value-of select="@Nome"/>
-            </xsl:attribute>
-            <xsl:element name="DataAdministracao">
-                <xsl:value-of select="ns:DataAdministracao"/>
-            </xsl:element>
-        </xsl:element>
+
+    <xsl:template match="ns:Animal">
+    =======================================================================
+        Nome:<xsl:value-of select="ns:Nome"/>
+        Tipo:<xsl:value-of select="@TipoAnimal"/>
+        Idade:<xsl:value-of select="ns:Idade"/>
+        Raça:<xsl:value-of select="ns:Raca"/>
+        <xsl:apply-templates select="ns:Vacinas"/>
+    =======================================================================
+    </xsl:template>
+    <xsl:template match="ns:Vacinas">
+        <xsl:for-each select="ns:Vacina">
+            Vacina:<xsl:value-of select="@Nome"/>       Data Administração:<xsl:value-of select="ns:DataAdministracao"/>
+        </xsl:for-each>
     </xsl:template>
 </xsl:stylesheet>
