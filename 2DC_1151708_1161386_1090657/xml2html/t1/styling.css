@@ -44,3 +44,7 @@ h2 {
  text-align: center;
  text-shadow: rgba(0, 0, 0, .2) 3px 3px 3px;
 }
+
+img{
+	border-radius:20%;
+}
