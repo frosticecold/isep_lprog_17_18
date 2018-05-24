@@ -8,8 +8,6 @@
     </xsl:template>
     <!-- Criar Elemento Raíz-->
     <xsl:template match="ns:ADOTAPets">
-
-
       .o.       ooooo      ooo ooooo ooo        ooooo       .o.       ooooo  .oooooo..o 
      .888.      `888b.     `8' `888' `88.       .888'      .888.      `888' d8P'    `Y8 
     .8"888.      8 `88b.    8   888   888b     d'888      .8"888.      888  Y88bo.      
@@ -17,8 +15,6 @@
   .88ooo8888.    8     `88b.8   888   8  `888'   888    .88ooo8888.    888       `"Y88b 
  .8'     `888.   8       `888   888   8    Y     888   .8'     `888.   888  oo     .d8P 
 o88o     o8888o o8o        `8  o888o o8o        o888o o88o     o8888o o888o 8""88888P'  
-    
-    <!-- Criar template Animais-->
     <xsl:apply-templates select="ns:Animais/ns:Animal"/>
     </xsl:template>
 
