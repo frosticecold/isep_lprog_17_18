@@ -12,10 +12,10 @@ Yb       .88ooo8888.    8     `88b.8   888   8  `888'   888    .88ooo8888.    88
         Tipo:Cão
         Idade:8
         Raça:Collie
-            Vacina:Contra Pulgas	Data Administração:2018-05-03
-            Vacina:Antirrábica	Data Administração:2018-07-03
-            Vacina:Giardíase	Data Administração:2019-05-27
-            Vacina:Óctupla	Data Administração:2018-05-03
+            Vacina:Contra PulgasData Administração:03-05-2018
+            Vacina:AntirrábicaData Administração:03-07-2018
+            Vacina:GiardíaseData Administração:27-05-2019
+            Vacina:ÓctuplaData Administração:03-05-2018
     =======================================================================
     
     =======================================================================
@@ -23,10 +23,10 @@ Yb       .88ooo8888.    8     `88b.8   888   8  `888'   888    .88ooo8888.    88
         Tipo:Cão
         Idade:3
         Raça:Rafeiro
-            Vacina:Contra Pulgas	Data Administração:2018-05-03
-            Vacina:Antirrábica	Data Administração:2018-07-03
-            Vacina:Giardíase	Data Administração:2019-05-27
-            Vacina:Óctupla	Data Administração:2018-07-13
+            Vacina:Contra PulgasData Administração:03-05-2018
+            Vacina:AntirrábicaData Administração:03-07-2018
+            Vacina:GiardíaseData Administração:27-05-2019
+            Vacina:ÓctuplaData Administração:13-07-2018
     =======================================================================
     
     =======================================================================
@@ -34,10 +34,10 @@ Yb       .88ooo8888.    8     `88b.8   888   8  `888'   888    .88ooo8888.    88
         Tipo:Cão
         Idade:11
         Raça:Doberman
-            Vacina:Contra Pulgas	Data Administração:2018-05-03
-            Vacina:Antirrábica	Data Administração:2018-07-03
-            Vacina:Giardíase	Data Administração:2019-05-27
-            Vacina:Óctupla	Data Administração:2018-05-03
+            Vacina:Contra PulgasData Administração:03-05-2018
+            Vacina:AntirrábicaData Administração:03-07-2018
+            Vacina:GiardíaseData Administração:27-05-2019
+            Vacina:ÓctuplaData Administração:03-05-2018
     =======================================================================
     
     =======================================================================
@@ -45,10 +45,10 @@ Yb       .88ooo8888.    8     `88b.8   888   8  `888'   888    .88ooo8888.    88
         Tipo:Gato
         Idade:2
         Raça:Rafeiro
-            Vacina:Contra Pulgas	Data Administração:2018-05-03
-            Vacina:Antirrábica	Data Administração:2018-07-03
-            Vacina:Giardíase	Data Administração:2019-05-27
-            Vacina:Óctupla	Data Administração:2018-05-03
+            Vacina:Contra PulgasData Administração:03-05-2018
+            Vacina:AntirrábicaData Administração:03-07-2018
+            Vacina:GiardíaseData Administração:27-05-2019
+            Vacina:ÓctuplaData Administração:03-05-2018
     =======================================================================
     
     =======================================================================
@@ -56,10 +56,10 @@ Yb       .88ooo8888.    8     `88b.8   888   8  `888'   888    .88ooo8888.    88
         Tipo:gato
         Idade:8
         Raça:Collie
-            Vacina:Contra Pulgas	Data Administração:2018-05-03
-            Vacina:Antirrábica	Data Administração:2018-07-03
-            Vacina:Giardíase	Data Administração:2019-05-27
-            Vacina:Óctupla	Data Administração:2018-05-03
+            Vacina:Contra PulgasData Administração:03-05-2018
+            Vacina:AntirrábicaData Administração:03-07-2018
+            Vacina:GiardíaseData Administração:27-05-2019
+            Vacina:ÓctuplaData Administração:03-05-2018
     =======================================================================
     
     =======================================================================
@@ -67,10 +67,10 @@ Yb       .88ooo8888.    8     `88b.8   888   8  `888'   888    .88ooo8888.    88
         Tipo:Outro
         Idade:4
         Raça:Indefinido
-            Vacina:Contra Pulgas	Data Administração:2018-05-03
-            Vacina:Antirrábica	Data Administração:2018-07-03
-            Vacina:Giardíase	Data Administração:2019-05-27
-            Vacina:Óctupla	Data Administração:2018-05-03
+            Vacina:Contra PulgasData Administração:03-05-2018
+            Vacina:AntirrábicaData Administração:03-07-2018
+            Vacina:GiardíaseData Administração:27-05-2019
+            Vacina:ÓctuplaData Administração:03-05-2018
     =======================================================================
     
     =======================================================================
@@ -78,10 +78,10 @@ Yb       .88ooo8888.    8     `88b.8   888   8  `888'   888    .88ooo8888.    88
         Tipo:Outro
         Idade:7
         Raça:Anaconda
-            Vacina:Contra Pulgas	Data Administração:2018-05-03
-            Vacina:Antirrábica	Data Administração:2018-07-03
-            Vacina:Giardíase	Data Administração:2019-05-27
-            Vacina:Óctupla	Data Administração:2018-05-03
+            Vacina:Contra PulgasData Administração:03-05-2018
+            Vacina:AntirrábicaData Administração:03-07-2018
+            Vacina:GiardíaseData Administração:27-05-2019
+            Vacina:ÓctuplaData Administração:03-05-2018
     =======================================================================
     
     =======================================================================
@@ -89,10 +89,10 @@ Yb       .88ooo8888.    8     `88b.8   888   8  `888'   888    .88ooo8888.    88
         Tipo:Outro
         Idade:7
         Raça:Hamsterville
-            Vacina:Contra Pulgas	Data Administração:2018-05-03
-            Vacina:Antirrábica	Data Administração:2018-07-03
-            Vacina:Giardíase	Data Administração:2019-05-27
-            Vacina:Óctupla	Data Administração:2018-05-03
+            Vacina:Contra PulgasData Administração:03-05-2018
+            Vacina:AntirrábicaData Administração:03-07-2018
+            Vacina:GiardíaseData Administração:27-05-2019
+            Vacina:ÓctuplaData Administração:03-05-2018
     =======================================================================
     
     =======================================================================
@@ -100,10 +100,10 @@ Yb       .88ooo8888.    8     `88b.8   888   8  `888'   888    .88ooo8888.    88
         Tipo:Outro
         Idade:3
         Raça:Coelho
-            Vacina:Contra Pulgas	Data Administração:2018-05-03
-            Vacina:Antirrábica	Data Administração:2018-07-03
-            Vacina:Giardíase	Data Administração:2019-05-27
-            Vacina:Óctupla	Data Administração:2018-05-03
+            Vacina:Contra PulgasData Administração:03-05-2018
+            Vacina:AntirrábicaData Administração:03-07-2018
+            Vacina:GiardíaseData Administração:27-05-2019
+            Vacina:ÓctuplaData Administração:03-05-2018
     =======================================================================
     
             88       .o.       ooooo      ooo ooooo ooo        ooooo       .o.       ooooo  .oooooo..o        

@@ -24,7 +24,7 @@
     </xsl:template>
     <xsl:template match="ns:Vacinas">
         <xsl:for-each select="ns:Vacina">
-            Vacina:<xsl:value-of select="@Nome"/>&#x9;Data Administração:<xsl:value-of select="ns:DataAdministracao"/>
+            Vacina:<xsl:value-of select="@Nome"/>Data Administração:<xsl:value-of select="format-date(ns:DataAdministracao,'[D01]-[M01]-[Y0001]')"/>
         </xsl:for-each>
     </xsl:template>
     <xsl:template name="HEADER">
@@ -46,4 +46,5 @@ Yb      .8'      .88ooo8888.    8     `88b.8   888   8  `888'   888    .88ooo888
  `Yb   .8'      .8'     `888.   8       `888   888   8    Y     888   .8'     `888.   888  oo     .d8P  .dP   
    `Yb 88      o88o     o8888o o8o        `8  o888o o8o        o888o o88o     o8888o o888o 8""88888P'  dP     
     </xsl:template>
+
 </xsl:stylesheet>
