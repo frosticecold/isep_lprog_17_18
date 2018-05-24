@@ -23,19 +23,7 @@
         <h2>
             <xsl:value-of select="ns:tema"/>
         </h2>
-        <table id="logotipo" align ="center">
-            <img>
-                <xsl:attribute name="src">
-                    <xsl:value-of select='ns:logotipoDEI'/>
-                </xsl:attribute>
-                <xsl:attribute name="width">
-                    <xsl:value-of select='format-number(0.25,"0%")'/>
-                </xsl:attribute>
-                <xsl:attribute name="height">
-                    <xsl:value-of select='format-number(0.35,"0%")'/>
-                </xsl:attribute>
-            </img>
-        </table>
+        <xsl:apply-templates select="ns:logotipoDEI"/>
         <xsl:apply-templates select="ns:disciplina"/>
         <table id="autores" align="left">
             <tr>
@@ -64,15 +52,32 @@
             <xsl:apply-templates select="ns:professor"/>
         </table>
     </xsl:template>
+
+    <!-- Template LogotipoDei-->
+    <xsl:template match="ns:logotipoDEI">
+            <table id="logotipo" align ="center">
+            <img>
+                <xsl:attribute name="src">
+                    <xsl:value-of select='.'/>
+                </xsl:attribute>
+                <xsl:attribute name="width">
+                    <xsl:value-of select='format-number(0.23,"0%")'/>
+                </xsl:attribute>
+                <xsl:attribute name="height">
+                    <xsl:value-of select='format-number(0.35,"0%")'/>
+                </xsl:attribute>
+            </img>
+        </table>
+    </xsl:template>
     <!--Template Disciplina-->
     <xsl:template match="ns:disciplina">
         <h3>
             <xsl:value-of select="ns:designação"/>             [
-                
+                                        
             <xsl:value-of select="ns:sigla"/>]
-                    
+                                    
         </h3>
-        <h3>Ano Curricular:                                         
+        <h3>Ano Curricular:                                                                 
             <xsl:value-of select="ns:anoCurricular"/>
         </h3>
     </xsl:template>
@@ -80,10 +85,8 @@
     <xsl:template match="ns:professor">
         <tr>
             <td>
-                <xsl:value-of select="@sigla"/>                         [
-                    
-                <xsl:value-of select="@tipoAula"/>]
-                            
+                <xsl:value-of select="@sigla"/> [<xsl:value-of select="@tipoAula"/>]
+                                                    
             </td>
         </tr>
         <br/>
