@@ -1,0 +1,22 @@
+body {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align: center
+}
+
+#autores{
+	display: inline-block;
+	text-align: center;
+	margin-left: 100px;
+	margin-top: 200px;
+}
+
+#autores th, #autores td {
+	padding: 10px;
+}
+
+#infoCapa {
+	display: inline-block;
+	text-align: center;
+	margin-right: 300px;
+	margin-top: 200px;
+}
