@@ -15,6 +15,7 @@
             </head>
             <body>
                 <xsl:apply-templates select="ns:páginaRosto"/>
+                <xsl:apply-templates select="ns:corpo"/>
             </body>
         </html>
     </xsl:template>
@@ -30,7 +31,6 @@
     </xsl:template>
     <!-- Template LogotipoDei-->
     <xsl:template match="ns:logotipoDEI">
-        <table id="logotipo" align ="center">
             <img>
                 <xsl:attribute name="src">
                     <xsl:value-of select='.'/>
@@ -42,7 +42,6 @@
                     <xsl:value-of select='format-number(0.35,"0%")'/>
                 </xsl:attribute>
             </img>
-        </table>
     </xsl:template>
     <!-- Template autores -->
     <xsl:template name="autores">
@@ -78,10 +77,7 @@
     </xsl:template>
     <!--Template Disciplina-->
     <xsl:template match="ns:disciplina">
-        <h3>
-            <xsl:value-of select="ns:designação"/>  [<xsl:value-of select="ns:sigla"/>]
-                                                    
-        </h3>
+        <h3><xsl:value-of select="ns:designação"/>  [<xsl:value-of select="ns:sigla"/>]</h3>
         <h3>Ano Curricular:                                                                                         
             <xsl:value-of select="ns:anoCurricular"/>
         <p>Data:<xsl:value-of select="format-date(../ns:data,'[D01]-[M01]-[Y0001]')"/></p>
@@ -90,11 +86,18 @@
     <!--Template Professores-->
     <xsl:template match="ns:professor">
         <tr>
-            <td>
-                <xsl:value-of select="@sigla"/> [<xsl:value-of select="@tipoAula"/>]
-                                                                            
-            </td>
+            <td><xsl:value-of select="@sigla"/> [<xsl:value-of select="@tipoAula"/>]</td>
         </tr>
         <br/>
+    </xsl:template>
+
+    <!--Template Corpo-->
+    <xsl:template match="ns:corpo">
+    <xsl:call-template name="Indice"/>
+    </xsl:template>
+
+    <xsl:template name="Indice">
+    <table><h2>Indice</h2>
+    </table>
     </xsl:template>
 </xsl:stylesheet>
