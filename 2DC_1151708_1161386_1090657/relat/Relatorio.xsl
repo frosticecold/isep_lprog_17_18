@@ -90,9 +90,7 @@
     <xsl:template match="ns:professor">
         <p>
             <td>
-                <xsl:value-of select="@sigla"/> [
-                                
-                <xsl:value-of select="@tipoAula"/>]
+                <xsl:value-of select="@sigla"/> [<xsl:value-of select="@tipoAula"/>]
                         
             </td>
         </p>
@@ -111,11 +109,13 @@
             </xsl:for-each>
         </ol>
         <!-- Introdução-->
+        <!-- Outras Secções-->
+
         <xsl:apply-templates select="ns:introdução"/>
+            <xsl:apply-templates select="ns:outrasSecções"/>
     </xsl:template>
     <!-- Template Introdução-->
     <xsl:template match="ns:introdução">
-
             <h2><xsl:attribute name="id"><xsl:value-of select="@id"/>
             </xsl:attribute>Introdução</h2>
             <xsl:apply-templates select="ns:parágrafo"/>
@@ -124,5 +124,20 @@
     <xsl:template match="ns:parágrafo">
     <p><xsl:value-of select="."/>
     </p>
+    </xsl:template>
+    <!-- Template Outras Secções-->
+    <xsl:template match="ns:outrasSecções">
+    <xsl:for-each select="./*">
+    <h2><xsl:attribute name="id"><xsl:value-of select="@id"/>
+            </xsl:attribute><xsl:value-of select="@tituloSecção"/></h2>
+        <xsl:apply-templates select="ns:parágrafo"/>
+    </xsl:for-each>
+    </xsl:template>
+    <!-- Template Conclusão-->
+    <xsl:template match="ns:conclusão">
+        <xsl:apply-templates select="ns:parágrafo"/>
+    </xsl:template>
+    <!-- Template Referências -->
+    <xsl:template match="ns:Referências">
     </xsl:template>
 </xsl:stylesheet>
