@@ -104,10 +104,7 @@
         <ol>
             <xsl:for-each select="//*[@tituloSecção]">
                 <li>
-                    <a>
-                        <xsl:attribute name="href">#
-                            <xsl:value-of select="@id"/>
-                        </xsl:attribute>
+                    <a><xsl:attribute name="href">#<xsl:value-of select="@id"/></xsl:attribute>
                         <xsl:value-of select="@tituloSecção"/>
                     </a>
                 </li>
@@ -118,12 +115,9 @@
     </xsl:template>
     <!-- Template Introdução-->
     <xsl:template match="ns:introdução">
-        <a>
-            <xsl:attribute name="href">#
-                <xsl:value-of select="@id"/>
-            </xsl:attribute>
-            <h2>Introdução</h2>
-                </a>
+
+            <h2><xsl:attribute name="id"><xsl:value-of select="@id"/>
+            </xsl:attribute>Introdução</h2>
             <xsl:apply-templates select="ns:parágrafo"/>
     </xsl:template>
     <!-- Template Paragrafo-->
