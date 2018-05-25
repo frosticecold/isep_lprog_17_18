@@ -70,10 +70,8 @@
         <div style="float:left; text-align:left;">
             <xsl:for-each select="ns:autor">
                 <p>
-                    <b>
-                        <xsl:value-of select="ns:nome"/>
-                    </b>
-                    <xsl:value-of select="ns:número"/>
+                    <b><xsl:value-of select="ns:nome"/></b> - 
+                    <xsl:value-of select="ns:número"/>  - 
                     <xsl:value-of select="ns:mail"/>
                 </p>
             </xsl:for-each>
@@ -97,6 +95,7 @@
     </xsl:template>
     <!--Template Corpo-->
     <xsl:template match="ns:corpo">
+        <hr/>
         <!-- Indice-->
         <h2>Indice</h2>
         <ol>
@@ -106,14 +105,29 @@
                         <xsl:value-of select="@tituloSecção"/>
                     </a>
                 </li>
+            <xsl:for-each select=".//ns:subsecção">
+            <xsl:if test="string(.)">
+                <ul>
+                    <li>
+                        <a><xsl:attribute name="href">#<xsl:value-of select="@id"/></xsl:attribute>
+                        <xsl:value-of select="."/>
+                        </a>
+                    </li>
+                </ul>
+            </xsl:if>
+            </xsl:for-each>
             </xsl:for-each>
         </ol>
         <!-- Introdução-->
         <!-- Outras Secções-->
 
+        <hr/>
         <xsl:apply-templates select="ns:introdução"/>
+    	<hr/>
         <xsl:apply-templates select="ns:outrasSecções"/>
+        <hr/>
         <xsl:apply-templates select="ns:conclusão"/>
+        <hr/>
         <xsl:apply-templates select="ns:referências"/>
     </xsl:template>
     <!-- Template Introdução-->
@@ -139,6 +153,7 @@
     <xsl:template match="ns:conclusão">
      <h2><xsl:attribute name="id"><xsl:value-of select="@id"/>
             </xsl:attribute><xsl:value-of select="@tituloSecção"/></h2>
+        <xsl:apply-templates select="ns:subsecção"/>
         <xsl:apply-templates select="ns:parágrafo"/>
     </xsl:template>
     <!-- Template Referências -->
@@ -149,7 +164,21 @@
     </xsl:template>
     <!-- Template refBibliográfica-->
     <xsl:template match="ns:refBibliográfica">
-    Título:<xsl:value-of select="ns:título"/>   Data Publicação:<xsl:value-of select="ns:dataPublicação"/>
+    
+    <p>Título:<i><xsl:value-of select="ns:título"/></i>   Data Publicação:<xsl:value-of select="ns:dataPublicação"/>
     Autor:<xsl:value-of select="ns:autor"/>
+    </p>
+    </xsl:template>
+    
+    <xsl:template match="ns:subsecção">
+    <xsl:if test="string(.)">
+    
+    
+    <div>
+    <h3><xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
+    <xsl:value-of select="."/>
+    </h3>
+    </div>
+    </xsl:if>
     </xsl:template>
 </xsl:stylesheet>

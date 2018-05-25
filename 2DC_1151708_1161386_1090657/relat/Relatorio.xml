@@ -28,7 +28,7 @@
         <professor sigla="PDF" tipoAula="PL"/>
         <professor sigla="AMD" tipoAula="T"/>
         <professor sigla="ACM" tipoAula="TP"/>
-        <logotipoDEI>mete aqui um uri em vez de ficares feito banana a ler esta treta</logotipoDEI>
+        <logotipoDEI>isep_logo.png</logotipoDEI>
         <data>2018-05-17</data>
     </páginaRosto>
     <corpo id="SUBSEC001">
