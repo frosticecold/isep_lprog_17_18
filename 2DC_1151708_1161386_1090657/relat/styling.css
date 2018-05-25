@@ -4,10 +4,8 @@ body {
 }
 
 #autores{
-	display: inline-block;
+
 	text-align: center;
-	margin-left: 100px;
-	margin-top: 200px;
 }
 
 #autores th, #autores td {
@@ -15,8 +13,5 @@ body {
 }
 
 #infoCapa {
-	display: inline-block;
 	text-align: center;
-	margin-right: 300px;
-	margin-top: 200px;
 }
