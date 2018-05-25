@@ -53,14 +53,14 @@
     <xsl:template match="ns:disciplina">
         <h3>
             <xsl:value-of select="ns:designação"/>  [
-            
+                        
             <xsl:value-of select="ns:sigla"/>]
-        
+                
         </h3>
-        <h3>Ano Curricular:                                                                                                                 
+        <h3>Ano Curricular:                                                                                                                             
             <xsl:value-of select="ns:anoCurricular"/>
             <p>Data:
-                
+                                
                 <xsl:value-of select="format-date(../ns:data,'[D01]-[M01]-[Y0001]')"/>
             </p>
         </h3>
@@ -91,23 +91,44 @@
         <p>
             <td>
                 <xsl:value-of select="@sigla"/> [
-                
+                                
                 <xsl:value-of select="@tipoAula"/>]
-            
+                        
             </td>
         </p>
     </xsl:template>
     <!--Template Corpo-->
     <xsl:template match="ns:corpo">
+        <!-- Indice-->
         <h2>Indice</h2>
         <ol>
-        <xsl:for-each select="//*[@tituloSecção]">
+            <xsl:for-each select="//*[@tituloSecção]">
                 <li>
                     <a>
-                    <xsl:attribute name="href">#<xsl:value-of select="@id"/></xsl:attribute>
-                    <xsl:value-of select="@tituloSecção"/></a>
+                        <xsl:attribute name="href">#
+                            <xsl:value-of select="@id"/>
+                        </xsl:attribute>
+                        <xsl:value-of select="@tituloSecção"/>
+                    </a>
                 </li>
             </xsl:for-each>
         </ol>
+        <!-- Introdução-->
+        <xsl:apply-templates select="ns:introdução"/>
+    </xsl:template>
+    <!-- Template Introdução-->
+    <xsl:template match="ns:introdução">
+        <a>
+            <xsl:attribute name="href">#
+                <xsl:value-of select="@id"/>
+            </xsl:attribute>
+            <h2>Introdução</h2>
+                </a>
+            <xsl:apply-templates select="ns:parágrafo"/>
+    </xsl:template>
+    <!-- Template Paragrafo-->
+    <xsl:template match="ns:parágrafo">
+    <p><xsl:value-of select="."/>
+    </p>
     </xsl:template>
 </xsl:stylesheet>
