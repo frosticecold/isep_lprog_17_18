@@ -112,7 +112,9 @@
         <!-- Outras Secções-->
 
         <xsl:apply-templates select="ns:introdução"/>
-            <xsl:apply-templates select="ns:outrasSecções"/>
+        <xsl:apply-templates select="ns:outrasSecções"/>
+        <xsl:apply-templates select="ns:conclusão"/>
+        <xsl:apply-templates select="ns:referências"/>
     </xsl:template>
     <!-- Template Introdução-->
     <xsl:template match="ns:introdução">
@@ -135,9 +137,19 @@
     </xsl:template>
     <!-- Template Conclusão-->
     <xsl:template match="ns:conclusão">
+     <h2><xsl:attribute name="id"><xsl:value-of select="@id"/>
+            </xsl:attribute><xsl:value-of select="@tituloSecção"/></h2>
         <xsl:apply-templates select="ns:parágrafo"/>
     </xsl:template>
     <!-- Template Referências -->
-    <xsl:template match="ns:Referências">
+    <xsl:template match="ns:referências">
+     <h2><xsl:attribute name="id"><xsl:value-of select="@id"/>
+            </xsl:attribute><xsl:value-of select="@tituloSecção"/></h2>
+            <xsl:apply-templates select="ns:refBibliográfica"/>
+    </xsl:template>
+    <!-- Template refBibliográfica-->
+    <xsl:template match="ns:refBibliográfica">
+    Título:<xsl:value-of select="ns:título"/>   Data Publicação:<xsl:value-of select="ns:dataPublicação"/>
+    Autor:<xsl:value-of select="ns:autor"/>
     </xsl:template>
 </xsl:stylesheet>
