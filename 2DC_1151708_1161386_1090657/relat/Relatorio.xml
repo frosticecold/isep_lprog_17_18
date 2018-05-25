@@ -56,12 +56,18 @@
             </transformações>
         </outrasSecções>
         <conclusão id="SEC005" tituloSecção="Conclusão">
-<<<<<<< HEAD
         <subsecção id="SUBSEC005">Transformação para HTML 1</subsecção>
             <parágrafo>
-                Esta transformação consiste em filtrar a informação do ficheiro xml para apenas uma tabela com as seguintes informações relativas ao animal:            
+                Esta transformação consiste em filtrar a informação do ficheiro xml para apresentação de apenas uma tabela com as seguintes informações relativas aos animais:
             </parágrafo>
             <listaItems>
+                <item label="Fotografia"/>
+                <item label="Nome"/>
+                <item label="Raça"/>
+                <item label="Sexo"/>
+                <item label="Idade"/>
+                <item label="Peso"/>
+            </listaItems>
     </conclusão>
     <referências id="SEC006" tituloSecção="Referências">
         <refBibliográfica idRef="RefB_www">
@@ -70,17 +76,5 @@
             <autor>Marco António</autor>
         </refBibliográfica>
     </referências>
-=======
-            <subsecção id="SUBSEC005"/>
-            <parágrafo></parágrafo>
-        </conclusão>
-        <referências id="SEC006" tituloSecção="Referências">
-            <refBibliográfica idRef="RefB_xml">
-                <título>XML em 3 passos</título>
-                <dataPublicação>2011-05-10</dataPublicação>
-                <autor>Marco António</autor>
-            </refBibliográfica>
-        </referências>
->>>>>>> 1ba55396e5bfbfdbf20507b887ea349a7509af74
     </corpo>
 </relatório>
