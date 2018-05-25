@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<relatório id="LPROG"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://www.dei.isep.ipp.pt/lprog Relatorio.xsd"
+<relatório id="LPROG" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dei.isep.ipp.pt/lprog Relatorio.xsd" 
     xmlns="http://www.dei.isep.ipp.pt/lprog">
     <páginaRosto>
         <tema>ADOTAPets - Informação estruturada em XML</tema>
@@ -32,7 +31,6 @@
         <logotipoDEI>isep_logo.png</logotipoDEI>
         <data>2018-05-17</data>
     </páginaRosto>
-
     <corpo id="SUBSEC001">
         <introdução id="SEC001" tituloSecção="Introdução">
             <subsecção id="SUBSEC001"/>
@@ -46,35 +44,27 @@
         <outrasSecções>
             <análise id="SEC002" tituloSecção="Análise">
                 <subsecção id="SUBSEC002"/>
-                <parágrafo>
-                    
-                </parágrafo>
+                <parágrafo></parágrafo>
             </análise>
             <linguagem id="SEC003" tituloSecção="Linguagem">
                 <subsecção id="SUBSEC003"/>
-                <parágrafo>
-                    
-                </parágrafo>
+                <parágrafo></parágrafo>
             </linguagem>
             <transformações id="SEC004" tituloSecção="Transformações">
                 <subsecção id="SUBSEC004"/>
-                <parágrafo>
-                    
-                </parágrafo>
+                <parágrafo></parágrafo>
             </transformações>
         </outrasSecções>
         <conclusão id="SEC005" tituloSecção="Conclusão">
-        <subsecção id="SUBSEC005"/>
-            <parágrafo>
-                    
-            </parágrafo>
-    </conclusão>
-    <referências id="SEC006" tituloSecção="Referências">
-        <refBibliográfica idRef="RefB_xml">
-            <título>XML em 3 passos</título>
-            <dataPublicação>2011-05-10</dataPublicação>
-            <autor>Marco António</autor>
-        </refBibliográfica>
-    </referências>
+            <subsecção id="SUBSEC005"/>
+            <parágrafo></parágrafo>
+        </conclusão>
+        <referências id="SEC006" tituloSecção="Referências">
+            <refBibliográfica idRef="RefB_xml">
+                <título>XML em 3 passos</título>
+                <dataPublicação>2011-05-10</dataPublicação>
+                <autor>Marco António</autor>
+            </refBibliográfica>
+        </referências>
     </corpo>
 </relatório>
