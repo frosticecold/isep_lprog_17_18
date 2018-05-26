@@ -169,6 +169,7 @@
     <xsl:for-each select="./*">
     <h2><xsl:attribute name="id"><xsl:value-of select="@id"/>
             </xsl:attribute><xsl:value-of select="@tituloSecção"/></h2>
+            <xsl:apply-templates select="ns:subsecção"/>
         <xsl:apply-templates select="ns:parágrafo"/>
     </xsl:for-each>
     </xsl:template>

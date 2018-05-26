@@ -51,12 +51,7 @@
                 <parágrafo></parágrafo>
             </linguagem>
             <transformações id="SEC004" tituloSecção="Transformações">
-                <subsecção id="SUBSEC004"/>
-                <parágrafo></parágrafo>
-            </transformações>
-        </outrasSecções>
-        <conclusão id="SEC005" tituloSecção="Conclusão">
-        <subsecção id="SUBSEC005">Transformação para HTML 1</subsecção>
+                <subsecção id="SUBSEC004">Transformação para HTML 1</subsecção>
             <parágrafo>
                 Esta transformação consiste em filtrar a informação do ficheiro xml para apresentação de apenas uma tabela com as seguintes informações relativas aos animais:
             </parágrafo>
@@ -68,15 +63,20 @@
                 <item label="Idade"/>
                 <item label="Peso"/>
             </listaItems>
-        <subsecção id="SUBSEC006">Transformação para HTML 2</subsecção>
+        <subsecção id="SUBSEC005">Transformação para HTML 2</subsecção>
             <parágrafo>
                 A segunda transformação consiste num plano mais abrangente de informação, apresentando para além dos dados do animal também as respetivas vacinas de cada um, com a data de administração e validade. 
             </parágrafo>
-            <subsecção id="SUBSEC007">Transformação para HTML 3</subsecção>
+            <subsecção id="SUBSEC006">Transformação para HTML 3</subsecção>
             <parágrafo>
                 Esta ultima transformação tem a particularidade de apresentar todos os dados dos animais agrupados por tipo de animal, permitindo uma mais rápida visualização dos dados do respetivo animal através de uma 
             </parágrafo>
-    </conclusão>
+            </transformações>
+        </outrasSecções>
+        <conclusão id="SEC005" tituloSecção="Conclusão">
+            <subsecção id="SUBSEC007"/>
+                <parágrafo></parágrafo>
+        </conclusão>
     <referências id="SEC006" tituloSecção="Referências">
         <refBibliográfica idRef="RefB_www">
             <título>XML em 3 passos</título>
