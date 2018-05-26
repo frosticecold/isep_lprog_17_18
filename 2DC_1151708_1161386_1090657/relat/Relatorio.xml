@@ -36,8 +36,9 @@
             <subsecção id="SUBSEC001"/>
             <parágrafo>
                 Tendo em conta um aumento significativo da utilização do XML nos últimos anos devido à facilidade com que permite compartilhar informação através da internet,                 
-                <itálico>este trabalho tem em vista aplicar</itálico> os conhecimentos obtidos durante as aulas da cadeira LPROG sobre o tema fornecido "ADOTAPets".
+                                <itálico>este trabalho tem em vista aplicar</itálico> os conhecimentos obtidos durante as aulas da cadeira LPROG sobre o tema fornecido "ADOTAPets".
                         
+            
             </parágrafo>
             <parágrafo>
                 Através do XML, serão organizados e estruturados os dados de uma associação de apoio a animais abandonados, caracterizando todos os elementos dos respetivos animais.
@@ -127,14 +128,14 @@
                 <autor>Marco António</autor>
             </refBibliográfica>
             <refWeb idRef="RefW_w3school">
-            <URL>https://www.w3schools.com/</URL>
-            <descrição>THE WORLD'S LARGEST WEB DEVELOPER SITE</descrição>
-            <consultadoEm>2018-05-26</consultadoEm>
+                <URL>https://www.w3schools.com/</URL>
+                <descrição>THE WORLD'S LARGEST WEB DEVELOPER SITE</descrição>
+                <consultadoEm>2018-05-26</consultadoEm>
             </refWeb>
             <refWeb idRef="RefW_stackoverflow">
-            <URL>https://pt.stackoverflow.com/</URL>
-            <descrição>Site de Perguntas e Respostas para programadores</descrição>
-            <consultadoEm>2018-05-26</consultadoEm>
+                <URL>https://pt.stackoverflow.com/</URL>
+                <descrição>Site de Perguntas e Respostas para programadores</descrição>
+                <consultadoEm>2018-05-26</consultadoEm>
             </refWeb>
         </referências>
     </corpo>
