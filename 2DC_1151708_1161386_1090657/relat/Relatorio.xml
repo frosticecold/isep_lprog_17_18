@@ -131,10 +131,22 @@
                 <subsecção id="SUBSEC006">Transformação para HTML 3</subsecção>
                 <parágrafo>
                 Esta ultima transformação tem a particularidade de apresentar todos os dados dos animais agrupados por tipo de animal, permitindo uma mais rápida visualização dos dados do respetivo animal através de uma             </parágrafo>
+
+                <subsecção id="SUBSEC007">Transformação para XML 1</subsecção>
+                <parágrafo>
+                </parágrafo>
+                <subsecção id="SUBSEC008">Transformação para XML 2</subsecção>
+                <parágrafo></parágrafo>
+
+                <subsecção id="SUBSEC009">Transformação para TXT 1</subsecção>
+                <parágrafo></parágrafo>
+
+                <subsecção id="SUBSEC010">Transformação para TXT 2</subsecção>
+                <parágrafo></parágrafo>
             </transformações>
         </outrasSecções>
         <conclusão id="SEC005" tituloSecção="Conclusão">
-            <subsecção id="SUBSEC007"/>
+            <subsecção id="SUBSEC011"/>
             <parágrafo></parágrafo>
         </conclusão>
         <referências id="SEC006" tituloSecção="Referências">
