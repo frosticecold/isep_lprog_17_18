@@ -94,13 +94,15 @@
             <linguagem id="SEC003" tituloSecção="Linguagem">
                 <subsecção id="SUBSEC003"/>
                 <parágrafo>A nivel de schema, foi assegurado que em tipo de animal apenas se poderia inserir 
-                    <negrito>cão</negrito>, 
-                    <negrito>gato</negrito> ou 
-                    <negrito>outro</negrito>, utilizando-se um enumerado.
+                                        <negrito>cão</negrito>, 
+                                        <negrito>gato</negrito> ou 
+                                        <negrito>outro</negrito>, utilizando-se um enumerado.
+                
                 </parágrafo>
                 <parágrafo>Em box ID foi feita referencia de chaves, chaves essas que têm que fazer parte do conjunto de Boxes.</parágrafo>
                 <parágrafo>Chip do animal é restrito po rum padrão, começa por 
-                    <negrito>PT-</negrito> seguido de 5 digitos de zero a nove
+                                        <negrito>PT-</negrito> seguido de 5 digitos de zero a nove
+                
                 </parágrafo>
                 <parágrafo>Nome e raça do animal, foi feito um padrão que so aceita letras e espaços.</parágrafo>
                 <parágrafo>A idade de um animal é restrita a um número inteiro positivi incluindo zero e no maximo até 100, isto é se incluirmos tartarugas.</parágrafo>
@@ -130,7 +132,7 @@
                 <subsecção id="SUBSEC006">Transformação para HTML 3</subsecção>
                 <parágrafo>
                 Esta ultima transformação tem a particularidade de apresentar todos os dados dos animais agrupados por tipo de animal, permitindo uma mais rápida visualização dos dados com interesse.             </parágrafo>
-                
+
                 <subsecção id="SUBSEC007">Transformação para XML 1</subsecção>
                 <parágrafo>
                 Esta transformação tem como atributos as propriedades importantes do animal, tem um elemento nome e um elemento com informação secundária.
@@ -149,8 +151,9 @@
         </outrasSecções>
         <conclusão id="SEC005" tituloSecção="Conclusão">
             <subsecção id="SUBSEC011"/>
-            <parágrafo> Os objetivos do projeto foram alcançados com sucesso, tendo-se conseguido criar um xml validado por um xsd e respetivas transformações para html, texto e xml. O presente relatório foi também validado com o <itálico>schema</itálico> fornecido e convertido com sucesso para html.</parágrafo>
-            <parágrafo> Toda as partes de estilização das páginas html foram inseridas por uma simples questão de brio na apresentação do projeto em questão, mesmo não contando para a valorização do mesmo.</parágrafo>          
+            <parágrafo> Os objetivos do projeto foram alcançados com sucesso, tendo-se conseguido criar um xml validado por um xsd e respetivas transformações para html, texto e xml. O presente relatório foi também validado com o                 <itálico>schema</itálico> fornecido e convertido com sucesso para html.
+            </parágrafo>
+            <parágrafo> Toda as partes de estilização das páginas html foram inseridas por uma simples questão de brio na apresentação do projeto em questão, mesmo não contando para a valorização do mesmo.</parágrafo>
         </conclusão>
         <referências id="SEC006" tituloSecção="Referências">
             <refBibliográfica idRef="RefB_www">
@@ -170,4 +173,13 @@
             </refWeb>
         </referências>
     </corpo>
+    <anexos id="SEC007" tituloSecção="Anexos">
+        <figura src="../fotografias/t1html.JPG" descrição="Transformação 1 AdotaPETS XML - HTML"/>
+        <figura src="../fotografias/t2html.JPG" descrição="Transformação 2 AdotaPETS XML - HTML"/>
+        <figura src="../fotografias/t3html.JPG" descrição="Transformação 3 AdotaPETS XML - HTML"/>
+        <figura src="../fotografias/t1txt.JPG" descrição="Transformação 1 AdotaPETS XML - TXT"/>
+        <figura src="../fotografias/t2txt.JPG" descrição="Transformação 2 AdotaPETS XML - TXT"/>
+        <figura src="../fotografias/t1xml.JPG" descrição="Transformação 1 AdotaPETS XML - XML"/>
+        <figura src="../fotografias/t2xml.JPG" descrição="Transformação 2 AdotaPETS XML - XML"/>
+    </anexos>
 </relatório>
