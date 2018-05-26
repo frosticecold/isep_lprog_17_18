@@ -56,7 +56,7 @@
                 <subsecção id="SUBSEC004">Transformação para HTML 1</subsecção>
                 <parágrafo>
                 Esta transformação consiste em filtrar a informação do ficheiro xml para apresentação de apenas uma tabela com as seguintes informações relativas aos animais:
-            </parágrafo>
+                </parágrafo>
                 <listaItems>
                     <item label="Fotografia"/>
                     <item label="Nome"/>
@@ -83,6 +83,16 @@
                 <dataPublicação>2011-05-10</dataPublicação>
                 <autor>Marco António</autor>
             </refBibliográfica>
+            <refWeb idRef="RefW_w3school">
+            <URL>https://www.w3schools.com/</URL>
+            <descrição>THE WORLD'S LARGEST WEB DEVELOPER SITE</descrição>
+            <consultadoEm>2018-05-26</consultadoEm>
+            </refWeb>
+            <refWeb idRef="RefW_stackoverflow">
+            <URL>https://pt.stackoverflow.com/</URL>
+            <descrição>Site de Perguntas e Respostas para programadores</descrição>
+            <consultadoEm>2018-05-26</consultadoEm>
+            </refWeb>
         </referências>
     </corpo>
 </relatório>

@@ -1,5 +1,7 @@
 body {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-image: url("pattern2.png");
+	background-repeat: repeat;
 }
 
 p{
@@ -13,4 +15,12 @@ h2{
 
 h3{
 	margin-left: 8%;
+}
+
+.listas {
+	margin-left:10%;
+}
+
+.Indice {
+	margin-left:8%;
 }
