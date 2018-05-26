@@ -165,14 +165,40 @@
             (<xsl:apply-templates />)
     </xsl:template>
     <!-- Template Outras Secções-->
-    <xsl:template match="ns:outrasSecções">
+    
+
+<xsl:template match="ns:outrasSecções">
     <xsl:for-each select="./*">
-    <h2><xsl:attribute name="id"><xsl:value-of select="@id"/>
-            </xsl:attribute><xsl:value-of select="@tituloSecção"/></h2>
-            <xsl:apply-templates select="ns:subsecção"/>
-        <xsl:apply-templates select="ns:parágrafo"/>
+        <xsl:choose>
+            <xsl:when test="@tituloSecção">
+                <div>
+                    <h2>
+                        <xsl:attribute name="id">
+                            <xsl:value-of select="@id"/>
+                        </xsl:attribute>
+                        <xsl:value-of select="@tituloSecção"/>
+                    </h2>
+                            <xsl:when test="ns:subsecção">
+                                <h3>
+                                    <xsl:attribute name="id">
+                                        <xsl:value-of select="@id"/>
+                                    </xsl:attribute>
+                                    <xsl:value-of select="."/>
+                                </h3>
+                            </xsl:when>
+                            <xsl:when test="ns:parágrafo">
+                                <p>
+                                    <xsl:value-of select="ns:parágrafo"/>
+                                </p>
+                            </xsl:when>
+                        </xsl:choose>
+                    </xsl:for-each>
+                    <xsl:apply-templates select="ns:subsecção"/>
+                </div>
+            </xsl:when>
+        </xsl:choose>
     </xsl:for-each>
-    </xsl:template>
+</xsl:template>
     <!-- Template Conclusão-->
     <xsl:template match="ns:conclusão">
      <h2><xsl:attribute name="id"><xsl:value-of select="@id"/>
@@ -194,15 +220,16 @@
     </p>
     </xsl:template>
     
-    <xsl:template match="ns:subsecção">
+    
+<xsl:template match="ns:subsecção">
     <xsl:if test="string(.)">
-    
-    
-    <div>
-    <h3><xsl:attribute name="id"><xsl:value-of select="@id"/></xsl:attribute>
-    <xsl:value-of select="."/>
-    </h3>
-    </div>
+            <h3>
+                <xsl:attribute name="id">
+                    <xsl:value-of select="@id"/>
+                </xsl:attribute>
+                <xsl:value-of select="."/>
+            </h3>
+            <xsl:apply-templates select="./../ns:parágrafo"/>
     </xsl:if>
-    </xsl:template>
+</xsl:template>
 </xsl:stylesheet>
