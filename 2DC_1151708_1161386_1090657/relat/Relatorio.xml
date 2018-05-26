@@ -133,15 +133,18 @@
                 
                 <subsecção id="SUBSEC007">Transformação para XML 1</subsecção>
                 <parágrafo>
+                Esta transformação tem como atributos as propriedades importantes do animal, tem um elemento nome e um elemento com informação secundária.
                 </parágrafo>
                 <subsecção id="SUBSEC008">Transformação para XML 2</subsecção>
-                <parágrafo></parágrafo>
+                <parágrafo>
+                
+                </parágrafo>
 
                 <subsecção id="SUBSEC009">Transformação para TXT 1</subsecção>
-                <parágrafo></parágrafo>
+                <parágrafo>Esta transformação mostra quantos animais estão para ser adotados e filtra toda a informação pessoal sobre o dado animal.</parágrafo>
 
                 <subsecção id="SUBSEC010">Transformação para TXT 2</subsecção>
-                <parágrafo></parágrafo>
+                <parágrafo>Esta transformação tem como objetivo dar informação médica dos animais a serem adotados, mostrando que vacinas tomou e quando.</parágrafo>
             </transformações>
         </outrasSecções>
         <conclusão id="SEC005" tituloSecção="Conclusão">
