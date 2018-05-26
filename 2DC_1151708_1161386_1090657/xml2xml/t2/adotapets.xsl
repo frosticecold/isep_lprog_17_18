@@ -43,9 +43,9 @@
             <xsl:attribute name="Nome">
                 <xsl:value-of select="@Nome"/>
             </xsl:attribute>
-            <xsl:element name="DataAdministracao">
+            <xsl:attribute name="DataAdministracao">
                 <xsl:value-of select="ns:DataAdministracao"/>
-            </xsl:element>
+            </xsl:attribute>
         </xsl:element>
     </xsl:template>
 </xsl:stylesheet>
