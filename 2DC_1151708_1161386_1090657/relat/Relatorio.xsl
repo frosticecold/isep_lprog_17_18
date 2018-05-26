@@ -47,10 +47,14 @@
             <xsl:attribute name="height">
                 <xsl:value-of select='format-number(0.35,"0%")'/>
             </xsl:attribute>
+            <xsl:attribute name="align">
+                <xsl:value-of select="middle"/>
+            </xsl:attribute>
         </img>
     </xsl:template>
     <!--Template Disciplina-->
     <xsl:template match="ns:disciplina">
+        <div align="center">
         <h3>
             <xsl:value-of select="ns:designação"/>  [
                         
@@ -64,10 +68,11 @@
                 <xsl:value-of select="format-date(../ns:data,'[D01]-[M01]-[Y0001]')"/>
             </p>
         </h3>
+        </div>
     </xsl:template>
     <!-- Template autores -->
     <xsl:template name="autores">
-        <div style="float:left; text-align:left;">
+        <div style="float:left; text-align:left; margin-left:10%">
             <xsl:for-each select="ns:autor">
                 <p>
                     <b><xsl:value-of select="ns:nome"/></b> - 
@@ -79,7 +84,7 @@
     </xsl:template>
     <!-- Template infoCapa-->
     <xsl:template name="infocapa">
-        <div style="float:right; text-align:center;">
+        <div style="float:right; text-align:center;margin-right:10%">
             <p id="profsH">Docentes:</p>
             <xsl:apply-templates select="ns:professor"/>
         </div>
@@ -98,6 +103,7 @@
         <hr/>
         <!-- Indice-->
         <h2>Indice</h2>
+        <div class="Indice">
         <ol>
             <xsl:for-each select="//*[@tituloSecção]">
                 <li>
@@ -118,6 +124,7 @@
                 </xsl:for-each>
             </xsl:for-each>
         </ol>
+        </div>
         <!-- Introdução-->
         <!-- Outras Secções-->
 
@@ -212,12 +219,20 @@
      <h2><xsl:attribute name="id"><xsl:value-of select="@id"/>
             </xsl:attribute><xsl:value-of select="@tituloSecção"/></h2>
             <xsl:apply-templates select="ns:refBibliográfica"/>
+            <xsl:apply-templates select="ns:refWeb"/>
     </xsl:template>
     <!-- Template refBibliográfica-->
     <xsl:template match="ns:refBibliográfica">
     
     <p>Título:<i><xsl:value-of select="ns:título"/></i>   Data Publicação:<xsl:value-of select="ns:dataPublicação"/>
     Autor:<xsl:value-of select="ns:autor"/>
+    </p>
+    </xsl:template>
+
+    <xsl:template match="ns:refWeb">
+    <p>URL:<xsl:value-of select="ns:URL"/>
+    Descrição:<xsl:value-of select="ns:descrição"/>
+    Consultado em:<xsl:value-of select="ns:consultadoEm"/>
     </p>
     </xsl:template>
     
@@ -235,7 +250,7 @@
 </xsl:template>
 
 <xsl:template match="ns:listaItems">
-<ul>
+<ul class="listas">
     <xsl:for-each select="./*">
         <li><xsl:value-of select="@label"/></li>
     </xsl:for-each>

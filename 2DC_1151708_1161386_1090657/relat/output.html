@@ -6,22 +6,24 @@
    <body>
       <div style="width:100%; display:table;">
          <center>
-            <h2>ADOTAPets - Informação estruturada em XML</h2><img src="isep_logo.png" width="23%" height="35%"><h3>Linguagens e Programação  [
-               
-               LPROG]
-               
-               
-            </h3>
-            <h3>Ano Curricular:                                                                  
-               
-               2
-               <p>Data:
+            <h2>ADOTAPets - Informação estruturada em XML</h2><img src="isep_logo.png" width="23%" height="35%" align=""><div align="center">
+               <h3>Linguagens e Programação  [
                   
-                  17-05-2018
-               </p>
-            </h3>
+                  LPROG]
+                  
+                  
+               </h3>
+               <h3>Ano Curricular:                                                                  
+                  
+                  2
+                  <p>Data:
+                     
+                     17-05-2018
+                  </p>
+               </h3>
+            </div>
             <div style="width:100%; display:table;">
-               <div style="float:left; text-align:left;">
+               <div style="float:left; text-align:left; margin-left:10%">
                   <p><b>Raúl Correia</b> - 
                      1090657  - 
                      1090657@isep.ipp.pt
@@ -35,7 +37,7 @@
                      1161386@isep.ipp.pt
                   </p>
                </div>
-               <div style="float:right; text-align:center;">
+               <div style="float:right; text-align:center;margin-right:10%">
                   <p id="profsH">Docentes:</p>
                   <p>
                      <td id="profs">PDF [PL]
@@ -61,23 +63,25 @@
       </div>
       <hr>
       <h2>Indice</h2>
-      <ol>
-         <li><a href="#SEC001">Introdução</a></li>
-         <li><a href="#SEC002">Análise</a></li>
-         <li><a href="#SEC003">Linguagem</a></li>
-         <li><a href="#SEC004">Transformações</a></li>
-         <ul>
-            <li><a href="#SUBSEC004">Transformação para HTML 1</a></li>
-         </ul>
-         <ul>
-            <li><a href="#SUBSEC005">Transformação para HTML 2</a></li>
-         </ul>
-         <ul>
-            <li><a href="#SUBSEC006">Transformação para HTML 3</a></li>
-         </ul>
-         <li><a href="#SEC005">Conclusão</a></li>
-         <li><a href="#SEC006">Referências</a></li>
-      </ol>
+      <div class="Indice">
+         <ol>
+            <li><a href="#SEC001">Introdução</a></li>
+            <li><a href="#SEC002">Análise</a></li>
+            <li><a href="#SEC003">Linguagem</a></li>
+            <li><a href="#SEC004">Transformações</a></li>
+            <ul>
+               <li><a href="#SUBSEC004">Transformação para HTML 1</a></li>
+            </ul>
+            <ul>
+               <li><a href="#SUBSEC005">Transformação para HTML 2</a></li>
+            </ul>
+            <ul>
+               <li><a href="#SUBSEC006">Transformação para HTML 3</a></li>
+            </ul>
+            <li><a href="#SEC005">Conclusão</a></li>
+            <li><a href="#SEC006">Referências</a></li>
+         </ol>
+      </div>
       <hr>
       <h2 id="SEC001">Introdução</h2>
       <p>
@@ -109,7 +113,7 @@
          <p>Após uma analise mais aprofundada a resolução que se chegou foi a seguinte estrutura
             para a constituição do ficheiro:
          </p>
-         <ul>
+         <ul class="listas">
             <li>Animais</li>
             <li>Boxes</li>
          </ul>
@@ -118,13 +122,13 @@
          </p>
          <p>A constituição de um animal:</p>
          <p>Atributos:</p>
-         <ul>
+         <ul class="listas">
             <li>TipoAnimal</li>
             <li>BoxID</li>
             <li>Chip</li>
          </ul>
          <p>Elementos:</p>
-         <ul>
+         <ul class="listas">
             <li>Nome</li>
             <li>Raça</li>
             <li>Idade</li>
@@ -137,10 +141,9 @@
             <li>ExercicioFisico</li>
          </ul>
          <p>O  tipo de animal foi feito tendo em conta que só podem ser inseridos três tipos de
-            dados, ou seja tipos de animais, para isso utilizou-se um enumerado com os seguintes
-            valores:
+            dados com os seguintes valores:
          </p>
-         <ul>
+         <ul class="listas">
             <li>Cão</li>
             <li>Gato</li>
             <li>Outro</li>
@@ -148,28 +151,26 @@
          <p>O box id, tem uma referenciação a uma chave, isto é, só podem ser inseridos números
             de boxes que estejam contidos no conjunto de elementos Boxes.
          </p>
-         <p>Chip só pode ser inserido por um padrão, por exemplo PT-01234</p>
-         <p>Nome e raça do animal podem ser inseridos por padrão letras e espaços.</p>
+         <p>Chip, tem um formato fixo para poder ser inserido.</p>
          <p>Idade de um animal tem que ser um inteiro positivo, pode ser inserido zero e um número
             maximo até 100, isto é se incluirmos tartarugas.
          </p>
-         <p>No sexo de um animal novamente um enumerado constituído por Masculino ou Feminino.</p>
+         <p>No sexo de um animal pode ser constituído por Masculino ou Feminino.</p>
          <p>Peso de um animal tem que ter um padrão de um um digitou, ou dois se preciso mas no
             mínimo um, seguido por um ponto, seguido de no maximo três digitos e no final Kg,
             por exemplo: 15.21Kg
          </p>
-         <p>A personalidade pode ser qualquer string para descrever a personalidade de um animal.</p>
-         <p>Uma fotografia pode ser qualquer uri para definir a localização da fotografia/imagem.</p>
+         <p>A personalidade pode ser qualquer tipo de "string" para descrever a personalidade
+            de um animal.
+         </p>
+         <p>Uma fotografia, não era necessário no âmbito do problema, foi apenas informação acrescida
+            para poder enriquecer o conteúdo e dar mais realismo a estrutura da informação.
+         </p>
          <p>Vacinas, e constituida por um conjunto de Vacina, cada vacina é consituida por uma
-            data de administração e uma validade. Data de adminitração é do tipo date, com a seguinte
-            estrutura: AAAA-MM-DD e uma validade, essa validade é um enumerado, pode ser Mensal,
-            Anual ou Sem Validade.
+            data de administração e uma validade.
          </p>
-         <p>Ração de um animal é um enumerado e pode ser um de três valores: Normal, Light ou
-            Senior.
-         </p>
-         <p>Exercicio fisico de um animal també é um enumerado de três valores possíveis: Normal,
-            Moderado ou Grande.
+         <p>Ração e Exercicio fisico de um animal pode ser um de três valores: Normal, Light ou
+            Senior e também Normal, Moderado ou Grande respectivamente.
          </p>
       </div>
       <div>
@@ -185,7 +186,7 @@
             de apenas uma tabela com as seguintes informações relativas aos animais:
             
          </p>
-         <ul>
+         <ul class="listas">
             <li>Fotografia</li>
             <li>Nome</li>
             <li>Raça</li>
@@ -213,6 +214,14 @@
       <h2 id="SEC006">Referências</h2>
       <p>Título:<i>XML em 3 passos</i>   Data Publicação:2011-05-10
          Autor:Marco António
+      </p>
+      <p>URL:https://www.w3schools.com/
+         Descrição:THE WORLD'S LARGEST WEB DEVELOPER SITE
+         Consultado em:2018-05-26
+      </p>
+      <p>URL:https://pt.stackoverflow.com/
+         Descrição:Site de Perguntas e Respostas para programadores
+         Consultado em:2018-05-26
       </p>
    </body>
 </html>
