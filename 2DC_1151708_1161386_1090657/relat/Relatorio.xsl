@@ -230,7 +230,7 @@
     </xsl:template>
 
     <xsl:template match="ns:refWeb">
-    <p>URL:<xsl:value-of select="ns:URL"/>
+    <p>URL:<a><xsl:attribute name="href"><xsl:value-of select="ns:URL"/></xsl:attribute><xsl:value-of select="ns:URL"/></a>
     Descrição:<xsl:value-of select="ns:descrição"/>
     Consultado em:<xsl:value-of select="ns:consultadoEm"/>
     </p>
