@@ -168,35 +168,36 @@
     
 
 <xsl:template match="ns:outrasSecções">
-    <xsl:for-each select="./*">
-        <xsl:choose>
-            <xsl:when test="@tituloSecção">
-                <div>
-                    <h2>
-                        <xsl:attribute name="id">
-                            <xsl:value-of select="@id"/>
-                        </xsl:attribute>
-                        <xsl:value-of select="@tituloSecção"/>
-                    </h2>
-                            <xsl:when test="ns:subsecção">
-                                <h3>
-                                    <xsl:attribute name="id">
-                                        <xsl:value-of select="@id"/>
-                                    </xsl:attribute>
-                                    <xsl:value-of select="."/>
-                                </h3>
-                            </xsl:when>
-                            <xsl:when test="ns:parágrafo">
-                                <p>
-                                    <xsl:value-of select="ns:parágrafo"/>
-                                </p>
-                            </xsl:when>
-                        </xsl:choose>
-                    </xsl:for-each>
-                    <xsl:apply-templates select="ns:subsecção"/>
-                </div>
-            </xsl:when>
-        </xsl:choose>
+    <xsl:for-each select="./*[@tituloSecção]">
+        <div>
+            <h2>
+                <xsl:attribute name="id">
+                    <xsl:value-of select="@id"/>
+                </xsl:attribute>
+                <xsl:value-of select="@tituloSecção"/>
+            </h2>
+            <xsl:for-each select="./*">
+            
+                <xsl:choose>
+                    <xsl:when test="name() = 'subsecção'">
+                        <h3>
+                            <xsl:attribute name="id">
+                                <xsl:value-of select="@id"/>
+                            </xsl:attribute>
+                            <xsl:value-of select="."/>
+                        </h3>
+                    </xsl:when>
+                    <xsl:when test="local-name() = 'parágrafo'">
+                        <p>
+                            <xsl:value-of select="."/>
+                        </p>
+                    </xsl:when>
+                    <xsl:when test="local-name() = 'listaItems'">
+                            <xsl:apply-templates select="."/>
+                    </xsl:when>
+                </xsl:choose>
+            </xsl:for-each>
+        </div>
     </xsl:for-each>
 </xsl:template>
     <!-- Template Conclusão-->
@@ -231,5 +232,13 @@
             </h3>
             <xsl:apply-templates select="./../ns:parágrafo"/>
     </xsl:if>
+</xsl:template>
+
+<xsl:template match="ns:listaItems">
+<ul>
+    <xsl:for-each select="./*">
+        <li><xsl:value-of select="@label"/></li>
+    </xsl:for-each>
+</ul>
 </xsl:template>
 </xsl:stylesheet>
