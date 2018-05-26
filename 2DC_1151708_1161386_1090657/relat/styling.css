@@ -1,17 +1,16 @@
 body {
 	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-	text-align: center
 }
 
-#autores{
-
-	text-align: center;
+p{
+	margin-left: 10%;
+	margin-right: 10%;
 }
 
-#autores th, #autores td {
-	padding: 10px;
+h2{
+	margin-left: 5%;
 }
 
-#infoCapa {
-	text-align: center;
+h3{
+	margin-left: 5%;
 }

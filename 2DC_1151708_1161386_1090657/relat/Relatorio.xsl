@@ -11,7 +11,7 @@
     <xsl:template match="ns:relatório">
         <html>
             <head>
-                <!--<link href="styling.css" rel="stylesheet"/>-->
+                <link href="styling.css" rel="stylesheet"/>
             </head>
             <body>
                 <xsl:apply-templates select="ns:páginaRosto"/>
@@ -80,14 +80,14 @@
     <!-- Template infoCapa-->
     <xsl:template name="infocapa">
         <div style="float:right; text-align:center;">
-            <p>Docentes:</p>
+            <p id="profsH">Docentes:</p>
             <xsl:apply-templates select="ns:professor"/>
         </div>
     </xsl:template>
     <!--Template Professores-->
     <xsl:template match="ns:professor">
         <p>
-            <td>
+            <td id="profs">
                 <xsl:value-of select="@sigla"/> [<xsl:value-of select="@tipoAula"/>]
                         
             </td>
@@ -105,17 +105,17 @@
                         <xsl:value-of select="@tituloSecção"/>
                     </a>
                 </li>
-            <xsl:for-each select=".//ns:subsecção">
-            <xsl:if test="string(.)">
-                <ul>
-                    <li>
-                        <a><xsl:attribute name="href">#<xsl:value-of select="@id"/></xsl:attribute>
-                        <xsl:value-of select="."/>
-                        </a>
-                    </li>
-                </ul>
-            </xsl:if>
-            </xsl:for-each>
+                <xsl:for-each select=".//ns:subsecção">
+                <xsl:if test="string(.)">
+                    <ul>
+                        <li>
+                            <a><xsl:attribute name="href">#<xsl:value-of select="@id"/></xsl:attribute>
+                            <xsl:value-of select="."/>
+                            </a>
+                        </li>
+                    </ul>
+                </xsl:if>
+                </xsl:for-each>
             </xsl:for-each>
         </ol>
         <!-- Introdução-->
@@ -138,8 +138,31 @@
     </xsl:template>
     <!-- Template Paragrafo-->
     <xsl:template match="ns:parágrafo">
-    <p><xsl:value-of select="."/>
-    </p>
+        <p>
+            <xsl:apply-templates />
+        </p>
+    </xsl:template>
+    <!-- Template Negrito-->
+    <xsl:template match="ns:negrito">
+        <b>
+           <xsl:apply-templates /> 
+        </b>
+    </xsl:template>
+    <!-- Template Itálico-->
+    <xsl:template match="ns:itálico">
+        <i>
+            <xsl:apply-templates />
+        </i>
+    </xsl:template>
+    <!-- Template Sublinhado-->
+    <xsl:template match="ns:sublinhado">
+        <u>
+            <xsl:apply-templates />
+        </u>
+    </xsl:template>
+    <!-- Template Sublinhado-->
+    <xsl:template match="ns:citação">
+            (<xsl:apply-templates />)
     </xsl:template>
     <!-- Template Outras Secções-->
     <xsl:template match="ns:outrasSecções">
