@@ -130,8 +130,8 @@
                 A segunda transformação consiste num plano mais abrangente de informação, apresentando para além dos dados do animal também as respetivas vacinas de cada um, com a data de administração e validade.             </parágrafo>
                 <subsecção id="SUBSEC006">Transformação para HTML 3</subsecção>
                 <parágrafo>
-                Esta ultima transformação tem a particularidade de apresentar todos os dados dos animais agrupados por tipo de animal, permitindo uma mais rápida visualização dos dados do respetivo animal através de uma             </parágrafo>
-
+                Esta ultima transformação tem a particularidade de apresentar todos os dados dos animais agrupados por tipo de animal, permitindo uma mais rápida visualização dos dados com interesse.             </parágrafo>
+                
                 <subsecção id="SUBSEC007">Transformação para XML 1</subsecção>
                 <parágrafo>
                 Esta transformação tem como atributos as propriedades importantes do animal, tem um elemento nome e um elemento com informação secundária.
@@ -150,7 +150,8 @@
         </outrasSecções>
         <conclusão id="SEC005" tituloSecção="Conclusão">
             <subsecção id="SUBSEC011"/>
-            <parágrafo></parágrafo>
+            <parágrafo> Os objetivos do projeto foram alcançados com sucesso, tendo-se conseguido criar um xml validado por um xsd e respetivas transformações para html, texto e xml. O presente relatório foi também validado com o <itálico>schema</itálico> fornecido e convertido com sucesso para html.</parágrafo>
+            <parágrafo> Toda as partes de estilização das páginas html foram inseridas por uma simples questão de brio na apresentação do projeto em questão, mesmo não contando para a valorização do mesmo.</parágrafo>          
         </conclusão>
         <referências id="SEC006" tituloSecção="Referências">
             <refBibliográfica idRef="RefB_www">

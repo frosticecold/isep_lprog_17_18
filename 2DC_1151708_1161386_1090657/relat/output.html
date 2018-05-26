@@ -78,6 +78,18 @@
             <ul>
                <li><a href="#SUBSEC006">Transformação para HTML 3</a></li>
             </ul>
+            <ul>
+               <li><a href="#SUBSEC007">Transformação para XML 1</a></li>
+            </ul>
+            <ul>
+               <li><a href="#SUBSEC008">Transformação para XML 2</a></li>
+            </ul>
+            <ul>
+               <li><a href="#SUBSEC009">Transformação para TXT 1</a></li>
+            </ul>
+            <ul>
+               <li><a href="#SUBSEC010">Transformação para TXT 2</a></li>
+            </ul>
             <li><a href="#SEC005">Conclusão</a></li>
             <li><a href="#SEC006">Referências</a></li>
          </ol>
@@ -90,6 +102,7 @@
          
          <i>este trabalho tem em vista aplicar</i> os conhecimentos obtidos durante as aulas da cadeira LPROG sobre o tema fornecido
          "ADOTAPets".
+         
          
          
       </p>
@@ -176,7 +189,42 @@
       <div>
          <h2 id="SEC003">Linguagem</h2>
          <h3 id="SUBSEC003"></h3>
-         <p></p>
+         <p>A nivel de schema, foi assegurado que em tipo de animal apenas se poderia inserir
+            
+            cão, 
+            gato ou 
+            outro, utilizando-se um enumerado.
+            
+         </p>
+         <p>Em box ID foi feita referencia de chaves, chaves essas que têm que fazer parte do
+            conjunto de Boxes.
+         </p>
+         <p>Chip do animal é restrito po rum padrão, começa por 
+            PT- seguido de 5 digitos de zero a nove
+            
+         </p>
+         <p>Nome e raça do animal, foi feito um padrão que so aceita letras e espaços.</p>
+         <p>A idade de um animal é restrita a um número inteiro positivi incluindo zero e no maximo
+            até 100, isto é se incluirmos tartarugas.
+         </p>
+         <p>O sexo do animal foi feito um enumerado assegurando que os dados podes ser masculino
+            ou feminino.
+         </p>
+         <p>Peso de um animal tem certas restrições, no mínimo tem um número decimal, maximo dois,
+            seguido de um ponto e pode ter até três casas decimais acabando em Kg
+         </p>
+         <p>Na fototgrafia/imagem a não tem nenhuma restrição em particular a não ser que tem
+            quer inserido um uri para o caminho ou link da fonte.
+         </p>
+         <p>Não foi feita nenhuma restrição a nível de personalidade de qualquer animal.</p>
+         <p>Cada vacina tem que ser constituida obrigatóriamente por uma data de administração,
+            tem um formato obrigatorio do tipo AAAA-MM-DD. A validade da vacinaé um enumerado
+            com os valores Mensal, Anual ou Sem Validade.
+         </p>
+         <p>A ração e exercicio fisico seguem a mesma estrutura de dados, sendo um enumerado.
+            A ração pode ser Normal, Light ou Senior, e o exercicio físico Normal, Moderado ou
+            Grande.
+         </p>
       </div>
       <div>
          <h2 id="SEC004">Transformações</h2>
@@ -203,23 +251,40 @@
          <h3 id="SUBSEC006">Transformação para HTML 3</h3>
          <p>
             Esta ultima transformação tem a particularidade de apresentar todos os dados dos animais
-            agrupados por tipo de animal, permitindo uma mais rápida visualização dos dados do
-            respetivo animal através de uma             
+            agrupados por tipo de animal, permitindo uma mais rápida visualização dos dados com
+            interesse.             
          </p>
+         <h3 id="SUBSEC007">Transformação para XML 1</h3>
+         <p>
+            
+         </p>
+         <h3 id="SUBSEC008">Transformação para XML 2</h3>
+         <p></p>
+         <h3 id="SUBSEC009">Transformação para TXT 1</h3>
+         <p></p>
+         <h3 id="SUBSEC010">Transformação para TXT 2</h3>
+         <p></p>
       </div>
       <hr>
       <h2 id="SEC005">Conclusão</h2>
-      <p></p>
+      <p> Os objetivos do projeto foram alcançados com sucesso, tendo-se conseguido criar um
+         xml validado por um xsd e respetivas transformações para html, texto e xml. O presente
+         relatório foi também validado com o <i>schema</i> fornecido e convertido com sucesso para html.
+      </p>
+      <p> Toda as partes de estilização das páginas html foram inseridas por uma simples questão
+         de brio na apresentação do projeto em questão, mesmo não contando para a valorização
+         do mesmo.
+      </p>
       <hr>
       <h2 id="SEC006">Referências</h2>
       <p>Título:<i>XML em 3 passos</i>   Data Publicação:2011-05-10
          Autor:Marco António
       </p>
-      <p>URL:https://www.w3schools.com/
+      <p>URL:<a href="https://www.w3schools.com/">https://www.w3schools.com/</a>
          Descrição:THE WORLD'S LARGEST WEB DEVELOPER SITE
          Consultado em:2018-05-26
       </p>
-      <p>URL:https://pt.stackoverflow.com/
+      <p>URL:<a href="https://pt.stackoverflow.com/">https://pt.stackoverflow.com/</a>
          Descrição:Site de Perguntas e Respostas para programadores
          Consultado em:2018-05-26
       </p>
