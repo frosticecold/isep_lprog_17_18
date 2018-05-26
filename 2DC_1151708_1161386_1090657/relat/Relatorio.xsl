@@ -23,10 +23,10 @@
     <xsl:template match="ns:páginaRosto">
         <div style="width:100%; display:table;">
             <center>
-                <h2>
-                    <xsl:value-of select="ns:tema"/>
-                </h2>
                 <xsl:apply-templates select="ns:logotipoDEI"/>
+                <h2 style="margin-left: 0%;">
+                    <xsl:value-of select="ns:tema"/>
+                </h2>     
                 <xsl:apply-templates select="ns:disciplina"/>
                 <div style="width:100%; display:table;">
                     <xsl:call-template name="autores"/>
@@ -55,13 +55,13 @@
     <!--Template Disciplina-->
     <xsl:template match="ns:disciplina">
         <div align="center">
-        <h3>
+        <h3 style="margin-left: 0%;">
             <xsl:value-of select="ns:designação"/>  [
                         
             <xsl:value-of select="ns:sigla"/>]
                 
         </h3>
-        <h3>Ano Curricular:                                                                                                                             
+        <h3 style="margin-left: 0%;">Ano Curricular:                                                                                                                             
             <xsl:value-of select="ns:anoCurricular"/>
             <p>Data:
                                 
@@ -84,7 +84,7 @@
     </xsl:template>
     <!-- Template infoCapa-->
     <xsl:template name="infocapa">
-        <div style="float:right; text-align:center;margin-right:10%">
+        <div style="float:right; text-align:center;margin-right:15%">
             <p id="profsH">Docentes:</p>
             <xsl:apply-templates select="ns:professor"/>
         </div>
