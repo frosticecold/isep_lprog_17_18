@@ -92,6 +92,7 @@
          "ADOTAPets".
          
          
+         
       </p>
       <p>
          Através do XML, serão organizados e estruturados os dados de uma associação de apoio
@@ -176,7 +177,42 @@
       <div>
          <h2 id="SEC003">Linguagem</h2>
          <h3 id="SUBSEC003"></h3>
-         <p></p>
+         <p>A nivel de schema, foi assegurado que em tipo de animal apenas se poderia inserir
+            
+            cão, 
+            gato ou 
+            outro, utilizando-se um enumerado.
+            
+         </p>
+         <p>Em box ID foi feita referencia de chaves, chaves essas que têm que fazer parte do
+            conjunto de Boxes.
+         </p>
+         <p>Chip do animal é restrito po rum padrão, começa por 
+            PT- seguido de 5 digitos de zero a nove
+            
+         </p>
+         <p>Nome e raça do animal, foi feito um padrão que so aceita letras e espaços.</p>
+         <p>A idade de um animal é restrita a um número inteiro positivi incluindo zero e no maximo
+            até 100, isto é se incluirmos tartarugas.
+         </p>
+         <p>O sexo do animal foi feito um enumerado assegurando que os dados podes ser masculino
+            ou feminino.
+         </p>
+         <p>Peso de um animal tem certas restrições, no mínimo tem um número decimal, maximo dois,
+            seguido de um ponto e pode ter até três casas decimais acabando em Kg
+         </p>
+         <p>Na fototgrafia/imagem a não tem nenhuma restrição em particular a não ser que tem
+            quer inserido um uri para o caminho ou link da fonte.
+         </p>
+         <p>Não foi feita nenhuma restrição a nível de personalidade de qualquer animal.</p>
+         <p>Cada vacina tem que ser constituida obrigatóriamente por uma data de administração,
+            tem um formato obrigatorio do tipo AAAA-MM-DD. A validade da vacinaé um enumerado
+            com os valores Mensal, Anual ou Sem Validade.
+         </p>
+         <p>A ração e exercicio fisico seguem a mesma estrutura de dados, sendo um enumerado.
+            A ração pode ser Normal, Light ou Senior, e o exercicio físico Normal, Moderado ou
+            Grande.
+         </p>
       </div>
       <div>
          <h2 id="SEC004">Transformações</h2>
