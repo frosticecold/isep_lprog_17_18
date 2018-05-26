@@ -229,7 +229,7 @@
     </p>
     </xsl:template>
 
-    <xsl:template match="ns:redWeb">
+    <xsl:template match="ns:refWeb">
     <p>URL:<xsl:value-of select="ns:URL"/>
     Descrição:<xsl:value-of select="ns:descrição"/>
     Consultado em:<xsl:value-of select="ns:consultadoEm"/>
