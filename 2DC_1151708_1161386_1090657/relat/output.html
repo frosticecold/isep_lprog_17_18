@@ -82,7 +82,8 @@
       <h2 id="SEC001">Introdução</h2>
       <p>
          Tendo em conta um aumento significativo da utilização do XML nos últimos anos devido
-         à facilidade com que permite compartilhar informação através da internet, 
+         à facilidade com que permite compartilhar informação através da internet,        
+         
          <i>este trabalho tem em vista aplicar</i> os conhecimentos obtidos durante as aulas da cadeira LPROG sobre o tema fornecido
          "ADOTAPets".
          
@@ -97,7 +98,79 @@
       <div>
          <h2 id="SEC002">Análise</h2>
          <h3 id="SUBSEC002"></h3>
-         <p></p>
+         <p>Neste projecto o objectivo foi gerar um documento XML para o seguinte tema, AdotaPets.</p>
+         <p>Neste tema em particular pretende-se desenvolver uma estrutura de dados com vários
+            tipos de informação sobre animais para adoção, como por exemplo nome, raça e informação
+            medica.
+         </p>
+         <p>A primeira abordagem foi simples, foi feito um pequeno esboço da informação tendo
+            assim uma ideia geral do problema proposto.
+         </p>
+         <p>Após uma analise mais aprofundada a resolução que se chegou foi a seguinte estrutura
+            para a constituição do ficheiro:
+         </p>
+         <ul>
+            <li>Animais</li>
+            <li>Boxes</li>
+         </ul>
+         <p>Tag "Animais" é constituído por vários estruturas "Animal". E Tag "Boxes" é constituído
+            por estruturas "Box", cada Box tem apenas um atributo, o número da box.
+         </p>
+         <p>A constituição de um animal:</p>
+         <p>Atributos:</p>
+         <ul>
+            <li>TipoAnimal</li>
+            <li>BoxID</li>
+            <li>Chip</li>
+         </ul>
+         <p>Elementos:</p>
+         <ul>
+            <li>Nome</li>
+            <li>Raça</li>
+            <li>Idade</li>
+            <li>Sexo</li>
+            <li>Peso</li>
+            <li>Personalidade</li>
+            <li>Fotografia</li>
+            <li>Vacinas</li>
+            <li>Ração</li>
+            <li>ExercicioFisico</li>
+         </ul>
+         <p>O  tipo de animal foi feito tendo em conta que só podem ser inseridos três tipos de
+            dados, ou seja tipos de animais, para isso utilizou-se um enumerado com os seguintes
+            valores:
+         </p>
+         <ul>
+            <li>Cão</li>
+            <li>Gato</li>
+            <li>Outro</li>
+         </ul>
+         <p>O box id, tem uma referenciação a uma chave, isto é, só podem ser inseridos números
+            de boxes que estejam contidos no conjunto de elementos Boxes.
+         </p>
+         <p>Chip só pode ser inserido por um padrão, por exemplo PT-01234</p>
+         <p>Nome e raça do animal podem ser inseridos por padrão letras e espaços.</p>
+         <p>Idade de um animal tem que ser um inteiro positivo, pode ser inserido zero e um número
+            maximo até 100, isto é se incluirmos tartarugas.
+         </p>
+         <p>No sexo de um animal novamente um enumerado constituído por Masculino ou Feminino.</p>
+         <p>Peso de um animal tem que ter um padrão de um um digitou, ou dois se preciso mas no
+            mínimo um, seguido por um ponto, seguido de no maximo três digitos e no final Kg,
+            por exemplo: 15.21Kg
+         </p>
+         <p>A personalidade pode ser qualquer string para descrever a personalidade de um animal.</p>
+         <p>Uma fotografia pode ser qualquer uri para definir a localização da fotografia/imagem.</p>
+         <p>Vacinas, e constituida por um conjunto de Vacina, cada vacina é consituida por uma
+            data de administração e uma validade. Data de adminitração é do tipo date, com a seguinte
+            estrutura: AAAA-MM-DD e uma validade, essa validade é um enumerado, pode ser Mensal,
+            Anual ou Sem Validade.
+         </p>
+         <p>Ração de um animal é um enumerado e pode ser um de três valores: Normal, Light ou
+            Senior.
+         </p>
+         <p>Exercicio fisico de um animal també é um enumerado de três valores possíveis: Normal,
+            Moderado ou Grande.
+         </p>
       </div>
       <div>
          <h2 id="SEC003">Linguagem</h2>
