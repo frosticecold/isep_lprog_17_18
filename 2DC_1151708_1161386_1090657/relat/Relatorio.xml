@@ -35,9 +35,9 @@
         <introdução id="SEC001" tituloSecção="Introdução">
             <subsecção id="SUBSEC001"/>
             <parágrafo>
-                Tendo em conta um aumento significativo da utilização do XML nos últimos anos devido à facilidade com que permite compartilhar informação através da internet, 
+                Tendo em conta um aumento significativo da utilização do XML nos últimos anos devido à facilidade com que permite compartilhar informação através da internet,                 
                 <itálico>este trabalho tem em vista aplicar</itálico> os conhecimentos obtidos durante as aulas da cadeira LPROG sobre o tema fornecido "ADOTAPets".
-            
+                        
             </parágrafo>
             <parágrafo>
                 Através do XML, serão organizados e estruturados os dados de uma associação de apoio a animais abandonados, caracterizando todos os elementos dos respetivos animais.
@@ -46,7 +46,50 @@
         <outrasSecções>
             <análise id="SEC002" tituloSecção="Análise">
                 <subsecção id="SUBSEC002"/>
-                <parágrafo></parágrafo>
+                <parágrafo>Neste projecto o objectivo foi gerar um documento XML para o seguinte tema, AdotaPets.</parágrafo>
+                <parágrafo>Neste tema em particular pretende-se desenvolver uma estrutura de dados com vários tipos de informação sobre animais para adoção, como por exemplo nome, raça e informação medica.</parágrafo>
+                <parágrafo>A primeira abordagem foi simples, foi feito um pequeno esboço da informação tendo assim uma ideia geral do problema proposto.</parágrafo>
+                <parágrafo>Após uma analise mais aprofundada a resolução que se chegou foi a seguinte estrutura para a constituição do ficheiro:</parágrafo>
+                <listaItems>
+                    <item label="Animais"/>
+                    <item label="Boxes"/>
+                </listaItems>
+                <parágrafo>Tag "Animais" é constituído por vários estruturas "Animal". E Tag "Boxes" é constituído por estruturas "Box", cada Box tem apenas um atributo, o número da box.</parágrafo>
+                <parágrafo>A constituição de um animal:</parágrafo>
+                <parágrafo>Atributos:</parágrafo>
+                <listaItems>
+                    <item label="TipoAnimal"/>
+                    <item label="BoxID"/>
+                    <item label="Chip"/>
+                </listaItems>
+                <parágrafo>Elementos:</parágrafo>
+                <listaItems>
+                    <item label="Nome"/>
+                    <item label="Raça"/>
+                    <item label="Idade"/>
+                    <item label="Sexo"/>
+                    <item label="Peso"/>
+                    <item label="Personalidade"/>
+                    <item label="Fotografia"/>
+                    <item label="Vacinas"/>
+                    <item label="Ração"/>
+                    <item label="ExercicioFisico"/>
+                </listaItems>
+                <parágrafo>O  tipo de animal foi feito tendo em conta que só podem ser inseridos três tipos de dados com os seguintes valores:</parágrafo>
+                <listaItems>
+                    <item label="Cão"/>
+                    <item label="Gato"/>
+                    <item label="Outro"/>
+                </listaItems>
+                <parágrafo>O box id, tem uma referenciação a uma chave, isto é, só podem ser inseridos números de boxes que estejam contidos no conjunto de elementos Boxes.</parágrafo>
+                <parágrafo>Chip, tem um formato fixo para poder ser inserido.</parágrafo>
+                <parágrafo>Idade de um animal tem que ser um inteiro positivo, pode ser inserido zero e um número maximo até 100, isto é se incluirmos tartarugas.</parágrafo>
+                <parágrafo>No sexo de um animal pode ser constituído por Masculino ou Feminino.</parágrafo>
+                <parágrafo>Peso de um animal tem que ter um padrão de um um digitou, ou dois se preciso mas no mínimo um, seguido por um ponto, seguido de no maximo três digitos e no final Kg, por exemplo: 15.21Kg</parágrafo>
+                <parágrafo>A personalidade pode ser qualquer tipo de "string" para descrever a personalidade de um animal.</parágrafo>
+                <parágrafo>Uma fotografia, não era necessário no âmbito do problema, foi apenas informação acrescida para poder enriquecer o conteúdo e dar mais realismo a estrutura da informação.</parágrafo>
+                <parágrafo>Vacinas, e constituida por um conjunto de Vacina, cada vacina é consituida por uma data de administração e uma validade.</parágrafo>
+                <parágrafo>Ração e Exercicio fisico de um animal pode ser um de três valores: Normal, Light ou Senior e também Normal, Moderado ou Grande respectivamente.</parágrafo>
             </análise>
             <linguagem id="SEC003" tituloSecção="Linguagem">
                 <subsecção id="SUBSEC003"/>
