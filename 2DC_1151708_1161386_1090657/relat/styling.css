@@ -43,11 +43,11 @@ h3{
 .listaIndice li::before {
 	content: counter(my-awesome-counter);
 	background: #0a2be7c9;
-	width: 2rem;
-	height: 2rem;
+	width: 1.5rem;
+	height: 1.5rem;
 	border-radius: 50%;
 	display: inline-block;
-	line-height: 2rem;
+	line-height: 1.5rem;
 	color: white;
 	text-align: center;
 	margin-right: 0.5rem;
@@ -69,14 +69,14 @@ a {
   }
   
   a:link, a:visited, a:focus {
-	background: rgba(0, 162, 255, 0.452);
+	color: rgb(0, 38, 255);
   }
   
   a:hover {     
-	background: rgba(0, 60, 255, 0.548);
+	color: rgb(0, 183, 255);
   }
   
   a:active {
-	background: red;
+	color: rgb(0, 255, 179);
 	color: white;
   }
