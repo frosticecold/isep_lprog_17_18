@@ -42,7 +42,7 @@ h3{
 
 .listaIndice li::before {
 	content: counter(my-awesome-counter);
-	background: #0a71e7a4;
+	background: #0a2be7c9;
 	width: 2rem;
 	height: 2rem;
 	border-radius: 50%;
@@ -52,3 +52,31 @@ h3{
 	text-align: center;
 	margin-right: 0.5rem;
 }
+
+a {
+	outline: none;
+	text-decoration: none;
+	display: inline-block;
+
+	margin-right: 0.625%;
+	text-align: center;
+
+	color: black;
+  }
+  
+  li:last-child a {
+	margin-right: 0;
+  }
+  
+  a:link, a:visited, a:focus {
+	background: rgba(0, 162, 255, 0.452);
+  }
+  
+  a:hover {     
+	background: rgba(0, 60, 255, 0.548);
+  }
+  
+  a:active {
+	background: red;
+	color: white;
+  }
