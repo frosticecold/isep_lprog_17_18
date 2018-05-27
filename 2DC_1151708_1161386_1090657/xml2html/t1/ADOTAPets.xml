@@ -63,7 +63,7 @@
             <Racao>Light</Racao>
             <ExercicioFisico>Normal</ExercicioFisico>
         </Animal>
-        <Animal TipoAnimal="Cão" BoxID="1" Chip="PT-123457">
+        <Animal TipoAnimal="Cão" BoxID="1" Chip="PT-12345">
             <Nome>Rex</Nome>
             <Raca>Doberman</Raca>
             <Idade>11</Idade>
