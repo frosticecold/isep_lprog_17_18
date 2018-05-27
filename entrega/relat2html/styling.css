@@ -1,0 +1,82 @@
+body {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	background-image: url("pattern2.png");
+	background-repeat: repeat;
+}
+
+p{
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+h2{
+	margin-left: 5%;
+}
+
+h3{
+	margin-left: 8%;
+}
+
+.listas {
+	margin-left:10%;
+}
+
+.Indice {
+	margin-left:8%;
+}
+
+.anexos{
+	border-radius:10%;
+}
+
+.listaIndice ol {
+	list-style: none;
+	counter-reset: my-awesome-counter;
+}
+
+.listaIndice li {
+	list-style-type: none;
+	counter-increment: my-awesome-counter;
+	margin: 0.25rem;
+}
+
+.listaIndice li::before {
+	content: counter(my-awesome-counter);
+	background: #0a2be7c9;
+	width: 1.5rem;
+	height: 1.5rem;
+	border-radius: 50%;
+	display: inline-block;
+	line-height: 1.5rem;
+	color: white;
+	text-align: center;
+	margin-right: 0.5rem;
+}
+
+a {
+	outline: none;
+	text-decoration: none;
+	display: inline-block;
+
+	margin-right: 0.625%;
+	text-align: center;
+
+	color: black;
+  }
+  
+  li:last-child a {
+	margin-right: 0;
+  }
+  
+  a:link, a:visited, a:focus {
+	color: rgb(0, 38, 255);
+  }
+  
+  a:hover {     
+	color: rgb(0, 183, 255);
+  }
+  
+  a:active {
+	color: rgb(0, 255, 179);
+	color: white;
+  }
