@@ -156,11 +156,6 @@
             <parágrafo> Toda as partes de estilização das páginas html foram inseridas por uma simples questão de brio na apresentação do projeto em questão, mesmo não contando para a valorização do mesmo.</parágrafo>
         </conclusão>
         <referências id="SEC006" tituloSecção="Referências">
-            <refBibliográfica idRef="RefB_www">
-                <título>XML em 3 passos</título>
-                <dataPublicação>2011-05-10</dataPublicação>
-                <autor>Marco António</autor>
-            </refBibliográfica>
             <refWeb idRef="RefW_w3school">
                 <URL>https://www.w3schools.com/</URL>
                 <descrição>THE WORLD'S LARGEST WEB DEVELOPER SITE</descrição>
@@ -174,12 +169,12 @@
         </referências>
     </corpo>
     <anexos id="SEC007" tituloSecção="Anexos">
-        <figura src="../fotografias/t1html.JPG" descrição="Transformação 1 AdotaPETS XML - HTML"/>
-        <figura src="../fotografias/t2html.JPG" descrição="Transformação 2 AdotaPETS XML - HTML"/>
-        <figura src="../fotografias/t3html.JPG" descrição="Transformação 3 AdotaPETS XML - HTML"/>
-        <figura src="../fotografias/t1txt.JPG" descrição="Transformação 1 AdotaPETS XML - TXT"/>
-        <figura src="../fotografias/t2txt.JPG" descrição="Transformação 2 AdotaPETS XML - TXT"/>
-        <figura src="../fotografias/t1xml.JPG" descrição="Transformação 1 AdotaPETS XML - XML"/>
-        <figura src="../fotografias/t2xml.JPG" descrição="Transformação 2 AdotaPETS XML - XML"/>
+        <figura src="..\fotografias\t1html.jpg" descrição="Transformação 1 AdotaPETS XML - HTML"/>
+        <figura src="..\fotografias\t2html.JPG" descrição="Transformação 2 AdotaPETS XML - HTML"/>
+        <figura src="..\fotografias\t3html.JPG" descrição="Transformação 3 AdotaPETS XML - HTML"/>
+        <figura src="..\fotografias\t1txt.JPG" descrição="Transformação 1 AdotaPETS XML - TXT"/>
+        <figura src="..\fotografias\t2txt.JPG" descrição="Transformação 2 AdotaPETS XML - TXT"/>
+        <figura src="..\fotografias\t1xml.JPG" descrição="Transformação 1 AdotaPETS XML - XML"/>
+        <figura src="..\fotografias\t2xml.JPG" descrição="Transformação 2 AdotaPETS XML - XML"/>
     </anexos>
 </relatório>
