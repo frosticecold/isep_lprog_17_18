@@ -46,15 +46,14 @@
         <outrasSecções>
             <análise id="SEC002" tituloSecção="Análise">
                 <subsecção id="SUBSEC002"/>
-                <parágrafo>Neste projecto o objectivo foi gerar um documento XML para o seguinte tema, AdotaPets.</parágrafo>
-                <parágrafo>Neste tema em particular pretende-se desenvolver uma estrutura de dados com vários tipos de informação sobre animais para adoção, como por exemplo nome, raça e informação medica.</parágrafo>
-                <parágrafo>A primeira abordagem foi simples, foi feito um pequeno esboço da informação tendo assim uma ideia geral do problema proposto.</parágrafo>
-                <parágrafo>Após uma analise mais aprofundada a resolução que se chegou foi a seguinte estrutura para a constituição do ficheiro:</parágrafo>
+                <parágrafo>Neste tema em particular pretende-se desenvolver uma estrutura de dados com vários tipos de informação sobre animais para adoção, como por exemplo nome, raça e informação médica.</parágrafo>
+                <parágrafo>A primeira abordagem foi simples, tendo sido feito um pequeno esboço da informação de maneira a apresentar uma ideia geral do problema proposto.</parágrafo>
+                <parágrafo>Após uma análise mais aprofundada a solução obtida foi a seguinte estrutura para a constituição do ficheiro:</parágrafo>
                 <listaItems>
                     <item label="Animais"/>
                     <item label="Boxes"/>
                 </listaItems>
-                <parágrafo>Tag "Animais" é constituído por vários estruturas "Animal". E Tag "Boxes" é constituído por estruturas "Box", cada Box tem apenas um atributo, o número da box.</parágrafo>
+                <parágrafo>Tag "Animais" é constituído por várias estruturas "Animal". E Tag "Boxes" é formada por estruturas "Box", tendo cada Box apenas como atributo, o número da mesma.</parágrafo>
                 <parágrafo>A constituição de um animal:</parágrafo>
                 <parágrafo>Atributos:</parágrafo>
                 <listaItems>
@@ -75,43 +74,37 @@
                     <item label="Ração"/>
                     <item label="ExercicioFisico"/>
                 </listaItems>
-                <parágrafo>O  tipo de animal foi feito tendo em conta que só podem ser inseridos três tipos de dados com os seguintes valores:</parágrafo>
+                <parágrafo>O tipo de animal é considerado um enumerado, tendo em conta que só podem ser inseridos três tipos de dados com os seguintes valores:</parágrafo>
                 <listaItems>
                     <item label="Cão"/>
                     <item label="Gato"/>
                     <item label="Outro"/>
                 </listaItems>
-                <parágrafo>O box id, tem uma referenciação a uma chave, isto é, só podem ser inseridos números de boxes que estejam contidos no conjunto de elementos Boxes.</parágrafo>
-                <parágrafo>Chip, tem um formato fixo para poder ser inserido.</parágrafo>
-                <parágrafo>Idade de um animal tem que ser um inteiro positivo, pode ser inserido zero e um número maximo até 100, isto é se incluirmos tartarugas.</parágrafo>
-                <parágrafo>No sexo de um animal pode ser constituído por Masculino ou Feminino.</parágrafo>
-                <parágrafo>Peso de um animal tem que ter um padrão de um um digitou, ou dois se preciso mas no mínimo um, seguido por um ponto, seguido de no maximo três digitos e no final Kg, por exemplo: 15.21Kg</parágrafo>
-                <parágrafo>A personalidade pode ser qualquer tipo de "string" para descrever a personalidade de um animal.</parágrafo>
-                <parágrafo>Uma fotografia, não era necessário no âmbito do problema, foi apenas informação acrescida para poder enriquecer o conteúdo e dar mais realismo a estrutura da informação.</parágrafo>
-                <parágrafo>Vacinas, e constituida por um conjunto de Vacina, cada vacina é consituida por uma data de administração e uma validade.</parágrafo>
-                <parágrafo>Ração e Exercicio fisico de um animal pode ser um de três valores: Normal, Light ou Senior e também Normal, Moderado ou Grande respectivamente.</parágrafo>
+                <parágrafo>O box id possui uma referenciação a uma chave, isto é, só podem ser inseridos números de boxes que estejam contidos no conjunto de elementos <itálico>Boxes</itálico>. Foi também tido em conta que uma box pode ser utilizada por mais do que um animal.</parágrafo>
+                <parágrafo>O atibuto <itálico>Chip</itálico> tem um formato fixo para poder ser inserido, de maneira a manter a consistência da informação.</parágrafo>
+                <parágrafo>Idade de um animal é obrigatoriamente um número inteiro positivo entre zero e um máximo de 100, isto é, se incluirmos tartarugas.</parágrafo>
+                <parágrafo>O sexo de um animal pode apenas ser preenchido como Masculino ou Feminino.</parágrafo>
+                <parágrafo>Peso de um animal é constituido por um padrão de no mínimo um digito e um máximo de dois, seguido de no maximo três digitos para as gramas e no finalizado por Kg. <itálico>Como exemplo: 15.21Kg</itálico></parágrafo>
+                <parágrafo>A personalidade do animal é tida em conta como qualquer tipo de "string", de forma a cobrir todos os caracteres especiais, essencialmente os acentos.</parágrafo>
+                <parágrafo>Vacinas são constituidas por um conjunto de <itálico>Vacina</itálico>, sendo por sua vez, cada uma preenchida com o nome, uma data de administração e uma validade.</parágrafo>
+                <parágrafo>Ração e Exercicio fisico de um animal é um enumerado de um dos três valores: Normal, Light ou Senior e também Normal, Moderado ou Grande respectivamente.</parágrafo>
             </análise>
             <linguagem id="SEC003" tituloSecção="Linguagem">
                 <subsecção id="SUBSEC003"/>
-                <parágrafo>A nivel de schema, foi assegurado que em tipo de animal apenas se poderia inserir 
+                <parágrafo>A nivel de <itálico>schema</itálico>, foi assegurado que em tipo de animal apenas se poderia inserir 
                                         <negrito>cão</negrito>, 
                                         <negrito>gato</negrito> ou 
                                         <negrito>outro</negrito>, utilizando-se um enumerado.
-                
                 </parágrafo>
-                <parágrafo>Em box ID foi feita referencia de chaves, chaves essas que têm que fazer parte do conjunto de Boxes.</parágrafo>
-                <parágrafo>Chip do animal é restrito po rum padrão, começa por 
+                <parágrafo>Em box ID foi realizada uma referência de <sublinhado>id</sublinhado>, chaves essas que têm que fazer parte do conjunto de Boxes.</parágrafo>
+                <parágrafo>Chip do animal é restrito pelo padrão: 
                                         <negrito>PT-</negrito> seguido de 5 digitos de zero a nove
                 
                 </parágrafo>
-                <parágrafo>Nome e raça do animal, foi feito um padrão que so aceita letras e espaços.</parágrafo>
-                <parágrafo>A idade de um animal é restrita a um número inteiro positivi incluindo zero e no maximo até 100, isto é se incluirmos tartarugas.</parágrafo>
-                <parágrafo>O sexo do animal foi feito um enumerado assegurando que os dados podes ser masculino ou feminino.</parágrafo>
-                <parágrafo>Peso de um animal tem certas restrições, no mínimo tem um número decimal, maximo dois, seguido de um ponto e pode ter até três casas decimais acabando em Kg</parágrafo>
-                <parágrafo>Na fototgrafia/imagem a não tem nenhuma restrição em particular a não ser que tem quer inserido um uri para o caminho ou link da fonte.</parágrafo>
-                <parágrafo>Não foi feita nenhuma restrição a nível de personalidade de qualquer animal.</parágrafo>
-                <parágrafo>Cada vacina tem que ser constituida obrigatóriamente por uma data de administração, tem um formato obrigatorio do tipo AAAA-MM-DD. A validade da vacinaé um enumerado com os valores Mensal, Anual ou Sem Validade.</parágrafo>
-                <parágrafo>A ração e exercicio fisico seguem a mesma estrutura de dados, sendo um enumerado. A ração pode ser Normal, Light ou Senior, e o exercicio físico Normal, Moderado ou Grande.</parágrafo>
+                <parágrafo>Nome e raça do animal, constituidos por um padrão que apenas aceita letras e espaços.</parágrafo>
+                <parágrafo>As fotografias/imagens não possuem nenhuma restrição em particular a não ser a inserção de um uri para o caminho ou link da fonte.</parágrafo>
+                <parágrafo>Cada vacina tem que ser constituida obrigatoriamente por uma data de administração, com um formato fixo do tipo AAAA-MM-DD. A validade da vacina é um enumerado com os valores Mensal, Anual ou Sem Validade.</parágrafo>
+                <parágrafo>A ração e exercício físico seguem a mesma estrutura de dados, sendo um enumerado. A ração pode ser Normal, Light ou Senior, e o exercicio físico Normal, Moderado ou Grande.</parágrafo>
             </linguagem>
             <transformações id="SEC004" tituloSecção="Transformações">
                 <subsecção id="SUBSEC004">Transformação para HTML 1</subsecção>
@@ -153,7 +146,7 @@
             <subsecção id="SUBSEC011"/>
             <parágrafo> Os objetivos do projeto foram alcançados com sucesso, tendo-se conseguido criar um xml validado por um xsd e respetivas transformações para html, texto e xml. O presente relatório foi também validado com o                 <itálico>schema</itálico> fornecido e convertido com sucesso para html.
             </parágrafo>
-            <parágrafo> Toda as partes de estilização das páginas html foram inseridas por uma simples questão de brio na apresentação do projeto em questão, mesmo não contando para a valorização do mesmo.</parágrafo>
+            <parágrafo> Ao longo do desenvolvimento do trabalho, foi possível apreciar a utilidade que o xml e xsl apresentam, permitindo guardar e apresentar informação de forma simples e bem organizada. Toda as partes de estilização das páginas html foram inseridas por uma simples questão de brio na apresentação do projeto em questão, mesmo não contando para a valorização do mesmo.</parágrafo>
         </conclusão>
         <referências id="SEC006" tituloSecção="Referências">
             <refWeb idRef="RefW_w3school">
