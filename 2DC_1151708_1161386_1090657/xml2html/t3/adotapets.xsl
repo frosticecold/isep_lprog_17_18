@@ -15,7 +15,7 @@
             </head>
             <body>
                 <body id="backgroundIMG">
-                    <h2> Animal Details</h2>
+                    <h2>Detalhes Animais</h2>
                 </body>
                 <br/>
                 <br/>

@@ -37,7 +37,8 @@
 			<xsd:element name="Idade" type="z:TIdade" />
 			<xsd:element name="Sexo" type="z:TSexo" />
 			<xsd:element name="Peso" type="z:TPeso" />
-			<xsd:element name="Personalidade" type="z:TText" />
+			<xsd:element name="Personalidade" type="xsd:string" />
+			<xsd:element name="Fotografia" type = "xsd:anyURI"/>
 			<xsd:element name="Vacinas" type="z:TVacinas"/>
 			<xsd:element name="Racao" type="z:TRacao"/>
 			<xsd:element name="ExercicioFisico" type="z:TExercicioFisico"/>
@@ -116,7 +117,7 @@
 	</xsd:simpleType>
 	<xsd:simpleType name="TText">
 		<xsd:restriction base="xsd:string">
-			<xsd:pattern value="[a-zA-Z]+"/>
+			<xsd:pattern value="[a-zA-Z ]+"/>
 		</xsd:restriction>
 	</xsd:simpleType>
 	<xsd:simpleType name="TIdade">
