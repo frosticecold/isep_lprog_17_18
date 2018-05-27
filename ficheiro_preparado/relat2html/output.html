@@ -115,31 +115,45 @@
       <div>
          <h2 id="SEC002">Análise</h2>
          <h3 id="SUBSEC002"></h3>
-         <p>Neste tema em particular pretende-se desenvolver uma estrutura de dados com vários
-            tipos de informação sobre animais para adoção, como por exemplo nome, raça e informação
-            médica.
+         <p>
+            <p>Neste tema em particular pretende-se desenvolver uma estrutura de dados com vários
+               tipos de informação sobre animais para adoção, como por exemplo nome, raça e informação
+               médica.
+            </p>
          </p>
-         <p>A primeira abordagem foi simples, tendo sido feito um pequeno esboço da informação
-            de maneira a apresentar uma ideia geral do problema proposto.
+         <p>
+            <p>A primeira abordagem foi simples, tendo sido feito um pequeno esboço da informação
+               de maneira a apresentar uma ideia geral do problema proposto.
+            </p>
          </p>
-         <p>Após uma análise mais aprofundada a solução obtida foi a seguinte estrutura para a
-            constituição do ficheiro:
+         <p>
+            <p>Após uma análise mais aprofundada a solução obtida foi a seguinte estrutura para a
+               constituição do ficheiro:
+            </p>
          </p>
          <ul class="listas">
             <li>Animais</li>
             <li>Boxes</li>
          </ul>
-         <p>Tag "Animais" é constituído por várias estruturas "Animal". E Tag "Boxes" é formada
-            por estruturas "Box", tendo cada Box apenas como atributo, o número da mesma.
+         <p>
+            <p>Tag "Animais" é constituído por várias estruturas "Animal". E Tag "Boxes" é formada
+               por estruturas "Box", tendo cada Box apenas como atributo, o número da mesma.
+            </p>
          </p>
-         <p>A constituição de um animal:</p>
-         <p>Atributos:</p>
+         <p>
+            <p>A constituição de um animal:</p>
+         </p>
+         <p>
+            <p>Atributos:</p>
+         </p>
          <ul class="listas">
             <li>TipoAnimal</li>
             <li>BoxID</li>
             <li>Chip</li>
          </ul>
-         <p>Elementos:</p>
+         <p>
+            <p>Elementos:</p>
+         </p>
          <ul class="listas">
             <li>Nome</li>
             <li>Raça</li>
@@ -152,77 +166,106 @@
             <li>Ração</li>
             <li>ExercicioFisico</li>
          </ul>
-         <p>O tipo de animal é considerado um enumerado, tendo em conta que só podem ser inseridos
-            três tipos de dados com os seguintes valores:
+         <p>
+            <p>O tipo de animal é considerado um enumerado, tendo em conta que só podem ser inseridos
+               três tipos de dados com os seguintes valores:
+            </p>
          </p>
          <ul class="listas">
             <li>Cão</li>
             <li>Gato</li>
             <li>Outro</li>
          </ul>
-         <p>O box id possui uma referenciação a uma chave, isto é, só podem ser inseridos números
-            de boxes que estejam contidos no conjunto de elementos Boxes. Foi também tido em conta
-            que uma box pode ser utilizada por mais do que um animal.
+         <p>
+            <p>O box id possui uma referenciação a uma chave, isto é, só podem ser inseridos números
+               de boxes que estejam contidos no conjunto de elementos <i>Boxes</i>. Foi também tido em conta que uma box pode ser utilizada por mais do que um animal.
+            </p>
          </p>
-         <p>O atibuto Chip tem um formato fixo para poder ser inserido, de maneira a manter a
-            consistência da informação.
+         <p>
+            <p>O atibuto <i>Chip</i> tem um formato fixo para poder ser inserido, de maneira a manter a consistência da
+               informação.
+            </p>
          </p>
-         <p>Idade de um animal é obrigatoriamente um número inteiro positivo entre zero e um máximo
-            de 100, isto é, se incluirmos tartarugas.
+         <p>
+            <p>Idade de um animal é obrigatoriamente um número inteiro positivo entre zero e um máximo
+               de 100, isto é, se incluirmos tartarugas.
+            </p>
          </p>
-         <p>O sexo de um animal pode apenas ser preenchido como Masculino ou Feminino.</p>
-         <p>Peso de um animal é constituido por um padrão de no mínimo um digito e um máximo de
-            dois, seguido de no maximo três digitos para as gramas e no finalizado por Kg. Como
-            exemplo: 15.21Kg
+         <p>
+            <p>O sexo de um animal pode apenas ser preenchido como Masculino ou Feminino.</p>
          </p>
-         <p>A personalidade do animal é tida em conta como qualquer tipo de "string", de forma
-            a cobrir todos os caracteres especiais, essencialmente os acentos.
+         <p>
+            <p>Peso de um animal é constituido por um padrão de no mínimo um digito e um máximo de
+               dois, seguido de no maximo três digitos para as gramas e no finalizado por Kg. <i>Como exemplo: 15.21Kg</i></p>
          </p>
-         <p>Vacinas são constituidas por um conjunto de Vacina, sendo por sua vez, cada uma preenchida
-            com o nome, uma data de administração e uma validade.
+         <p>
+            <p>A personalidade do animal é tida em conta como qualquer tipo de "string", de forma
+               a cobrir todos os caracteres especiais, essencialmente os acentos.
+            </p>
          </p>
-         <p>Ração e Exercicio fisico de um animal é um enumerado de um dos três valores: Normal,
-            Light ou Senior e também Normal, Moderado ou Grande respectivamente.
+         <p>
+            <p>Vacinas são constituidas por um conjunto de <i>Vacina</i>, sendo por sua vez, cada uma preenchida com o nome, uma data de administração e uma
+               validade.
+            </p>
+         </p>
+         <p>
+            <p>Ração e Exercicio fisico de um animal é um enumerado de um dos três valores: Normal,
+               Light ou Senior e também Normal, Moderado ou Grande respectivamente.
+            </p>
          </p>
       </div>
       <div>
          <h2 id="SEC003">Linguagem</h2>
          <h3 id="SUBSEC003"></h3>
-         <p>A nivel de schema, foi assegurado que em tipo de animal apenas se poderia inserir
-            
-            cão, 
-            gato ou 
-            outro, utilizando-se um enumerado.
-            
+         <p>
+            <p>A nivel de <i>schema</i>, foi assegurado que em tipo de animal apenas se poderia inserir 
+               <b>cão</b>, 
+               <b>gato</b> ou 
+               <b>outro</b>, utilizando-se um enumerado.
+               
+            </p>
          </p>
-         <p>Em box ID foi realizada uma referência de id, chaves essas que têm que fazer parte
-            do conjunto de Boxes.
+         <p>
+            <p>Em box ID foi realizada uma referência de <u>id</u>, chaves essas que têm que fazer parte do conjunto de Boxes.
+            </p>
          </p>
-         <p>Chip do animal é restrito pelo padrão: 
-            PT- seguido de 5 digitos de zero a nove
-            
-            
+         <p>
+            <p>Chip do animal é restrito pelo padrão: 
+               <b>PT-</b> seguido de 5 digitos de zero a nove
+               
+               
+            </p>
          </p>
-         <p>Nome e raça do animal, constituidos por um padrão que apenas aceita letras e espaços.</p>
-         <p>As fotografias/imagens não possuem nenhuma restrição em particular a não ser a inserção
-            de um uri para o caminho ou link da fonte.
+         <p>
+            <p>Nome e raça do animal, constituidos por um padrão que apenas aceita letras e espaços.</p>
          </p>
-         <p>Cada vacina tem que ser constituida obrigatoriamente por uma data de administração,
-            com um formato fixo do tipo AAAA-MM-DD. A validade da vacina é um enumerado com os
-            valores Mensal, Anual ou Sem Validade.
+         <p>
+            <p>As fotografias/imagens não possuem nenhuma restrição em particular a não ser a inserção
+               de um uri para o caminho ou link da fonte.
+            </p>
          </p>
-         <p>A ração e exercício físico seguem a mesma estrutura de dados, sendo um enumerado.
-            A ração pode ser Normal, Light ou Senior, e o exercicio físico Normal, Moderado ou
-            Grande.
+         <p>
+            <p>Cada vacina tem que ser constituida obrigatoriamente por uma data de administração,
+               com um formato fixo do tipo AAAA-MM-DD. A validade da vacina é um enumerado com os
+               valores Mensal, Anual ou Sem Validade.
+            </p>
+         </p>
+         <p>
+            <p>A ração e exercício físico seguem a mesma estrutura de dados, sendo um enumerado.
+               A ração pode ser Normal, Light ou Senior, e o exercicio físico Normal, Moderado ou
+               Grande.
+            </p>
          </p>
       </div>
       <div>
          <h2 id="SEC004">Transformações</h2>
          <h3 id="SUBSEC004">Transformação para HTML 1</h3>
          <p>
-            Esta transformação consiste em filtrar a informação do ficheiro xml para apresentação
-            de apenas uma tabela com as seguintes informações relativas aos animais:
-            
+            <p>
+               Esta transformação consiste em filtrar a informação do ficheiro xml para apresentação
+               de apenas uma tabela com as seguintes informações relativas aos animais:
+               
+            </p>
          </p>
          <ul class="listas">
             <li>Fotografia</li>
@@ -234,35 +277,47 @@
          </ul>
          <h3 id="SUBSEC005">Transformação para HTML 2</h3>
          <p>
-            A segunda transformação consiste num plano mais abrangente de informação, apresentando
-            para além dos dados do animal também as respetivas vacinas de cada um, com a data
-            de administração e validade.             
+            <p>
+               A segunda transformação consiste num plano mais abrangente de informação, apresentando
+               para além dos dados do animal também as respetivas vacinas de cada um, com a data
+               de administração e validade.             
+            </p>
          </p>
          <h3 id="SUBSEC006">Transformação para HTML 3</h3>
          <p>
-            Esta ultima transformação tem a particularidade de apresentar todos os dados dos animais
-            agrupados por tipo de animal, permitindo uma mais rápida visualização dos dados com
-            interesse.             
+            <p>
+               Esta ultima transformação tem a particularidade de apresentar todos os dados dos animais
+               agrupados por tipo de animal, permitindo uma mais rápida visualização dos dados com
+               interesse.             
+            </p>
          </p>
          <h3 id="SUBSEC007">Transformação para XML 1</h3>
          <p>
-            Esta transformação tem como atributos as propriedades importantes do animal, tem um
-            elemento nome e um elemento com informação secundária.
-            
+            <p>
+               Esta transformação tem como atributos as propriedades importantes do animal, tem um
+               elemento nome e um elemento com informação secundária.
+               
+            </p>
          </p>
          <h3 id="SUBSEC008">Transformação para XML 2</h3>
          <p>
-            Nesta transformação, associou-se o Animal com o seu nome, a sua box e que vacinas
-            tomou.
-            
+            <p>
+               Nesta transformação, associou-se o Animal com o seu nome, a sua box e que vacinas
+               tomou.
+               
+            </p>
          </p>
          <h3 id="SUBSEC009">Transformação para TXT 1</h3>
-         <p>Esta transformação mostra quantos animais estão para ser adotados e filtra toda a
-            informação pessoal sobre o dado animal.
+         <p>
+            <p>Esta transformação mostra quantos animais estão para ser adotados e filtra toda a
+               informação pessoal sobre o dado animal.
+            </p>
          </p>
          <h3 id="SUBSEC010">Transformação para TXT 2</h3>
-         <p>Esta transformação tem como objetivo dar informação médica dos animais a serem adotados,
-            mostrando que vacinas tomou e quando.
+         <p>
+            <p>Esta transformação tem como objetivo dar informação médica dos animais a serem adotados,
+               mostrando que vacinas tomou e quando.
+            </p>
          </p>
       </div>
       <hr>

@@ -221,7 +221,7 @@
                         </xsl:when>
                         <xsl:when test="local-name() = 'parágrafo'">
                             <p>
-                                <xsl:value-of select="."/>
+                                <xsl:apply-templates select="current()"/>
                             </p>
                         </xsl:when>
                         <xsl:when test="local-name() = 'listaItems'">
