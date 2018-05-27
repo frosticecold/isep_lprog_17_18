@@ -105,7 +105,7 @@
         <!-- Indice-->
         <h2>Indice</h2>
         <div class="Indice">
-        <ol>
+        <ol class="listaIndice">
             <xsl:for-each select="//*[@tituloSecção]">
                 <li>
                     <a><xsl:attribute name="href">#<xsl:value-of select="@id"/></xsl:attribute>

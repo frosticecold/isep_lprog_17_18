@@ -28,3 +28,27 @@ h3{
 .anexos{
 	border-radius:10%;
 }
+
+.listaIndice ol {
+	list-style: none;
+	counter-reset: my-awesome-counter;
+}
+
+.listaIndice li {
+	list-style-type: none;
+	counter-increment: my-awesome-counter;
+	margin: 0.25rem;
+}
+
+.listaIndice li::before {
+	content: counter(my-awesome-counter);
+	background: #0a71e7a4;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	display: inline-block;
+	line-height: 2rem;
+	color: white;
+	text-align: center;
+	margin-right: 0.5rem;
+}
