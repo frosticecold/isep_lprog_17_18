@@ -14,7 +14,7 @@
                 </style>
             </head>
             <body>
-                <h2>Animal Details</h2>
+                <h2>Detalhes Animais</h2>
                 <xsl:for-each select="ns:ADOTAPets/ns:Animais/ns:Animal">
                     <h3>Dados</h3>
                     <h3>
