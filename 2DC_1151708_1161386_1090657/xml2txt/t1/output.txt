@@ -6,7 +6,15 @@
 ██║  ██║██████╔╝╚██████╔╝   ██║   ██║  ██║██║     ███████╗   ██║   ███████║
 ╚═╝  ╚═╝╚═════╝  ╚═════╝    ╚═╝   ╚═╝  ╚═╝╚═╝     ╚══════╝   ╚═╝   ╚══════╝
 
-    Animais : Quantidade = 9
+    ==================================
+    Animais : 
+        Estatísticas
+            Quantidade = 9
+            Maior Idade = 11
+            Menor Idade = 2
+            Média Idade = 5.89
+    ==================================
+            
         Animal
             •Nome:Lassie
             •Tipo:Cão

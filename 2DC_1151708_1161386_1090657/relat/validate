@@ -1,1 +1,1 @@
-xml val -e -s $(echo *.xsd) $(echo *.xml)
+xml val -e -s $(echo Relatorio.xsd) $(echo Relatorio.xml)
