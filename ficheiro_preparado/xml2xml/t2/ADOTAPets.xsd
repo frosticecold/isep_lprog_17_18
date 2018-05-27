@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified" 
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+	targetNamespace="http://www.dei.isep.ipp.pt/lprog/adotapets"
+	xmlns:z="http://www.dei.isep.ipp.pt/lprog/adotapets">
+	<xsd:element name="ADOTAPets">
+		<xsd:complexType>
+			<xsd:sequence>
+				<xsd:element name="Animais" type="z:TAnimais" maxOccurs="unbounded" />
+				<xsd:element name="Boxes" type="z:TBoxes" maxOccurs="unbounded" />
+			</xsd:sequence>
+		</xsd:complexType>
+		<xsd:keyref name="boxIDRef" refer="z:boxKey">
+			<xsd:selector xpath="./Animais/Animal"/>
+			<xsd:field xpath="@BoxID"/>
+		</xsd:keyref>
+		<xsd:key name="boxKey">
+			<xsd:selector xpath="./Boxes/Box"/>
+			<xsd:field xpath="@BoxID"/>
+		</xsd:key>
+	</xsd:element>
+	<xsd:complexType name="TAnimais">
+		<xsd:sequence>
+			<xsd:element name="Animal" type="z:TAnimal" maxOccurs="unbounded" />
+		</xsd:sequence>
+		<xsd:attribute name="Tipo" type="xsd:string" fixed="Domesticos"/>
+	</xsd:complexType>
+	<xsd:complexType name="TBoxes">
+		<xsd:sequence>
+			<xsd:element name="Box" type="z:TBox" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="TAnimal">
+		<xsd:sequence>
+			<xsd:element name="Nome" type="z:TText" />
+			<xsd:element name="Raca" type="z:TText" />
+			<xsd:element name="Idade" type="z:TIdade" />
+			<xsd:element name="Sexo" type="z:TSexo" />
+			<xsd:element name="Peso" type="z:TPeso" />
+			<xsd:element name="Personalidade" type="xsd:string" />
+			<xsd:element name="Fotografia" type = "xsd:anyURI"/>
+			<xsd:element name="Vacinas" type="z:TVacinas"/>
+			<xsd:element name="Racao" type="z:TRacao"/>
+			<xsd:element name="ExercicioFisico" type="z:TExercicioFisico"/>
+		</xsd:sequence>
+		<xsd:attribute name="TipoAnimal" type="z:TTipoAnimal" default="Outro"/>
+		<xsd:attribute name="BoxID" type="xsd:integer" use="required"/>
+		<xsd:attribute name="Chip">
+			<xsd:simpleType>
+				<xsd:restriction base = "xsd:string">
+					<xsd:pattern value ="PT-[0-9]{5}"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:complexType name="TBox">
+		<xsd:attribute name="BoxID">
+			<xsd:simpleType>
+				<xsd:restriction base = "xsd:integer">
+					<xsd:minInclusive value = "1"/>
+				</xsd:restriction>
+			</xsd:simpleType>
+		</xsd:attribute>
+	</xsd:complexType>
+	<xsd:simpleType name="TTipoAnimal">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="cão"/>
+			<xsd:enumeration value="gato"/>
+			<xsd:enumeration value="outro"/>
+			<xsd:enumeration value="Cão"/>
+			<xsd:enumeration value="Gato"/>
+			<xsd:enumeration value="Outro"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TRacao">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="normal"/>
+			<xsd:enumeration value="light"/>
+			<xsd:enumeration value="sénior"/>
+			<xsd:enumeration value="Normal"/>
+			<xsd:enumeration value="Light"/>
+			<xsd:enumeration value="Sénior"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TExercicioFisico">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="normal"/>
+			<xsd:enumeration value="moderada"/>
+			<xsd:enumeration value="grande"/>
+			<xsd:enumeration value="Normal"/>
+			<xsd:enumeration value="Moderada"/>
+			<xsd:enumeration value="Grande"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:complexType name="TVacinas">
+		<xsd:sequence>
+			<xsd:element name="Vacina" type="z:TVacina" maxOccurs="unbounded"/>
+		</xsd:sequence>
+	</xsd:complexType>
+	<xsd:complexType name="TVacina">
+		<xsd:sequence>
+			<xsd:element name="DataAdministracao" type="xsd:date"/>
+			<xsd:element name="Validade" type="z:TValidade"/>
+		</xsd:sequence>
+		<xsd:attribute name="Nome" type="xsd:string" use="required"/>
+	</xsd:complexType>
+	<xsd:simpleType name="TValidade">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Anual"/>
+			<xsd:enumeration value="anual"/>
+			<xsd:enumeration value="Mensal"/>
+			<xsd:enumeration value="mensal"/>
+			<xsd:enumeration value="Sem Validade"/>
+			<xsd:enumeration value="Sem validade"/>
+			<xsd:enumeration value="sem validade"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TText">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[a-zA-Z ]+"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TIdade">
+		<xsd:restriction base="xsd:integer">
+			<xsd:minInclusive value="1"/>
+			<xsd:maxInclusive value="30"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TSexo">
+		<xsd:restriction base="xsd:string">
+			<xsd:enumeration value="Masculino"/>
+			<xsd:enumeration value="Feminino"/>
+			<xsd:enumeration value="masculino"/>
+			<xsd:enumeration value="feminino"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+	<xsd:simpleType name="TPeso">
+		<xsd:restriction base="xsd:string">
+			<xsd:pattern value="[0-2]?[0-9].[0-9][0-9]Kg"/>
+		</xsd:restriction>
+	</xsd:simpleType>
+</xsd:schema>

@@ -1,0 +1,73 @@
+#Vacinas {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+#Vacinas td, #Vacinas th {
+	border: 1px solid #ddd;
+	padding: 5px;
+}
+
+#Vacinas tr:nth-child(even){background-color: #f2f2f2;}
+
+#Vacinas tr:hover {background-color: #ddd;}
+
+#Vacinas th {
+	padding-top: 6px;
+	padding-bottom: 6px;
+	text-align: left;
+	background-color: rgb(230, 173, 19);
+	color: white;
+}
+
+body {
+ background: rgb(255, 255, 255);
+ color: #111;
+ 
+}
+ 
+h2 {
+ font-size: 50px;
+ line-height: 100px;
+ font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+ font-weight: bold;
+ text-align: center;
+ text-shadow: rgba(0, 0, 0, .2) 3px 3px 3px;
+}
+
+dt {
+	 float: left; 
+	 width: 100px; 
+	 text-align: right
+}
+
+dd { 
+	margin-left: 110px; 
+}
+
+
+dt, dd{
+	width:50%;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+h3{
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+ 	font-weight: bold;
+ 	text-align: center;
+}
+
+#Animais {
+	font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+	text-align: center
+}
+
+img{
+	border-radius:20%;
+}

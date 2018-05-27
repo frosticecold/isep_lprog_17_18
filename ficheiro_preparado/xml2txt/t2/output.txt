@@ -1,0 +1,116 @@
+
+             .o.       ooooo      ooo ooooo ooo        ooooo       .o.       ooooo  .oooooo..o        
+   .dP      .888.      `888b.     `8' `888' `88.       .888'      .888.      `888' d8P'    `Y8 Yb     
+ .dP       .8"888.      8 `88b.    8   888   888b     d'888      .8"888.      888  Y88bo.       `Yb   
+dP        .8' `888.     8   `88b.  8   888   8 Y88. .P  888     .8' `888.     888   `"Y8888o.     `Yb 
+Yb       .88ooo8888.    8     `88b.8   888   8  `888'   888    .88ooo8888.    888       `"Y88b    .dP 
+ `Yb    .8'     `888.   8       `888   888   8    Y     888   .8'     `888.   888  oo     .d8P  .dP   
+   `Yb o88o     o8888o o8o        `8  o888o o8o        o888o o88o     o8888o o888o 8""88888P'  dP     
+    
+    =======================================================================
+        Nome:Lassie
+        Tipo:Cão
+        Idade:8
+        Raça:Collie
+            Vacina:Contra PulgasData Administração:03-05-2018
+            Vacina:AntirrábicaData Administração:03-07-2018
+            Vacina:GiardíaseData Administração:27-05-2019
+            Vacina:ÓctuplaData Administração:03-05-2018
+    =======================================================================
+    
+    =======================================================================
+        Nome:Milu
+        Tipo:Cão
+        Idade:3
+        Raça:Rafeiro
+            Vacina:Contra PulgasData Administração:03-05-2018
+            Vacina:AntirrábicaData Administração:03-07-2018
+            Vacina:GiardíaseData Administração:27-05-2019
+            Vacina:ÓctuplaData Administração:13-07-2018
+    =======================================================================
+    
+    =======================================================================
+        Nome:Rex
+        Tipo:Cão
+        Idade:11
+        Raça:Doberman
+            Vacina:Contra PulgasData Administração:03-05-2018
+            Vacina:AntirrábicaData Administração:03-07-2018
+            Vacina:GiardíaseData Administração:27-05-2019
+            Vacina:ÓctuplaData Administração:03-05-2018
+    =======================================================================
+    
+    =======================================================================
+        Nome:Vistoso
+        Tipo:Gato
+        Idade:2
+        Raça:Rafeiro
+            Vacina:Contra PulgasData Administração:03-05-2018
+            Vacina:AntirrábicaData Administração:03-07-2018
+            Vacina:GiardíaseData Administração:27-05-2019
+            Vacina:ÓctuplaData Administração:03-05-2018
+    =======================================================================
+    
+    =======================================================================
+        Nome:Tareco
+        Tipo:gato
+        Idade:8
+        Raça:Collie
+            Vacina:Contra PulgasData Administração:03-05-2018
+            Vacina:AntirrábicaData Administração:03-07-2018
+            Vacina:GiardíaseData Administração:27-05-2019
+            Vacina:ÓctuplaData Administração:03-05-2018
+    =======================================================================
+    
+    =======================================================================
+        Nome:Falador
+        Tipo:Outro
+        Idade:4
+        Raça:Indefinido
+            Vacina:Contra PulgasData Administração:03-05-2018
+            Vacina:AntirrábicaData Administração:03-07-2018
+            Vacina:GiardíaseData Administração:27-05-2019
+            Vacina:ÓctuplaData Administração:03-05-2018
+    =======================================================================
+    
+    =======================================================================
+        Nome:Slytherin
+        Tipo:Outro
+        Idade:7
+        Raça:Anaconda
+            Vacina:Contra PulgasData Administração:03-05-2018
+            Vacina:AntirrábicaData Administração:03-07-2018
+            Vacina:GiardíaseData Administração:27-05-2019
+            Vacina:ÓctuplaData Administração:03-05-2018
+    =======================================================================
+    
+    =======================================================================
+        Nome:Hammet
+        Tipo:Outro
+        Idade:7
+        Raça:Hamsterville
+            Vacina:Contra PulgasData Administração:03-05-2018
+            Vacina:AntirrábicaData Administração:03-07-2018
+            Vacina:GiardíaseData Administração:27-05-2019
+            Vacina:ÓctuplaData Administração:03-05-2018
+    =======================================================================
+    
+    =======================================================================
+        Nome:Bugs Bunny
+        Tipo:Outro
+        Idade:3
+        Raça:Coelho
+            Vacina:Contra PulgasData Administração:03-05-2018
+            Vacina:AntirrábicaData Administração:03-07-2018
+            Vacina:GiardíaseData Administração:27-05-2019
+            Vacina:ÓctuplaData Administração:03-05-2018
+    =======================================================================
+    
+            88       .o.       ooooo      ooo ooooo ooo        ooooo       .o.       ooooo  .oooooo..o        
+   .dP     .8'      .888.      `888b.     `8' `888' `88.       .888'      .888.      `888' d8P'    `Y8 Yb     
+ .dP      .8'      .8"888.      8 `88b.    8   888   888b     d'888      .8"888.      888  Y88bo.       `Yb   
+dP       .8'      .8' `888.     8   `88b.  8   888   8 Y88. .P  888     .8' `888.     888   `"Y8888o.     `Yb 
+Yb      .8'      .88ooo8888.    8     `88b.8   888   8  `888'   888    .88ooo8888.    888       `"Y88b    .dP 
+ `Yb   .8'      .8'     `888.   8       `888   888   8    Y     888   .8'     `888.   888  oo     .d8P  .dP   
+   `Yb 88      o88o     o8888o o8o        `8  o888o o8o        o888o o88o     o8888o o888o 8""88888P'  dP     
+    

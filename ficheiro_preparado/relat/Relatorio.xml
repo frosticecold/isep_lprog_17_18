@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<relatório id="LPROG" 
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.dei.isep.ipp.pt/lprog Relatorio.xsd" 
+    xmlns="http://www.dei.isep.ipp.pt/lprog">
+    <páginaRosto>
+        <tema>ADOTAPets - Informação estruturada em XML</tema>
+        <disciplina>
+            <designação>Linguagens e Programação</designação>
+            <anoCurricular>2</anoCurricular>
+            <sigla>LPROG</sigla>
+        </disciplina>
+        <autor>
+            <nome>Raúl Correia</nome>
+            <número>1090657</número>
+            <mail>1090657@isep.ipp.pt</mail>
+        </autor>
+        <autor>
+            <nome>Mário Dias</nome>
+            <número>1151708</número>
+            <mail>1151708@isep.ipp.pt</mail>
+        </autor>
+        <autor>
+            <nome>Miguel Santos</nome>
+            <número>1161386</número>
+            <mail>1161386@isep.ipp.pt</mail>
+        </autor>
+        <turma>2DC</turma>
+        <professor sigla="PDF" tipoAula="PL"/>
+        <professor sigla="AMD" tipoAula="T"/>
+        <professor sigla="ACM" tipoAula="TP"/>
+        <logotipoDEI>isep_logo.png</logotipoDEI>
+        <data>2018-05-17</data>
+    </páginaRosto>
+    <corpo id="SUBSEC001">
+        <introdução id="SEC001" tituloSecção="Introdução">
+            <subsecção id="SUBSEC001"/>
+            <parágrafo>
+                Tendo em conta um aumento significativo da utilização do XML nos últimos anos devido à facilidade com que permite compartilhar informação através da internet, este trabalho tem em vista aplicar os conhecimentos obtidos durante as aulas da cadeira LPROG sobre o tema fornecido "ADOTAPets".
+                        
+            
+            </parágrafo>
+            <parágrafo>
+                Através do XML, serão organizados e estruturados os dados de uma associação de apoio a animais abandonados, caracterizando todos os elementos dos respetivos animais.
+            </parágrafo>
+        </introdução>
+        <outrasSecções>
+            <análise id="SEC002" tituloSecção="Análise">
+                <subsecção id="SUBSEC002"/>
+                <parágrafo>Neste tema em particular pretende-se desenvolver uma estrutura de dados com vários tipos de informação sobre animais para adoção, como por exemplo nome, raça e informação médica.</parágrafo>
+                <parágrafo>A primeira abordagem foi simples, tendo sido feito um pequeno esboço da informação de maneira a apresentar uma ideia geral do problema proposto.</parágrafo>
+                <parágrafo>Após uma análise mais aprofundada a solução obtida foi a seguinte estrutura para a constituição do ficheiro:</parágrafo>
+                <listaItems>
+                    <item label="Animais"/>
+                    <item label="Boxes"/>
+                </listaItems>
+                <parágrafo>Tag "Animais" é constituído por várias estruturas "Animal". E Tag "Boxes" é formada por estruturas "Box", tendo cada Box apenas como atributo, o número da mesma.</parágrafo>
+                <parágrafo>A constituição de um animal:</parágrafo>
+                <parágrafo>Atributos:</parágrafo>
+                <listaItems>
+                    <item label="TipoAnimal"/>
+                    <item label="BoxID"/>
+                    <item label="Chip"/>
+                </listaItems>
+                <parágrafo>Elementos:</parágrafo>
+                <listaItems>
+                    <item label="Nome"/>
+                    <item label="Raça"/>
+                    <item label="Idade"/>
+                    <item label="Sexo"/>
+                    <item label="Peso"/>
+                    <item label="Personalidade"/>
+                    <item label="Fotografia"/>
+                    <item label="Vacinas"/>
+                    <item label="Ração"/>
+                    <item label="ExercicioFisico"/>
+                </listaItems>
+                <parágrafo>O tipo de animal é considerado um enumerado, tendo em conta que só podem ser inseridos três tipos de dados com os seguintes valores:</parágrafo>
+                <listaItems>
+                    <item label="Cão"/>
+                    <item label="Gato"/>
+                    <item label="Outro"/>
+                </listaItems>
+                <parágrafo>O box id possui uma referenciação a uma chave, isto é, só podem ser inseridos números de boxes que estejam contidos no conjunto de elementos <itálico>Boxes</itálico>. Foi também tido em conta que uma box pode ser utilizada por mais do que um animal.</parágrafo>
+                <parágrafo>O atibuto <itálico>Chip</itálico> tem um formato fixo para poder ser inserido, de maneira a manter a consistência da informação.</parágrafo>
+                <parágrafo>Idade de um animal é obrigatoriamente um número inteiro positivo entre zero e um máximo de 100, isto é, se incluirmos tartarugas.</parágrafo>
+                <parágrafo>O sexo de um animal pode apenas ser preenchido como Masculino ou Feminino.</parágrafo>
+                <parágrafo>Peso de um animal é constituido por um padrão de no mínimo um digito e um máximo de dois, seguido de no maximo três digitos para as gramas e no finalizado por Kg. <itálico>Como exemplo: 15.21Kg</itálico></parágrafo>
+                <parágrafo>A personalidade do animal é tida em conta como qualquer tipo de "string", de forma a cobrir todos os caracteres especiais, essencialmente os acentos.</parágrafo>
+                <parágrafo>Vacinas são constituidas por um conjunto de <itálico>Vacina</itálico>, sendo por sua vez, cada uma preenchida com o nome, uma data de administração e uma validade.</parágrafo>
+                <parágrafo>Ração e Exercicio fisico de um animal é um enumerado de um dos três valores: Normal, Light ou Senior e também Normal, Moderado ou Grande respectivamente.</parágrafo>
+            </análise>
+            <linguagem id="SEC003" tituloSecção="Linguagem">
+                <subsecção id="SUBSEC003"/>
+                <parágrafo>A nivel de <itálico>schema</itálico>, foi assegurado que em tipo de animal apenas se poderia inserir 
+                                        <negrito>cão</negrito>, 
+                                        <negrito>gato</negrito> ou 
+                                        <negrito>outro</negrito>, utilizando-se um enumerado.
+                </parágrafo>
+                <parágrafo>Em box ID foi realizada uma referência de <sublinhado>id</sublinhado>, chaves essas que têm que fazer parte do conjunto de Boxes.</parágrafo>
+                <parágrafo>Chip do animal é restrito pelo padrão: 
+                                        <negrito>PT-</negrito> seguido de 5 digitos de zero a nove
+                
+                </parágrafo>
+                <parágrafo>Nome e raça do animal, constituidos por um padrão que apenas aceita letras e espaços.</parágrafo>
+                <parágrafo>As fotografias/imagens não possuem nenhuma restrição em particular a não ser a inserção de um uri para o caminho ou link da fonte.</parágrafo>
+                <parágrafo>Cada vacina tem que ser constituida obrigatoriamente por uma data de administração, com um formato fixo do tipo AAAA-MM-DD. A validade da vacina é um enumerado com os valores Mensal, Anual ou Sem Validade.</parágrafo>
+                <parágrafo>A ração e exercício físico seguem a mesma estrutura de dados, sendo um enumerado. A ração pode ser Normal, Light ou Senior, e o exercicio físico Normal, Moderado ou Grande.</parágrafo>
+            </linguagem>
+            <transformações id="SEC004" tituloSecção="Transformações">
+                <subsecção id="SUBSEC004">Transformação para HTML 1</subsecção>
+                <parágrafo>
+                Esta transformação consiste em filtrar a informação do ficheiro xml para apresentação de apenas uma tabela com as seguintes informações relativas aos animais:
+                </parágrafo>
+                <listaItems>
+                    <item label="Fotografia"/>
+                    <item label="Nome"/>
+                    <item label="Raça"/>
+                    <item label="Sexo"/>
+                    <item label="Idade"/>
+                    <item label="Peso"/>
+                </listaItems>
+                <subsecção id="SUBSEC005">Transformação para HTML 2</subsecção>
+                <parágrafo>
+                A segunda transformação consiste num plano mais abrangente de informação, apresentando para além dos dados do animal também as respetivas vacinas de cada um, com a data de administração e validade.             </parágrafo>
+                <subsecção id="SUBSEC006">Transformação para HTML 3</subsecção>
+                <parágrafo>
+                Esta ultima transformação tem a particularidade de apresentar todos os dados dos animais agrupados por tipo de animal, permitindo uma mais rápida visualização dos dados com interesse.             </parágrafo>
+
+                <subsecção id="SUBSEC007">Transformação para XML 1</subsecção>
+                <parágrafo>
+                Esta transformação tem como atributos as propriedades importantes do animal, tem um elemento nome e um elemento com informação secundária.
+                </parágrafo>
+                <subsecção id="SUBSEC008">Transformação para XML 2</subsecção>
+                <parágrafo>
+                Nesta transformação, associou-se o Animal com o seu nome, a sua box e que vacinas tomou.
+                </parágrafo>
+
+                <subsecção id="SUBSEC009">Transformação para TXT 1</subsecção>
+                <parágrafo>Esta transformação mostra quantos animais estão para ser adotados e filtra toda a informação pessoal sobre o dado animal.</parágrafo>
+
+                <subsecção id="SUBSEC010">Transformação para TXT 2</subsecção>
+                <parágrafo>Esta transformação tem como objetivo dar informação médica dos animais a serem adotados, mostrando que vacinas tomou e quando.</parágrafo>
+            </transformações>
+        </outrasSecções>
+        <conclusão id="SEC005" tituloSecção="Conclusão">
+            <subsecção id="SUBSEC011"/>
+            <parágrafo> Os objetivos do projeto foram alcançados com sucesso, tendo-se conseguido criar um xml validado por um xsd e respetivas transformações para html, texto e xml. O presente relatório foi também validado com o                 <itálico>schema</itálico> fornecido e convertido com sucesso para html.
+            </parágrafo>
+            <parágrafo> Ao longo do desenvolvimento do trabalho, foi possível apreciar a utilidade que o xml e xsl apresentam, permitindo guardar e apresentar informação de forma simples e bem organizada. Toda as partes de estilização das páginas html foram inseridas por uma simples questão de brio na apresentação do projeto em questão, mesmo não contando para a valorização do mesmo.</parágrafo>
+        </conclusão>
+        <referências id="SEC006" tituloSecção="Referências">
+            <refWeb idRef="RefW_w3school">
+                <URL>https://www.w3schools.com/</URL>
+                <descrição>THE WORLD'S LARGEST WEB DEVELOPER SITE</descrição>
+                <consultadoEm>2018-05-26</consultadoEm>
+            </refWeb>
+            <refWeb idRef="RefW_stackoverflow">
+                <URL>https://pt.stackoverflow.com/</URL>
+                <descrição>Site de Perguntas e Respostas para programadores</descrição>
+                <consultadoEm>2018-05-26</consultadoEm>
+            </refWeb>
+        </referências>
+    </corpo>
+    <anexos id="SEC007" tituloSecção="Anexos">
+        <figura src="..\fotografias\t1html.jpg" descrição="Transformação 1 AdotaPETS XML - HTML"/>
+        <figura src="..\fotografias\t2html.JPG" descrição="Transformação 2 AdotaPETS XML - HTML"/>
+        <figura src="..\fotografias\t3html.JPG" descrição="Transformação 3 AdotaPETS XML - HTML"/>
+        <figura src="..\fotografias\t1txt.JPG" descrição="Transformação 1 AdotaPETS XML - TXT"/>
+        <figura src="..\fotografias\t2txt.JPG" descrição="Transformação 2 AdotaPETS XML - TXT"/>
+        <figura src="..\fotografias\t1xml.JPG" descrição="Transformação 1 AdotaPETS XML - XML"/>
+        <figura src="..\fotografias\t2xml.JPG" descrição="Transformação 2 AdotaPETS XML - XML"/>
+    </anexos>
+</relatório>
