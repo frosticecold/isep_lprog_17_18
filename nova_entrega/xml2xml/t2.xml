@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Animais Quantidade="9">
+   <Animal Tipo="Cão">
+      <Nome>Lassie</Nome>
+      <BoxID>1</BoxID>
+      <Informações>
+         <Vacinas Quantidade="4">
+            <Vacina Nome="Contra Pulgas" DataAdministracao="2018-05-03"/>
+            <Vacina Nome="Antirrábica" DataAdministracao="2018-07-03"/>
+            <Vacina Nome="Giardíase" DataAdministracao="2019-05-27"/>
+            <Vacina Nome="Óctupla" DataAdministracao="2018-05-03"/>
+         </Vacinas>
+      </Informações>
+   </Animal>
+   <Animal Tipo="Cão">
+      <Nome>Milu</Nome>
+      <BoxID>1</BoxID>
+      <Informações>
+         <Vacinas Quantidade="4">
+            <Vacina Nome="Contra Pulgas" DataAdministracao="2018-05-03"/>
+            <Vacina Nome="Antirrábica" DataAdministracao="2018-07-03"/>
+            <Vacina Nome="Giardíase" DataAdministracao="2019-05-27"/>
+            <Vacina Nome="Óctupla" DataAdministracao="2018-07-13"/>
+         </Vacinas>
+      </Informações>
+   </Animal>
+   <Animal Tipo="Cão">
+      <Nome>Rex</Nome>
+      <BoxID>1</BoxID>
+      <Informações>
+         <Vacinas Quantidade="4">
+            <Vacina Nome="Contra Pulgas" DataAdministracao="2018-05-03"/>
+            <Vacina Nome="Antirrábica" DataAdministracao="2018-07-03"/>
+            <Vacina Nome="Giardíase" DataAdministracao="2019-05-27"/>
+            <Vacina Nome="Óctupla" DataAdministracao="2018-05-03"/>
+         </Vacinas>
+      </Informações>
+   </Animal>
+   <Animal Tipo="Gato">
+      <Nome>Vistoso</Nome>
+      <BoxID>2</BoxID>
+      <Informações>
+         <Vacinas Quantidade="4">
+            <Vacina Nome="Contra Pulgas" DataAdministracao="2018-05-03"/>
+            <Vacina Nome="Antirrábica" DataAdministracao="2018-07-03"/>
+            <Vacina Nome="Giardíase" DataAdministracao="2019-05-27"/>
+            <Vacina Nome="Óctupla" DataAdministracao="2018-05-03"/>
+         </Vacinas>
+      </Informações>
+   </Animal>
+   <Animal Tipo="gato">
+      <Nome>Tareco</Nome>
+      <BoxID>3</BoxID>
+      <Informações>
+         <Vacinas Quantidade="4">
+            <Vacina Nome="Contra Pulgas" DataAdministracao="2018-05-03"/>
+            <Vacina Nome="Antirrábica" DataAdministracao="2018-07-03"/>
+            <Vacina Nome="Giardíase" DataAdministracao="2019-05-27"/>
+            <Vacina Nome="Óctupla" DataAdministracao="2018-05-03"/>
+         </Vacinas>
+      </Informações>
+   </Animal>
+   <Animal Tipo="Outro">
+      <Nome>Falador</Nome>
+      <BoxID>5</BoxID>
+      <Informações>
+         <Vacinas Quantidade="4">
+            <Vacina Nome="Contra Pulgas" DataAdministracao="2018-05-03"/>
+            <Vacina Nome="Antirrábica" DataAdministracao="2018-07-03"/>
+            <Vacina Nome="Giardíase" DataAdministracao="2019-05-27"/>
+            <Vacina Nome="Óctupla" DataAdministracao="2018-05-03"/>
+         </Vacinas>
+      </Informações>
+   </Animal>
+   <Animal Tipo="Outro">
+      <Nome>Slytherin</Nome>
+      <BoxID>6</BoxID>
+      <Informações>
+         <Vacinas Quantidade="4">
+            <Vacina Nome="Contra Pulgas" DataAdministracao="2018-05-03"/>
+            <Vacina Nome="Antirrábica" DataAdministracao="2018-07-03"/>
+            <Vacina Nome="Giardíase" DataAdministracao="2019-05-27"/>
+            <Vacina Nome="Óctupla" DataAdministracao="2018-05-03"/>
+         </Vacinas>
+      </Informações>
+   </Animal>
+   <Animal Tipo="Outro">
+      <Nome>Hammet</Nome>
+      <BoxID>7</BoxID>
+      <Informações>
+         <Vacinas Quantidade="4">
+            <Vacina Nome="Contra Pulgas" DataAdministracao="2018-05-03"/>
+            <Vacina Nome="Antirrábica" DataAdministracao="2018-07-03"/>
+            <Vacina Nome="Giardíase" DataAdministracao="2019-05-27"/>
+            <Vacina Nome="Óctupla" DataAdministracao="2018-05-03"/>
+         </Vacinas>
+      </Informações>
+   </Animal>
+   <Animal Tipo="Outro">
+      <Nome>Bugs Bunny</Nome>
+      <BoxID>8</BoxID>
+      <Informações>
+         <Vacinas Quantidade="4">
+            <Vacina Nome="Contra Pulgas" DataAdministracao="2018-05-03"/>
+            <Vacina Nome="Antirrábica" DataAdministracao="2018-07-03"/>
+            <Vacina Nome="Giardíase" DataAdministracao="2019-05-27"/>
+            <Vacina Nome="Óctupla" DataAdministracao="2018-05-03"/>
+         </Vacinas>
+      </Informações>
+   </Animal>
+</Animais>

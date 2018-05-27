@@ -1,0 +1,351 @@
+<html xmlns:ns="http://www.dei.isep.ipp.pt/lprog">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <link href="styling.css" rel="stylesheet">
+   </head>
+   <body>
+      <div style="width:100%; display:table;">
+         <center><img src="isep_logo.png" width="23%" height="35%" align=""><h2 style="margin-left: 0%;">ADOTAPets - Informação estruturada em XML</h2>
+            <div align="center">
+               <h3 style="margin-left: 0%;">Linguagens e Programação  [
+                  
+                  LPROG]
+                  
+                  
+               </h3>
+               <h3 style="margin-left: 0%;">Ano Curricular:                                                                  
+                  
+                  2
+                  <p>Data:
+                     
+                     17-05-2018
+                  </p>
+               </h3>
+            </div>
+            <div style="width:100%; display:table;">
+               <div style="float:left; text-align:left; margin-left:10%">
+                  <p><b>Raúl Correia</b> - 
+                     1090657  - 
+                     1090657@isep.ipp.pt
+                  </p>
+                  <p><b>Mário Dias</b> - 
+                     1151708  - 
+                     1151708@isep.ipp.pt
+                  </p>
+                  <p><b>Miguel Santos</b> - 
+                     1161386  - 
+                     1161386@isep.ipp.pt
+                  </p>
+               </div>
+               <div style="float:right; text-align:center;margin-right:15%">
+                  <p id="profsH">Docentes:</p>
+                  <p>
+                     <td id="profs">PDF [PL]
+                        
+                        
+                     </td>
+                  </p>
+                  <p>
+                     <td id="profs">AMD [T]
+                        
+                        
+                     </td>
+                  </p>
+                  <p>
+                     <td id="profs">ACM [TP]
+                        
+                        
+                     </td>
+                  </p>
+               </div>
+            </div>
+         </center>
+      </div>
+      <hr>
+      <h2>Indice</h2>
+      <div class="Indice">
+         <ol class="listaIndice">
+            <li><a href="#SEC001">Introdução</a></li>
+            <li><a href="#SEC002">Análise</a></li>
+            <li><a href="#SEC003">Linguagem</a></li>
+            <li><a href="#SEC004">Transformações</a></li>
+            <ul>
+               <li><a href="#SUBSEC004">Transformação para HTML 1</a></li>
+            </ul>
+            <ul>
+               <li><a href="#SUBSEC005">Transformação para HTML 2</a></li>
+            </ul>
+            <ul>
+               <li><a href="#SUBSEC006">Transformação para HTML 3</a></li>
+            </ul>
+            <ul>
+               <li><a href="#SUBSEC007">Transformação para XML 1</a></li>
+            </ul>
+            <ul>
+               <li><a href="#SUBSEC008">Transformação para XML 2</a></li>
+            </ul>
+            <ul>
+               <li><a href="#SUBSEC009">Transformação para TXT 1</a></li>
+            </ul>
+            <ul>
+               <li><a href="#SUBSEC010">Transformação para TXT 2</a></li>
+            </ul>
+            <li><a href="#SEC005">Conclusão</a></li>
+            <li><a href="#SEC006">Referências</a></li>
+            <li><a href="#SEC007">Anexos</a></li>
+         </ol>
+      </div>
+      <hr>
+      <h2 id="SEC001">Introdução</h2>
+      <p>
+         Tendo em conta um aumento significativo da utilização do XML nos últimos anos devido
+         à facilidade com que permite compartilhar informação através da internet, este trabalho
+         tem em vista aplicar os conhecimentos obtidos durante as aulas da cadeira LPROG sobre
+         o tema fornecido "ADOTAPets".
+         
+         
+         
+      </p>
+      <p>
+         Através do XML, serão organizados e estruturados os dados de uma associação de apoio
+         a animais abandonados, caracterizando todos os elementos dos respetivos animais.
+         
+      </p>
+      <hr>
+      <div>
+         <h2 id="SEC002">Análise</h2>
+         <h3 id="SUBSEC002"></h3>
+         <p>
+            <p>Neste tema em particular pretende-se desenvolver uma estrutura de dados com vários
+               tipos de informação sobre animais para adoção, como por exemplo nome, raça e informação
+               médica.
+            </p>
+         </p>
+         <p>
+            <p>A primeira abordagem foi simples, tendo sido feito um pequeno esboço da informação
+               de maneira a apresentar uma ideia geral do problema proposto.
+            </p>
+         </p>
+         <p>
+            <p>Após uma análise mais aprofundada a solução obtida foi a seguinte estrutura para a
+               constituição do ficheiro:
+            </p>
+         </p>
+         <ul class="listas">
+            <li>Animais</li>
+            <li>Boxes</li>
+         </ul>
+         <p>
+            <p>Tag "Animais" é constituído por várias estruturas "Animal". E Tag "Boxes" é formada
+               por estruturas "Box", tendo cada Box apenas como atributo, o número da mesma.
+            </p>
+         </p>
+         <p>
+            <p>A constituição de um animal:</p>
+         </p>
+         <p>
+            <p>Atributos:</p>
+         </p>
+         <ul class="listas">
+            <li>TipoAnimal</li>
+            <li>BoxID</li>
+            <li>Chip</li>
+         </ul>
+         <p>
+            <p>Elementos:</p>
+         </p>
+         <ul class="listas">
+            <li>Nome</li>
+            <li>Raça</li>
+            <li>Idade</li>
+            <li>Sexo</li>
+            <li>Peso</li>
+            <li>Personalidade</li>
+            <li>Fotografia</li>
+            <li>Vacinas</li>
+            <li>Ração</li>
+            <li>ExercicioFisico</li>
+         </ul>
+         <p>
+            <p>O tipo de animal é considerado um enumerado, tendo em conta que só podem ser inseridos
+               três tipos de dados com os seguintes valores:
+            </p>
+         </p>
+         <ul class="listas">
+            <li>Cão</li>
+            <li>Gato</li>
+            <li>Outro</li>
+         </ul>
+         <p>
+            <p>O box id possui uma referenciação a uma chave, isto é, só podem ser inseridos números
+               de boxes que estejam contidos no conjunto de elementos <i>Boxes</i>. Foi também tido em conta que uma box pode ser utilizada por mais do que um animal.
+            </p>
+         </p>
+         <p>
+            <p>O atibuto <i>Chip</i> tem um formato fixo para poder ser inserido, de maneira a manter a consistência da
+               informação.
+            </p>
+         </p>
+         <p>
+            <p>Idade de um animal é obrigatoriamente um número inteiro positivo entre zero e um máximo
+               de 100, isto é, se incluirmos tartarugas.
+            </p>
+         </p>
+         <p>
+            <p>O sexo de um animal pode apenas ser preenchido como Masculino ou Feminino.</p>
+         </p>
+         <p>
+            <p>Peso de um animal é constituido por um padrão de no mínimo um digito e um máximo de
+               dois, seguido de no maximo três digitos para as gramas e no finalizado por Kg. <i>Como exemplo: 15.21Kg</i></p>
+         </p>
+         <p>
+            <p>A personalidade do animal é tida em conta como qualquer tipo de "string", de forma
+               a cobrir todos os caracteres especiais, essencialmente os acentos.
+            </p>
+         </p>
+         <p>
+            <p>Vacinas são constituidas por um conjunto de <i>Vacina</i>, sendo por sua vez, cada uma preenchida com o nome, uma data de administração e uma
+               validade.
+            </p>
+         </p>
+         <p>
+            <p>Ração e Exercicio fisico de um animal é um enumerado de um dos três valores: Normal,
+               Light ou Senior e também Normal, Moderado ou Grande respectivamente.
+            </p>
+         </p>
+      </div>
+      <div>
+         <h2 id="SEC003">Linguagem</h2>
+         <h3 id="SUBSEC003"></h3>
+         <p>
+            <p>A nivel de <i>schema</i>, foi assegurado que em tipo de animal apenas se poderia inserir 
+               <b>cão</b>, 
+               <b>gato</b> ou 
+               <b>outro</b>, utilizando-se um enumerado.
+               
+            </p>
+         </p>
+         <p>
+            <p>Em box ID foi realizada uma referência de <u>id</u>, chaves essas que têm que fazer parte do conjunto de Boxes.
+            </p>
+         </p>
+         <p>
+            <p>Chip do animal é restrito pelo padrão: 
+               <b>PT-</b> seguido de 5 digitos de zero a nove
+               
+               
+            </p>
+         </p>
+         <p>
+            <p>Nome e raça do animal, constituidos por um padrão que apenas aceita letras e espaços.</p>
+         </p>
+         <p>
+            <p>As fotografias/imagens não possuem nenhuma restrição em particular a não ser a inserção
+               de um uri para o caminho ou link da fonte.
+            </p>
+         </p>
+         <p>
+            <p>Cada vacina tem que ser constituida obrigatoriamente por uma data de administração,
+               com um formato fixo do tipo AAAA-MM-DD. A validade da vacina é um enumerado com os
+               valores Mensal, Anual ou Sem Validade.
+            </p>
+         </p>
+         <p>
+            <p>A ração e exercício físico seguem a mesma estrutura de dados, sendo um enumerado.
+               A ração pode ser Normal, Light ou Senior, e o exercicio físico Normal, Moderado ou
+               Grande.
+            </p>
+         </p>
+      </div>
+      <div>
+         <h2 id="SEC004">Transformações</h2>
+         <h3 id="SUBSEC004">Transformação para HTML 1</h3>
+         <p>
+            <p>
+               Esta transformação consiste em filtrar a informação do ficheiro xml para apresentação
+               de apenas uma tabela com as seguintes informações relativas aos animais:
+               
+            </p>
+         </p>
+         <ul class="listas">
+            <li>Fotografia</li>
+            <li>Nome</li>
+            <li>Raça</li>
+            <li>Sexo</li>
+            <li>Idade</li>
+            <li>Peso</li>
+         </ul>
+         <h3 id="SUBSEC005">Transformação para HTML 2</h3>
+         <p>
+            <p>
+               A segunda transformação consiste num plano mais abrangente de informação, apresentando
+               para além dos dados do animal também as respetivas vacinas de cada um, com a data
+               de administração e validade.             
+            </p>
+         </p>
+         <h3 id="SUBSEC006">Transformação para HTML 3</h3>
+         <p>
+            <p>
+               Esta ultima transformação tem a particularidade de apresentar todos os dados dos animais
+               agrupados por tipo de animal, permitindo uma mais rápida visualização dos dados com
+               interesse.             
+            </p>
+         </p>
+         <h3 id="SUBSEC007">Transformação para XML 1</h3>
+         <p>
+            <p>
+               Esta transformação tem como atributos as propriedades importantes do animal, tem um
+               elemento nome e um elemento com informação secundária.
+               
+            </p>
+         </p>
+         <h3 id="SUBSEC008">Transformação para XML 2</h3>
+         <p>
+            <p>
+               Nesta transformação, associou-se o Animal com o seu nome, a sua box e que vacinas
+               tomou.
+               
+            </p>
+         </p>
+         <h3 id="SUBSEC009">Transformação para TXT 1</h3>
+         <p>
+            <p>Esta transformação mostra quantos animais estão para ser adotados e filtra toda a
+               informação pessoal sobre o dado animal.
+            </p>
+         </p>
+         <h3 id="SUBSEC010">Transformação para TXT 2</h3>
+         <p>
+            <p>Esta transformação tem como objetivo dar informação médica dos animais a serem adotados,
+               mostrando que vacinas tomou e quando.
+            </p>
+         </p>
+      </div>
+      <hr>
+      <h2 id="SEC005">Conclusão</h2>
+      <p> Os objetivos do projeto foram alcançados com sucesso, tendo-se conseguido criar um
+         xml validado por um xsd e respetivas transformações para html, texto e xml. O presente
+         relatório foi também validado com o                 <i>schema</i> fornecido e convertido com sucesso para html.
+         
+      </p>
+      <p> Ao longo do desenvolvimento do trabalho, foi possível apreciar a utilidade que o
+         xml e xsl apresentam, permitindo guardar e apresentar informação de forma simples
+         e bem organizada. Toda as partes de estilização das páginas html foram inseridas por
+         uma simples questão de brio na apresentação do projeto em questão, mesmo não contando
+         para a valorização do mesmo.
+      </p>
+      <hr>
+      <h2 id="SEC006">Referências</h2>
+      <p>URL:<a href="https://www.w3schools.com/">https://www.w3schools.com/</a>
+         Descrição:THE WORLD'S LARGEST WEB DEVELOPER SITE
+         Consultado em:2018-05-26
+      </p>
+      <p>URL:<a href="https://pt.stackoverflow.com/">https://pt.stackoverflow.com/</a>
+         Descrição:Site de Perguntas e Respostas para programadores
+         Consultado em:2018-05-26
+      </p>
+      <hr>
+      <h2 id="SEC007">Anexos</h2>
+      <div style="align:center">
+         <h4 style="margin-left:10%">Transformação 1 AdotaPETS XML - HTML</h4><img class="anexos" src="..\fotografias\t1html.jpg" align=""><br><h4 style="margin-left:10%">Transformação 2 AdotaPETS XML - HTML</h4><img class="anexos" src="..\fotografias\t2html.JPG" align=""><br><h4 style="margin-left:10%">Transformação 3 AdotaPETS XML - HTML</h4><img class="anexos" src="..\fotografias\t3html.JPG" align=""><br><h4 style="margin-left:10%">Transformação 1 AdotaPETS XML - TXT</h4><img class="anexos" src="..\fotografias\t1txt.JPG" align=""><br><h4 style="margin-left:10%">Transformação 2 AdotaPETS XML - TXT</h4><img class="anexos" src="..\fotografias\t2txt.JPG" align=""><br><h4 style="margin-left:10%">Transformação 1 AdotaPETS XML - XML</h4><img class="anexos" src="..\fotografias\t1xml.JPG" align=""><br><h4 style="margin-left:10%">Transformação 2 AdotaPETS XML - XML</h4><img class="anexos" src="..\fotografias\t2xml.JPG" align=""><br></div>
+   </body>
+</html>

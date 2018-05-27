@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Animais Quantidade="9">
+   <Animal Tipo="Cão" Sexo="Feminino" Idade="8">
+      <Nome>Lassie</Nome>
+      <Informações>
+         <Raca>Collie</Raca>
+         <Peso>15.01Kg</Peso>
+         <Racao>Light</Racao>
+         <ExercicioFisico>Normal</ExercicioFisico>
+      </Informações>
+   </Animal>
+   <Animal Tipo="Cão" Sexo="Feminino" Idade="3">
+      <Nome>Milu</Nome>
+      <Informações>
+         <Raca>Rafeiro</Raca>
+         <Peso>5.81Kg</Peso>
+         <Racao>Light</Racao>
+         <ExercicioFisico>Normal</ExercicioFisico>
+      </Informações>
+   </Animal>
+   <Animal Tipo="Cão" Sexo="Masculino" Idade="11">
+      <Nome>Rex</Nome>
+      <Informações>
+         <Raca>Doberman</Raca>
+         <Peso>17.01Kg</Peso>
+         <Racao>Light</Racao>
+         <ExercicioFisico>Moderada</ExercicioFisico>
+      </Informações>
+   </Animal>
+   <Animal Tipo="Gato" Sexo="Masculino" Idade="2">
+      <Nome>Vistoso</Nome>
+      <Informações>
+         <Raca>Rafeiro</Raca>
+         <Peso>6.01Kg</Peso>
+         <Racao>Light</Racao>
+         <ExercicioFisico>Normal</ExercicioFisico>
+      </Informações>
+   </Animal>
+   <Animal Tipo="gato" Sexo="Feminino" Idade="8">
+      <Nome>Tareco</Nome>
+      <Informações>
+         <Raca>Collie</Raca>
+         <Peso>15.01Kg</Peso>
+         <Racao>Light</Racao>
+         <ExercicioFisico>Normal</ExercicioFisico>
+      </Informações>
+   </Animal>
+   <Animal Tipo="Outro" Sexo="Feminino" Idade="4">
+      <Nome>Falador</Nome>
+      <Informações>
+         <Raca>Indefinido</Raca>
+         <Peso>15.01Kg</Peso>
+         <Racao>Light</Racao>
+         <ExercicioFisico>Normal</ExercicioFisico>
+      </Informações>
+   </Animal>
+   <Animal Tipo="Outro" Sexo="Feminino" Idade="7">
+      <Nome>Slytherin</Nome>
+      <Informações>
+         <Raca>Anaconda</Raca>
+         <Peso>10.57Kg</Peso>
+         <Racao>Light</Racao>
+         <ExercicioFisico>Normal</ExercicioFisico>
+      </Informações>
+   </Animal>
+   <Animal Tipo="Outro" Sexo="Masculino" Idade="7">
+      <Nome>Hammet</Nome>
+      <Informações>
+         <Raca>Hamsterville</Raca>
+         <Peso>2.57Kg</Peso>
+         <Racao>Light</Racao>
+         <ExercicioFisico>Normal</ExercicioFisico>
+      </Informações>
+   </Animal>
+   <Animal Tipo="Outro" Sexo="Masculino" Idade="3">
+      <Nome>Bugs Bunny</Nome>
+      <Informações>
+         <Raca>Coelho</Raca>
+         <Peso>5.57Kg</Peso>
+         <Racao>Light</Racao>
+         <ExercicioFisico>Normal</ExercicioFisico>
+      </Informações>
+   </Animal>
+</Animais>
