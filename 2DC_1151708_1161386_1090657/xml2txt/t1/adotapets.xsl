@@ -9,7 +9,14 @@
     <!-- Criar Elemento Raíz-->
     <xsl:template match="ns:ADOTAPets">
     <xsl:call-template name="HEADER"/>
-    Animais : Quantidade = <xsl:value-of select="count(ns:Animais/ns:Animal)"/>
+    ==================================
+    Animais : 
+        Estatísticas
+            Quantidade = <xsl:value-of select="count(ns:Animais/ns:Animal)"/>
+            Maior Idade = <xsl:value-of select="max(ns:Animais/ns:Animal/ns:Idade)"/>
+            Menor Idade = <xsl:value-of select="min(ns:Animais/ns:Animal/ns:Idade)"/>
+            Média Idade = <xsl:value-of select="format-number(avg(ns:Animais/ns:Animal/ns:Idade),'#.00')"/>
+    ==================================
             <xsl:apply-templates select="ns:Animais/ns:Animal"/>
     </xsl:template>
     <!-- Criar template Animais-->
