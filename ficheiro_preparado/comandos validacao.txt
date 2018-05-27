@@ -1,6 +1,0 @@
-(xmlstarlet)
-
-xml val -e -s ADOTAPets.xsd ADOTAPets.xml
-
-(saxon)
-java -jar saxon9he.jar -s:ADOTAPets.xml -xsl:adotapets.xsl -o:output.xml
