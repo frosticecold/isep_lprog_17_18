@@ -15,7 +15,7 @@
             </head>
             <body>
                 <body id="backgroundIMG">
-                    <h2>Detalhes Animais</h2>
+                    <h2>ADOTAPets</h2>
                 </body>
                 <br/>
                 <br/>
